@@ -3,156 +3,75 @@ allow-lan: false
 mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
-
-dns:
-  enable: true
-  ipv6: false
-  default-nameserver: [223.5.5.5, 119.29.29.29]
-  nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback:
-    - https://1.1.1.1/dns-query
-    - https://dns.google/dns-query
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-
-proxy-providers:
-  kuaiyu:
-    type: http
-    url: https://blog.kuaiyu.cc/tree/aHlzd.yaml
-    interval: 86400
-    path: ./providers/kuaiyu.yaml
-    header:
-      User-Agent: ["clash-verge/v2.0.0"]
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-
-  freeclash-0:
-    type: http
-    url: https://node.freeclashnode.com/uploads/2026/08/0-20260806.yaml
-    interval: 86400
-    path: ./providers/freeclash-0.yaml
-    header:
-      User-Agent: ["clash-verge/v2.0.0"]
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-
-  freeclash-2:
-    type: http
-    url: https://node.freeclashnode.com/uploads/2026/08/2-20260806.yaml
-    interval: 86400
-    path: ./providers/freeclash-2.yaml
-    header:
-      User-Agent: ["clash-verge/v2.0.0"]
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-
-  xinshoucun:
-    type: http
-    url: https://xinshoucun.net/sub/clash-20260806.yaml
-    interval: 86400
-    path: ./providers/xinshoucun.yaml
-    header:
-      User-Agent: ["clash-verge/v2.0.0"]
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-
-proxy-groups:
-  - name: 🚀 节点选择
-    type: select
-    use:
-      - kuaiyu
-      - freeclash-0
-      - freeclash-2
-      - xinshoucun
-
-  - name: ♻️ 自动选择
-    type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    use:
-      - kuaiyu
-      - freeclash-0
-      - freeclash-2
-      - xinshoucun
-
-  - name: 🎬 流媒体
-    type: select
-    use:
-      - kuaiyu
-      - freeclash-0
-      - freeclash-2
-      - xinshoucun
-
-  - name: 🌍 国外网站
-    type: select
-    use:
-      - kuaiyu
-      - freeclash-0
-      - freeclash-2
-      - xinshoucun
-
-  - name: 🤖 AI 服务
-    type: select
-    use:
-      - kuaiyu
-      - freeclash-0
-      - freeclash-2
-      - xinshoucun
-
-  - name: 🐟 漏网之鱼
-    type: select
-    use:
-      - kuaiyu
-      - freeclash-0
-      - freeclash-2
-      - xinshoucun
-
-rules:
-  - DOMAIN-SUFFIX,openai.com,🤖 AI 服务
-  - DOMAIN-SUFFIX,anthropic.com,🤖 AI 服务
-  - DOMAIN-SUFFIX,claude.ai,🤖 AI 服务
-  - DOMAIN-SUFFIX,gemini.google.com,🤖 AI 服务
-  - DOMAIN-SUFFIX,copilot.microsoft.com,🤖 AI 服务
-  - DOMAIN-SUFFIX,netflix.com,🎬 流媒体
-  - DOMAIN-SUFFIX,nflxvideo.net,🎬 流媒体
-  - DOMAIN-SUFFIX,youtube.com,🎬 流媒体
-  - DOMAIN-SUFFIX,googlevideo.com,🎬 流媒体
-  - DOMAIN-SUFFIX,disneyplus.com,🎬 流媒体
-  - DOMAIN-SUFFIX,primevideo.com,🎬 流媒体
-  - DOMAIN-SUFFIX,spotify.com,🎬 流媒体
-  - DOMAIN-SUFFIX,twitch.tv,🎬 流媒体
-  - DOMAIN-SUFFIX,bilibili.com,DIRECT
-  - DOMAIN-SUFFIX,google.com,🌍 国外网站
-  - DOMAIN-SUFFIX,googleapis.com,🌍 国外网站
-  - DOMAIN-SUFFIX,github.com,🌍 国外网站
-  - DOMAIN-SUFFIX,githubusercontent.com,🌍 国外网站
-  - DOMAIN-SUFFIX,twitter.com,🌍 国外网站
-  - DOMAIN-SUFFIX,x.com,🌍 国外网站
-  - DOMAIN-SUFFIX,telegram.org,🌍 国外网站
-  - DOMAIN-SUFFIX,t.me,🌍 国外网站
-  - DOMAIN-SUFFIX,wikipedia.org,🌍 国外网站
-  - DOMAIN-SUFFIX,reddit.com,🌍 国外网站
-  - DOMAIN-SUFFIX,instagram.com,🌍 国外网站
-  - DOMAIN-SUFFIX,cn,DIRECT
-  - DOMAIN-SUFFIX,baidu.com,DIRECT
-  - DOMAIN-SUFFIX,qq.com,DIRECT
-  - DOMAIN-SUFFIX,taobao.com,DIRECT
-  - DOMAIN-SUFFIX,jd.com,DIRECT
-  - DOMAIN-SUFFIX,alipay.com,DIRECT
-  - DOMAIN-SUFFIX,aliyun.com,DIRECT
-  - DOMAIN-SUFFIX,weibo.com,DIRECT
-  - DOMAIN-SUFFIX,douyin.com,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,🌍 国外网站
+proxies:
+- name: '[kuaiyu_08-05] 🇷🇴RO_131|463KB/s'
+  port: 9002
+  server: 84.239.49.225
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: '[kuaiyu_08-05] 🇳🇱NL_9|364KB/s'
+  port: 9002
+  server: 84.17.47.147
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: '[kuaiyu_08-05] 🇳🇱NL_13|897KB/s'
+  network: tcp
+  port: 62145
+  server: 141.144.196.45
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+- delay: 2580
+  name: '[kuaiyu_08-06] 🇷🇴RO_39|2.0MB/s|G001-260618'
+  port: 9002
+  server: 84.239.14.160
+  skip-cert-verify: true
+  sub_tag: G001-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[kuaiyu_08-06] 🇺🇸US_16|137KB/s|P002-260618'
+  password: ''
+  port: 9002
+  server: 156.146.59.5
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: '[freeclash_08] ğŸ‡«ğŸ‡·FR_232|251KB/s|C002-260622 01'
+  network: ws
+  port: 8443
+  server: 188.114.97.8
+  sub_tag: C002-260622
+  tls: true
+  type: vless
+  udp: true
+  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    max-early-data: 2560
+    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+  xudp: true
+  packet-encoding: xudp
+  servername: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
+- auth: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
+  name: '[kuaiyu_08-06] 🇺🇸US_9|2.7MB/s'
+  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
+  port: 8443
+  server: 172.245.233.237
+  skip-cert-verify: true
+  sni: hopp-us.yyuyy.com
+  type: hysteria2
+- name: '[kuaiyu_08-05] 🇭🇰HK_3|5
