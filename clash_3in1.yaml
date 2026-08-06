@@ -70,9 +70,7 @@ proxy-providers:
 proxy-groups:
   - name: 🚀 节点选择
     type: select
-    proxies:
-      - ♻️ 自动选择
-      - DIRECT
+    use:
       - kuaiyu
       - freeclash-0
       - freeclash-2
@@ -91,23 +89,35 @@ proxy-groups:
 
   - name: 🎬 流媒体
     type: select
-    proxies: [🚀 节点选择, ♻️ 自动选择, DIRECT]
+    use:
+      - kuaiyu
+      - freeclash-0
+      - freeclash-2
+      - xinshoucun
 
   - name: 🌍 国外网站
     type: select
-    proxies: [🚀 节点选择, ♻️ 自动选择, DIRECT]
+    use:
+      - kuaiyu
+      - freeclash-0
+      - freeclash-2
+      - xinshoucun
 
   - name: 🤖 AI 服务
     type: select
-    proxies: [🚀 节点选择, ♻️ 自动选择]
+    use:
+      - kuaiyu
+      - freeclash-0
+      - freeclash-2
+      - xinshoucun
 
   - name: 🐟 漏网之鱼
     type: select
-    proxies: [🚀 节点选择, DIRECT]
-
-  - name: GLOBAL
-    type: select
-    proxies: [DIRECT, kuaiyu, freeclash-0, freeclash-2, xinshoucun]
+    use:
+      - kuaiyu
+      - freeclash-0
+      - freeclash-2
+      - xinshoucun
 
 rules:
   - DOMAIN-SUFFIX,openai.com,🤖 AI 服务
@@ -145,4 +155,4 @@ rules:
   - DOMAIN-SUFFIX,weibo.com,DIRECT
   - DOMAIN-SUFFIX,douyin.com,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🐟 漏网之鱼
+  - MATCH,🌍 国外网站
