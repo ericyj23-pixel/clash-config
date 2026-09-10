@@ -5,6 +5,16 @@ on:
     # 每天 UTC 00:23 / 12:23（北京 08:23 / 20:23）
     - cron: '23 0,12 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'merge.py'
+      - 'parsers.py'
+      - 'regions.py'
+      - 'crawler.py'
+      - 'config/**'
+      - 'sources.txt'
+      - '.github/workflows/update.yml'
 
 permissions:
   contents: write
