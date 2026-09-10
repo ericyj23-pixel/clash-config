@@ -1,0 +1,15 @@
+# 订阅源清单：一行一条，# 开头为注释
+#
+# page: 开头 = 发布站，自动抓当天最新文章里的订阅地址（推荐，站点会换地址格式防爬）
+# 其余      = 直接订阅地址（Clash YAML / base64 / 分享链接均可）
+# 本地文件也可直接写路径，方便调试
+
+page:https://yoyapai.com/category/mianfeijiedian
+page:https://xinshoucun.net/category/freenode
+page:https://blog.kuaiyu.cc/
+
+# 说明：你给的三个地址是固定文章页，内容停在旧日期（如 yoyapai/531 停在 6月15日），
+# 所以用上面的「分类/首页」列表页，才能每天自动跟到最新一篇。
+# 原地址保留在下面，需要时取消注释即可：
+# page:https://yoyapai.com/531
+# page:https://xinshoucun.net/11200

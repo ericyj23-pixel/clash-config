@@ -1,0 +1,47 @@
+# 合并行为配置，可按需修改
+
+request:
+  timeout: 20        # 单个订阅超时（秒）
+  retries: 2         # 失败重试次数
+  user_agent: clash.meta
+
+filter:
+  # 节点名包含以下任一关键词则丢弃（通常用于过滤"剩余流量/官网"这类假节点）
+  exclude_keywords:
+    - 剩余流量
+    - 剩余
+    - 过期
+    - 到期
+    - 已过期
+    - 官网
+    - 网址
+    - 充值
+    - 续费
+    - 购买
+    - 套餐
+    - 公告
+    - 流量
+    - 重置
+    - traffic
+    - expire
+    - expired
+    - official
+    - renew
+  # 想整类不要就填这里，例如 [ssr, tuic]
+  exclude_types: []
+
+dedupe:
+  enabled: true      # 按 协议+地址+端口+密码/UUID 去重
+
+naming:
+  prefix_flag: true  # 自动补国旗前缀
+  ensure_unique: true
+  max_length: 60
+
+groups:
+  by_region: true    # 生成地区分组（香港/日本/美国...）
+  auto_select:
+    url: https://www.gstatic.com/generate_204
+    interval: 300    # 自动测速间隔（秒）
+    tolerance: 50    # 延迟容差（毫秒）
+    max_nodes: 80    # 测速组最多放多少个节点（跨地区取样，避免客户端压力过大）

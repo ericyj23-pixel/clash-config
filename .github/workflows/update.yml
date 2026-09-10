@@ -1,0 +1,43 @@
+name: Update Subscription
+
+on:
+  schedule:
+    # 每天 UTC 00:23 / 12:23（北京 08:23 / 20:23）
+    - cron: '23 0,12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 合并订阅
+        env:
+          SUB_URLS: ${{ secrets.SUB_URLS }}
+        run: python merge.py --output config.yaml
+
+      - name: 提交并推送
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "配置无变化，跳过提交"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add config.yaml
+          git commit -m "chore: 更新订阅 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push origin main
