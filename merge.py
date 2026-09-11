@@ -25,6 +25,7 @@ import yaml
 from crawler import resolve_page, response_text
 from parsers import b64_decode, parse_links
 from regions import detect_region, strip_flags
+from speedtest import is_udp_only, measure
 
 ROOT = Path(__file__).resolve().parent
 CST = timezone(timedelta(hours=8))
@@ -46,8 +47,20 @@ DEFAULT_OPTIONS = {
     },
     "dedupe": {"enabled": True},
     "naming": {"prefix_flag": True, "ensure_unique": True, "max_length": 60},
+    "speedtest": {
+        "enabled": True,
+        "workers": 200,          # 并发探测数
+        "timeout": 3.0,          # 单次连接超时（秒）
+        "drop_unreachable": True,# 连不上的直接丢弃
+        "max_latency_ms": 0,     # 延迟上限，超过则丢弃；0 = 不限制
+        "keep_top": 0,           # 只保留最快的 N 个；0 = 全保留
+        "keep_per_region": 0,    # 每个地区最多保留 N 个；0 = 不限制
+        "tag_name": True,        # 节点名后标注实测延迟
+        "min_keep": 30,          # 存活数低于此值时回退不过滤（防 CI 网络受限误杀）
+    },
     "groups": {
         "by_region": True,
+        "fast": {"count": 30},   # ⚡ 低延迟组取前 N 个
         "auto_select": {
             "interval": 300,
             "tolerance": 50,
@@ -245,6 +258,74 @@ def rename(node: dict, options: dict, used: dict) -> dict:
     return node
 
 
+def apply_speedtest(nodes: list[dict], options: dict) -> tuple[list[dict], dict]:
+    """探测延迟：丢弃连不上的 -> 按延迟升序 -> 标注延迟 -> 按需限量。
+    返回 (节点列表, 统计)。UDP 协议（hy2/tuic）不探测，原样保留。"""
+    conf = options["speedtest"]
+    stats = {"total": len(nodes), "tested": 0, "alive": 0, "dropped": 0}
+
+    results = measure(nodes, workers=int(conf["workers"]), timeout=float(conf["timeout"]))
+    scored: list[tuple[dict, float | None]] = []
+    for index, node in enumerate(nodes):
+        if is_udp_only(node):
+            scored.append((node, None))
+            continue
+        stats["tested"] += 1
+        latency = results.get(index)
+        if latency is None:
+            if conf["drop_unreachable"]:
+                stats["dropped"] += 1
+                continue
+            scored.append((node, None))
+            continue
+        stats["alive"] += 1
+        scored.append((node, latency))
+
+    max_latency = float(conf["max_latency_ms"] or 0)
+    if max_latency > 0:
+        before = len(scored)
+        scored = [
+            (n, lat) for n, lat in scored
+            if lat is None or lat <= max_latency
+        ]
+        stats["dropped"] += before - len(scored)
+
+    # 可达的按延迟升序，未探测的排最后
+    scored.sort(key=lambda item: (item[1] is None, item[1] or 0.0))
+    kept = [node for node, _ in scored]
+
+    per_region = int(conf["keep_per_region"] or 0)
+    if per_region > 0:
+        counter: dict[str, int] = {}
+        limited = []
+        for node in kept:
+            region, _ = detect_region(strip_flags(node["name"]))
+            counter[region] = counter.get(region, 0) + 1
+            if counter[region] <= per_region:
+                limited.append(node)
+        kept = limited
+
+    keep_top = int(conf["keep_top"] or 0)
+    if keep_top > 0:
+        kept = kept[:keep_top]
+
+    # 保护：CI 网络受限时可能大面积误判，节点太少就退回不过滤的结果
+    min_keep = int(conf.get("min_keep", 30))
+    fallback = len(kept) < min_keep <= len(nodes)
+    if fallback:
+        print(f"[测速] 存活节点仅 {len(kept)} 个（少于 {min_keep}），疑似网络受限，回退为不过滤")
+        kept = nodes
+
+    if conf["tag_name"] and not fallback:
+        kept_ids = {id(node) for node in kept}
+        for node, latency in scored:
+            if id(node) in kept_ids and latency is not None:
+                node["name"] = f'{node["name"]} [{latency:.0f}ms]'
+
+    stats["kept"] = len(kept)
+    return kept, stats
+
+
 def spread_pick(buckets: dict[str, list[str]], limit: int) -> list[str]:
     """跨地区轮询取样：保证每个地区都有代表，不会让测速组被某一地区占满。"""
     total = sum(len(v) for v in buckets.values())
@@ -291,6 +372,10 @@ def build_groups(nodes: list[dict], base: dict, options: dict) -> list[dict]:
     else:
         top_members = names
 
+    # 节点已按延迟升序，直接取前 N 个即"最快"
+    fast_count = int(options["groups"].get("fast", {}).get("count", 0) or 0)
+    fast_members = names[:fast_count] if fast_count > 0 else []
+
     auto = options["groups"]["auto_select"]
     max_nodes = int(auto.get("max_nodes", 80))
     auto_members = spread_pick(buckets, max_nodes) if max_nodes > 0 else names
@@ -302,6 +387,8 @@ def build_groups(nodes: list[dict], base: dict, options: dict) -> list[dict]:
         for item in group.get("proxies") or []:
             if item == "ALL_PROXIES":
                 expanded.extend(auto_members)
+            elif item == "FAST_PROXIES":
+                expanded.extend(fast_members or auto_members)
             elif item == "REGION_GROUPS":
                 expanded.extend(top_members)
             else:
@@ -334,8 +421,11 @@ def dump_config(config: dict, path: Path, stats: dict) -> None:
         f"# 更新时间：{now_cst()}（UTC+8）",
         f"# 数据源：{stats['ok']} 个成功 / {stats['total']} 个",
         f"# 节点数：{stats['nodes']}（已去重，来源 {stats['raw']} 个）",
-        "",
     ]
+    if stats.get("alive") is not None:
+        header.append(f"# 连通性：探测 {stats['tested']} 个，存活 {stats['alive']} 个"
+                      f"（已按实测延迟升序排列，节点名后为延迟）")
+    header.append("")
     body = yaml.safe_dump(
         config, allow_unicode=True, sort_keys=False,
         default_flow_style=False, width=4096,
@@ -350,6 +440,7 @@ def main() -> int:
     parser.add_argument("-o", "--output", default=str(ROOT / "dist" / "config.yaml"))
     parser.add_argument("-c", "--config", default=str(ROOT / "config" / "base.yaml"))
     parser.add_argument("--options", default=str(ROOT / "config" / "options.yaml"))
+    parser.add_argument("--no-speedtest", action="store_true", help="跳过延迟探测，只做合并去重")
     args = parser.parse_args()
 
     options = load_options(Path(args.options))
@@ -401,6 +492,18 @@ def main() -> int:
         print("[错误] 没有解析到任何可用节点，保留原配置不覆盖", file=sys.stderr)
         return 1
 
+    speed_stats = None
+    if options["speedtest"]["enabled"] and not args.no_speedtest:
+        print(f"[测速] 开始探测 {len(kept)} 个节点（并发 {options['speedtest']['workers']}，"
+              f"超时 {options['speedtest']['timeout']}s）...")
+        kept, speed_stats = apply_speedtest(kept, options)
+        print(f"[测速] 存活 {speed_stats['alive']}/{speed_stats['tested']} "
+              f"-> 保留 {speed_stats['kept']} 个节点")
+
+    if not kept:
+        print("[错误] 测速后没有可用节点，保留原配置不覆盖", file=sys.stderr)
+        return 1
+
     config = dict(base)
     config["proxies"] = kept
     config["proxy-groups"] = build_groups(kept, base, options)
@@ -409,6 +512,7 @@ def main() -> int:
     dump_config(config, out, {
         "ok": ok, "total": len(sources),
         "nodes": len(kept), "raw": len(raw_nodes),
+        **(speed_stats or {}),
     })
     print(f"[完成] {len(raw_nodes)} -> {len(kept)} 个节点，已写入 {out}")
     return 0

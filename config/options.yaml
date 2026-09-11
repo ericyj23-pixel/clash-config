@@ -38,8 +38,22 @@ naming:
   ensure_unique: true
   max_length: 60
 
+speedtest:
+  enabled: true        # 抓取后探测连通性与延迟，连不上的直接丢弃
+  workers: 200         # 并发探测数
+  timeout: 3.0         # 单次连接超时（秒），网络差可调到 5
+  drop_unreachable: true
+  max_latency_ms: 0    # 延迟上限（毫秒），超过丢弃；0 = 不限制
+  keep_top: 0          # 只留最快的 N 个；0 = 全保留
+  keep_per_region: 0   # 每个地区最多留 N 个；0 = 不限制
+  tag_name: true       # 节点名后标注实测延迟，如 [128ms]
+  min_keep: 30         # 存活数低于此值则回退不过滤（防 CI 网络受限大面积误杀）
+  # 注意：hysteria2 / tuic 走 UDP，无法用 TCP 探测，这类原样保留不过滤
+
 groups:
   by_region: true    # 生成地区分组（香港/日本/美国...）
+  fast:
+    count: 30        # ⚡ 低延迟优选组取前 N 个（按实测延迟）
   auto_select:
     url: https://www.gstatic.com/generate_204
     interval: 300    # 自动测速间隔（秒）

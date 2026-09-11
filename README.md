@@ -41,6 +41,41 @@ git add . && git commit -m "添加订阅合并" && git push
 
 > 首次进 Actions 页面如果提示 "Workflows aren't being run"，点 "I understand my workflows, go ahead and enable them"。
 
+## 延迟优化（连通性探测）
+
+抓到的免费节点里有大量已失效的，直接导入会出现"点了没反应"。所以合并后会**并发 TCP 探测**
+每个节点的连通性和耗时：
+
+- 连不上的直接丢弃（实测 623 个里 383 个能连上，约 62%）
+- 存活节点**按延迟升序**排列，节点名后标注实测值，如 `🇸🇬 SG-xxx [78ms]`
+- 新增 `⚡ 低延迟优选` 策略组：取实测最快的 30 个，客户端选它就行
+- `♻️ 自动选择` 组按地区轮询取样，但现在每个地区优先取最快的
+
+**注意**：`hysteria2` / `tuic` 走 UDP，TCP 探测必然失败，这类节点原样保留、不参与过滤。
+
+### 关于延迟数值准不准
+
+- **Actions（每天自动）**：出口在美国，测出的延迟只代表"美国到节点"，
+  主要用于**剔除死节点**（死节点在哪都是死的），数值别当真
+- **你本机跑**：才是你实际感受到的延迟，排序最准
+
+想拿到最准的排序，在你自己电脑上跑一次：
+
+```bash
+pip install -r requirements.txt
+python merge.py -o my.yaml      # 本机测速，延迟就是你真实延迟
+```
+
+参数在 `config/options.yaml` 的 `speedtest` 段：
+
+| 参数 | 说明 |
+|---|---|
+| `enabled` / `--no-speedtest` | 关掉测速，只做合并去重 |
+| `timeout` | 单次连接超时（秒），网络差可调到 5 |
+| `max_latency_ms` | 延迟上限，超过丢弃；`0` = 不限制 |
+| `keep_top` / `keep_per_region` | 只留最快的 N 个 / 每个地区最多 N 个 |
+| `tag_name` | 节点名后是否标注延迟 |
+
 ## 订阅源
 
 `sources.txt` 里一行一条，支持两种写法（当前三个源都是公开发布站，无隐私，可随仓库公开）：
@@ -69,6 +104,7 @@ Settings → Secrets and variables → Actions → New secret → Name: `SUB_URL
 merge.py                     主程序：抓取 / 去重 / 分组 / 输出
 parsers.py                   协议解析：ss vmess vless trojan hysteria2 tuic
 crawler.py                   发布站爬虫：page: 源自动定位当天最新订阅地址
+speedtest.py                 连通性/延迟探测：并发 TCP 握手计时
 regions.py                   地区识别与国旗
 config/base.yaml             配置模板：全局项、策略组、分流规则
 config/options.yaml          合并行为：过滤词、去重、测速参数
