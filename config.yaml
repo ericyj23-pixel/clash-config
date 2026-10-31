@@ -1,8 +1,8 @@
 # Clash 合并订阅 - 自动生成，请勿手动编辑
-# 更新时间：2026-10-31 13:56:15（UTC+8）
+# 更新时间：2026-11-01 01:16:52（UTC+8）
 # 数据源：5 个成功 / 505 个
-# 节点数：352（已去重，来源 1164 个）
-# 连通性：探测 501 个，存活 348 个（已按实测延迟升序排列，节点名后为延迟）
+# 节点数：347（已去重，来源 1164 个）
+# 连通性：探测 501 个，存活 343 个（已按实测延迟升序排列，节点名后为延迟）
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -56,55 +56,6 @@ proxies:
     headers:
       Host: cf-1rm.pages.dev
 - type: vless
-  name: 🇫🇷 FR法国丨yoyapai.com (7) [6ms]
-  server: 45.142.120.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
-- type: vless
-  name: 🌐 ❓未知丨yoyapai.com (80) [6ms]
-  server: 188.114.97.6
-  port: 443
-  uuid: 4bde8d55-d91c-45e9-9b36-e6448a194527
-  udp: true
-  tls: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
-  sni: dfsuporte.garena.com.ex33r.eu.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /sg-amz
-    headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
-- type: vless
-  name: 🇺🇸 US美国丨yoyapai.com (19) [6ms]
-  server: 104.254.140.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime54.workers.dev
-- name: 🇺🇸 US_1|164KB/s [6ms]
-  password: None
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- type: vless
   name: 🌐 ❓未知丨yoyapai.com (92) [6ms]
   server: 188.114.97.6
   port: 443
@@ -121,6 +72,364 @@ proxies:
     headers:
       Host: investor.fb.com.r3xxe.eu.cc
 - type: vless
+  name: 🌐 ❓未知丨yoyapai.com (68) [6ms]
+  server: 162.159.135.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  udp: true
+  tls: true
+  servername: snip.edgeoneai.cc.cd
+  sni: snip.edgeoneai.cc.cd
+  skip-cert-verify: false
+  alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 🌐 ❓Other_1|151KB/s [6ms]
+  type: vless
+  server: 104.17.70.206
+  port: 8443
+  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
+  tls: true
+  skip-cert-verify: false
+  servername: free.sahanwickramasinghe.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+  udp: true
+- type: vless
+  name: 🇫🇷 FR法国丨yoyapai.com (6) [6ms]
+  server: 80.93.202.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime02.workers.dev
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (80) [6ms]
+  server: 188.114.97.6
+  port: 443
+  uuid: 4bde8d55-d91c-45e9-9b36-e6448a194527
+  udp: true
+  tls: true
+  servername: dfsuporte.garena.com.ex33r.eu.cc
+  sni: dfsuporte.garena.com.ex33r.eu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /sg-amz
+    headers:
+      Host: dfsuporte.garena.com.ex33r.eu.cc
+- name: 🇺🇸 US_1|164KB/s [6ms]
+  password: None
+  port: 443
+  server: 172.64.68.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- type: vless
+  name: '🇬🇧 GB英國丨yoyapai.com #2 [6ms]'
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  sni: rAyAn-007.mAxImA.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- type: vless
+  name: 🇬🇧 GB英国丨yoyapai.com (4) [6ms]
+  server: 89.117.112.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime11.workers.dev
+- type: vless
+  name: 🇰🇷 KR韩國丨yoyapai.com [6ms]
+  server: 104.17.144.29
+  port: 8880
+  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: spring-sound-8d8e.36-9ff.workers.dev
+- type: trojan
+  name: '🇫🇷 法国丨yoyapai.com #2 [6ms]'
+  server: 104.18.152.73
+  port: 443
+  password: humanity
+  udp: true
+  tls: true
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (56) [6ms]
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  servername: ccc.010304.xyz
+  sni: ccc.010304.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- type: trojan
+  name: '🇫🇷 FR法國丨yoyapai.com (3) #2 [6ms]'
+  server: 104.17.111.4
+  port: 443
+  password: humanity
+  udp: true
+  tls: true
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assignment
+- type: vless
+  name: 🇫🇷 FR法國丨yoyapai.com (5) [6ms]
+  server: 104.17.64.70
+  port: 8880
+  uuid: 220046c3-0081-4c22-a648-83a52bc3a0d5
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: yellow-sky-38b3.154-d73.workers.dev
+- type: vless
+  name: 🇨🇦 加拿大丨yoyapai.com (4) [6ms]
+  server: 104.17.121.110
+  port: 8880
+  uuid: c0a7e427-1034-485a-b5c7-4449bd04b28d
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /mmd
+    headers:
+      Host: svn-panel-team.lorqino.ir
+    v2ray-http-upgrade: true
+- type: vless
+  name: 🇨🇦 CA加拿大丨yoyapai.com (20) [6ms]
+  server: 172.67.79.160
+  port: 2087
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  udp: true
+  tls: true
+  servername: cvhpyn.pages.dev
+  sni: cvhpyn.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cvhpyn.pages.dev
+- type: vless
+  name: 🇻🇳 VN越南丨yoyapai.com [6ms]
+  server: 104.27.0.121
+  port: 443
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  udp: true
+  tls: true
+  servername: b33ec4a1s226.fuhuovps.xyz
+  sni: b33ec4a1s226.fuhuovps.xyz
+  skip-cert-verify: false
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: ios
+  network: xhttp
+  xhttp-opts:
+    path: e0d9cd6ea04ecda957b4ca0869e038af
+    host: b33ec4a1s226.fuhuovps.xyz
+    mode: auto
+- name: 🌐 🏁RELAY-172.64.229.21-1657 [6ms]
+  type: vmess
+  server: 172.64.229.21
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  tls: true
+  udp: true
+- type: trojan
+  name: 🇨🇦 CA加拿大丨yoyapai.com (7) [6ms]
+  server: 104.18.152.77
+  port: 443
+  password: humanity
+  udp: true
+  tls: true
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- type: vless
+  name: 🇫🇷 FR法国丨yoyapai.com (7) [6ms]
+  server: 45.142.120.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime08.workers.dev
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (60) [6ms]
+  server: 172.64.150.43
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  udp: true
+  tls: true
+  servername: snip.edgeoneai.cc.cd
+  sni: snip.edgeoneai.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: unsafe
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- type: vless
+  name: 🇸🇬 SG新加坡丨yoyapai.com (9) [6ms]
+  server: 172.64.94.251
+  port: 8880
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: old-violet-a5ce.29-440.workers.dev
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (50) [6ms]
+  server: 185.148.104.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime51.workers.dev
+- type: vless
+  name: 🇸🇬 SG新加坡丨yoyapai.com (12) [6ms]
+  server: 104.21.28.176
+  port: 443
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /Singapore1
+    headers:
+      Host: sg.lovehk.xyz
+- type: vless
+  name: '🇨🇦 CA加拿大丨yoyapai.com #2 [6ms]'
+  server: 104.26.2.173
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  udp: true
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  sni: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (35) [6ms]
+  server: 185.148.107.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime55.workers.dev
+- type: trojan
+  name: 🌐 ❓未知丨yoyapai.com (45) [6ms]
+  server: 8.6.112.6
+  port: 443
+  password: humanity
+  udp: true
+  tls: true
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- type: vless
   name: 🇺🇸 US丨yoyapai.com美国 [6ms]
   server: 188.164.248.110
   port: 443
@@ -136,20 +445,20 @@ proxies:
     path: /
     headers:
       Host: imanvipreserved.pages.dev
-- type: vless
-  name: 🇯🇵 JP日本丨yoyapai.com (9) [6ms]
-  server: 104.21.81.50
+- type: trojan
+  name: 🇨🇦 CA加拿大丨yoyapai.com (10) [6ms]
+  server: 104.18.152.204
   port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  password: humanity
   udp: true
   tls: true
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /Tokyo1
-    headers:
-      Host: jp.lovehk.xyz
+    path: /assignment
 - type: trojan
   name: 🇨🇦 CA加拿大丨yoyapai.com (5) [6ms]
   server: 104.18.152.225
@@ -166,8 +475,125 @@ proxies:
     headers:
       Host: www.ignitelimit.com
 - type: vless
-  name: 🌐 ❓未知丨yoyapai.com (87) [6ms]
-  server: 185.162.229.40
+  name: 🇺🇸 US丨yoyapai.com美国 (2) [6ms]
+  server: 188.164.248.151
+  port: 2096
+  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
+  udp: true
+  tls: true
+  servername: d39333476.pages.dev
+  sni: d39333476.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /item/m
+    headers:
+      Host: d39333476.pages.dev
+- type: vless
+  name: '🇺🇸 美國丨yoyapai.com (2) #2 [6ms]'
+  server: 162.159.156.214
+  port: 8880
+  uuid: 12cebf33-2f96-48a3-af37-c2231e5cef75
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: throbbing-moon-a07c.90-ec4.workers.dev
+- type: vless
+  name: 🇺🇸 US美國丨yoyapai.com (13) [6ms]
+  server: 45.131.208.4
+  port: 80
+  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: floral-thunder-10d3.82-67d.workers.dev
+- type: vless
+  name: 🇫🇷 FR法國丨yoyapai.com (6) [6ms]
+  server: 104.27.82.154
+  port: 8880
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: old-violet-a5ce.29-440.workers.dev
+- type: trojan
+  name: 🇺🇸 US美国丨yoyapai.com (2) [6ms]
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  udp: true
+  tls: true
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
+  skip-cert-verify: false
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assignment
+- type: vless
+  name: 🇺🇸 US美國丨yoyapai.com (2) [6ms]
+  server: 108.162.194.135
+  port: 443
+  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
+  udp: true
+  tls: true
+  servername: nbhhh.mrcool.kdns.fr
+  sni: nbhhh.mrcool.kdns.fr
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nbhhh.mrcool.kdns.fr
+- type: vless
+  name: 🌐 LK斯里兰卡丨yoyapai.com [6ms]
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- type: vless
+  name: 🇩🇪 德国丨yoyapai.com (5) [6ms]
+  server: 104.18.12.149
+  port: 443
+  uuid: afcc2147-1350-4155-9ec0-95c4ba4be847
+  udp: true
+  tls: true
+  servername: fran.sarzamiiinahang.ir
+  sni: fran.sarzamiiinahang.ir
+  skip-cert-verify: false
+  alpn:
+  - h2
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /Meh?di=443
+    host: fran.sarzamiiinahang.ir
+    mode: auto
+- type: vless
+  name: '🇨🇦 CA加拿大丨yoyapai.com (2) #2 [6ms]'
+  server: 155.46.167.30
   port: 8880
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
@@ -177,10 +603,10 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime61.workers.dev
+      Host: vms.lifetime50.workers.dev
 - type: trojan
-  name: 🇫🇷 FR法国丨yoyapai.com [6ms]
-  server: 104.16.174.36
+  name: 🇨🇦 CA加拿大丨yoyapai.com (8) [6ms]
+  server: 104.18.152.140
   port: 443
   password: humanity
   udp: true
@@ -193,33 +619,33 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- type: vless
-  name: 🇬🇧 GB英国丨yoyapai.com (4) [6ms]
-  server: 89.117.112.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- type: trojan
+  name: 🇫🇷 法国丨yoyapai.com (3) [6ms]
+  server: 104.18.152.152
+  port: 443
+  password: humanity
   udp: true
-  tls: false
+  tls: true
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: 🌐 🏁RELAY-172.64.229.21-1657 [6ms]
-  type: vmess
-  server: 172.64.229.21
+    path: /assignment
+- type: trojan
+  name: 🇨🇦 CA加拿大丨yoyapai.com (13) [6ms]
+  server: 104.16.73.213
   port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
+  password: humanity
+  udp: true
+  tls: true
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-  tls: true
-  udp: true
+    path: /assignment
 - type: vless
   name: 🇵🇱 PL波兰丨yoyapai.com (7) [6ms]
   server: 195.137.226.11
@@ -241,56 +667,24 @@ proxies:
     host: mobile.zandix.ir
     mode: auto
 - type: vless
-  name: '🇨🇦 CA加拿大丨yoyapai.com #2 [6ms]'
-  server: 104.26.2.173
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  name: 🇨🇦 加拿大丨yoyapai.com (3) [6ms]
+  server: 104.21.88.174
+  port: 2052
+  uuid: 81e09a82-fe8d-4393-aefb-747322b20795
   udp: true
-  tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  sni: support.zoom.us.yxls.eu.cc
+  tls: false
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /wss
     headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: 🌐 ❓Other_1|151KB/s [6ms]
-  type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
-  tls: true
-  skip-cert-verify: false
-  servername: free.sahanwickramasinghe.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-  udp: true
+      Host: nexo.xelviro.ir
+    v2ray-http-upgrade: true
 - type: vless
-  name: 🌐 ❓未知丨yoyapai.com (56) [6ms]
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  servername: ccc.010304.xyz
-  sni: ccc.010304.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- type: vless
-  name: 🇨🇦 CA加拿大丨yoyapai.com (3) [6ms]
-  server: 104.21.23.72
+  name: 🇸🇬 SG新加坡丨yoyapai.com (8) [7ms]
+  server: 172.65.90.53
   port: 8880
-  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
+  uuid: 30a2a9a6-6a03-4353-a7fb-63831d64f718
   udp: true
   tls: false
   skip-cert-verify: false
@@ -298,97 +692,10 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: calm-haze-d105.21-7cd.workers.dev
+      Host: orange-lab-896e.365-80b.workers.dev
 - type: trojan
-  name: 🇨🇦 CA加拿大丨yoyapai.com (18) [6ms]
-  server: 104.16.174.101
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- type: vless
-  name: 🌐 ❓未知丨yoyapai.com (35) [6ms]
-  server: 185.148.107.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime55.workers.dev
-- type: vless
-  name: 🌐 ❓未知丨yoyapai.com (84) [6ms]
-  server: 188.114.98.0
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  sni: snip.edgeoneai.cc.cd
-  skip-cert-verify: false
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fdip
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- type: trojan
-  name: '🇫🇷 FR法國丨yoyapai.com (2) #2 [6ms]'
-  server: 104.26.15.137
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /assignment
-- type: vless
-  name: 🇫🇷 FR法国丨yoyapai.com (6) [6ms]
-  server: 80.93.202.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime02.workers.dev
-- type: vless
-  name: 🇨🇦 CA加拿大丨yoyapai.com (20) [6ms]
-  server: 172.67.79.160
-  port: 2087
-  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
-  udp: true
-  tls: true
-  servername: cvhpyn.pages.dev
-  sni: cvhpyn.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cvhpyn.pages.dev
-- type: trojan
-  name: '🇫🇷 法国丨yoyapai.com #2 [6ms]'
-  server: 104.18.152.73
+  name: 🇨🇦 CA加拿大丨yoyapai.com (9) [7ms]
+  server: 104.16.174.44
   port: 443
   password: humanity
   udp: true
@@ -401,9 +708,35 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (87) [7ms]
+  server: 185.162.229.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime61.workers.dev
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (33) [7ms]
+  server: 104.26.13.40
+  port: 8880
+  uuid: 875d3876-ab9a-4dd6-8a8d-bf57f03403aa
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: square-sea-01d1.339-be3.workers.dev
 - type: trojan
-  name: 🇨🇦 CA加拿大丨yoyapai.com (8) [6ms]
-  server: 104.18.152.140
+  name: 🌐 ❓未知丨yoyapai.com (44) [7ms]
+  server: 104.18.12.149
   port: 443
   password: humanity
   udp: true
@@ -414,85 +747,9 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 🇳🇱 NL_1|308KB/s [6ms]
-  type: trojan
-  server: 172.67.203.46
-  port: 443
-  password: humanity
-  skip-cert-verify: false
-  sni: www.cordweave.com
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /assignment
-  udp: true
 - type: vless
-  name: 🇺🇸 🗽美國CloudFlare节点丨yoyapai.com [6ms]
-  server: 162.159.81.104
-  port: 80
-  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
-    headers:
-      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
-- type: vless
-  name: 🌐 ❓未知丨yoyapai.com (60) [6ms]
-  server: 172.64.150.43
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  sni: snip.edgeoneai.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: unsafe
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- type: vless
-  name: 🌐 ❓未知丨yoyapai.com (50) [6ms]
-  server: 185.148.104.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-- type: vless
-  name: 🌐 ❓未知丨yoyapai.com (78) [6ms]
-  server: 188.114.97.6
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  sni: snip.edgeoneai.cc.cd
-  skip-cert-verify: false
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- type: vless
-  name: 🇺🇸 US美國丨yoyapai.com (9) [6ms]
-  server: 162.159.60.167
+  name: 🇨🇦 CA加拿大丨yoyapai.com [7ms]
+  server: 162.159.8.42
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   udp: true
@@ -506,9 +763,48 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
+- type: vless
+  name: 🇨🇦 CA加拿大丨yoyapai.com (4) [7ms]
+  server: 104.21.23.72
+  port: 8880
+  uuid: 30a88c40-581e-4952-aa4c-8af95686ede0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rapid-lab-95ef.173-74c.workers.dev
+- type: vless
+  name: '🇮🇷 IR伊朗丨yoyapai.com #2 [7ms]'
+  server: 45.131.4.115
+  port: 80
+  uuid: a7b22989-6c1f-4b59-b0f3-0605401813c4
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: worker3.gigak25604.workers.dev
+- type: vless
+  name: 🇸🇬 SG新加坡丨yoyapai.com (7) [7ms]
+  server: 104.17.191.15
+  port: 8880
+  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fancy-haze-ab00.236-68b.workers.dev
 - type: trojan
-  name: 🇧🇷 BR巴西圣保罗丨yoyapai.com [6ms]
-  server: 188.114.97.7
+  name: 🇫🇷 FR法国丨yoyapai.com [7ms]
+  server: 104.16.174.36
   port: 443
   password: humanity
   udp: true
@@ -519,154 +815,59 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - type: vless
-  name: 🇩🇪 DE德国丨yoyapai.com (2) [6ms]
-  server: 217.163.76.118
-  port: 2086
-  uuid: b7977b65-cfd8-4db9-a029-6ef014a4ae4a
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: xvh.andishehparenting.com
-    mode: auto
-- type: trojan
-  name: 🇨🇦 CA加拿大丨yoyapai.com (12) [6ms]
-  server: 104.18.152.208
+  name: 🇺🇸 US美國丨yoyapai.com (8) [7ms]
+  server: 162.159.10.87
   port: 443
-  password: humanity
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   udp: true
   tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
+  servername: t1s1.rittbo.kdns.fr
+  sni: t1s1.rittbo.kdns.fr
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /assignment
-- type: vless
-  name: 🇺🇸 US美國丨yoyapai.com (10) [6ms]
-  server: 185.193.29.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  servername: notls.lukongtou.eu.org
-  sni: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- type: trojan
-  name: 🇨🇦 CA加拿大丨yoyapai.com (16) [7ms]
-  server: 104.16.174.37
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- type: vless
-  name: '🇨🇦 CA加拿大丨yoyapai.com (2) #2 [7ms]'
-  server: 155.46.167.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
     path: /
     headers:
-      Host: vms.lifetime50.workers.dev
+      Host: t1s1.rittbo.kdns.fr
 - type: vless
-  name: 🌐 ❓未知丨yoyapai.com (68) [7ms]
-  server: 162.159.135.234
+  name: 🇷🇺 俄罗斯丨yoyapai.com (2) [7ms]
+  server: 104.18.32.47
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: a5a544bf-e4b3-4651-9ff4-de3461910d87
   udp: true
   tls: true
-  servername: snip.edgeoneai.cc.cd
-  sni: snip.edgeoneai.cc.cd
+  servername: rus.aba-hum.store
+  sni: rus.aba-hum.store
   skip-cert-verify: false
   alpn:
   - h3
-  - h2
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
+  network: xhttp
+  xhttp-opts:
     path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- type: trojan
-  name: 🌐 ❓未知丨yoyapai.com (45) [7ms]
-  server: 8.6.112.6
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- type: trojan
-  name: 🇺🇸 US美国丨yoyapai.com (2) [7ms]
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /assignment
+    mode: auto
 - type: vless
-  name: 🇸🇬 SG新加坡丨yoyapai.com (12) [7ms]
-  server: 104.21.28.176
-  port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  name: 🇨🇦 CA加拿大丨yoyapai.com (3) [7ms]
+  server: 104.21.23.72
+  port: 8880
+  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /Singapore1
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: sg.lovehk.xyz
-- type: trojan
-  name: 🇫🇷 法国丨yoyapai.com (4) [7ms]
-  server: 104.18.22.63
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+      Host: calm-haze-d105.21-7cd.workers.dev
 - type: vless
-  name: 🇨🇦 加拿大丨yoyapai.com (4) [7ms]
+  name: 🇨🇦 加拿大丨yoyapai.com (2) [7ms]
   server: 104.17.121.110
   port: 8880
-  uuid: c0a7e427-1034-485a-b5c7-4449bd04b28d
+  uuid: f3d6c244-772a-428f-b8fe-e2d632cd76e4
   udp: true
   tls: false
   skip-cert-verify: false
@@ -676,41 +877,39 @@ proxies:
     headers:
       Host: svn-panel-team.lorqino.ir
     v2ray-http-upgrade: true
-- type: vless
-  name: '🇺🇸 美國丨yoyapai.com (2) #2 [7ms]'
-  server: 162.159.156.214
-  port: 8880
-  uuid: 12cebf33-2f96-48a3-af37-c2231e5cef75
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: throbbing-moon-a07c.90-ec4.workers.dev
-- type: vless
-  name: 🇻🇳 VN越南丨yoyapai.com [7ms]
-  server: 104.27.0.121
-  port: 443
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  udp: true
-  tls: true
-  servername: b33ec4a1s226.fuhuovps.xyz
-  sni: b33ec4a1s226.fuhuovps.xyz
-  skip-cert-verify: false
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: ios
-  network: xhttp
-  xhttp-opts:
-    path: e0d9cd6ea04ecda957b4ca0869e038af
-    host: b33ec4a1s226.fuhuovps.xyz
-    mode: auto
 - type: trojan
   name: 🇹🇷 TR土耳其丨yoyapai.com [7ms]
   server: 86.38.214.205
+  port: 443
+  password: humanity
+  udp: true
+  tls: true
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assignment
+- type: vless
+  name: 🇺🇸 US美國丨yoyapai.com (4) [7ms]
+  server: 104.24.9.6
+  port: 443
+  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  udp: true
+  tls: true
+  servername: ld.223350.xyz
+  sni: ld.223350.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.223350.xyz
+- type: trojan
+  name: 🇨🇦 CA加拿大丨yoyapai.com (14) [7ms]
+  server: 104.18.152.229
   port: 443
   password: humanity
   udp: true
@@ -738,10 +937,10 @@ proxies:
     headers:
       Host: www.ignitelimit.com
 - type: vless
-  name: 🇨🇦 CA加拿大丨yoyapai.com (4) [7ms]
-  server: 104.21.23.72
+  name: 🇸🇬 SG新加坡丨yoyapai.com [7ms]
+  server: 45.40.149.50
   port: 8880
-  uuid: 30a88c40-581e-4952-aa4c-8af95686ede0
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: false
@@ -749,21 +948,36 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: rapid-lab-95ef.173-74c.workers.dev
-- type: trojan
-  name: 🇨🇦 CA加拿大丨yoyapai.com (6) [7ms]
-  server: 104.18.152.219
+      Host: vms.lifetime39.workers.dev
+- type: vless
+  name: 🇫🇷 法國丨yoyapai.com [7ms]
+  server: 94.140.0.100
+  port: 8880
+  uuid: 78e6619e-e82a-cd8d-b482-0973d8498305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: silent-pine-a674.jfadwkglaugul.workers.dev
+- type: vless
+  name: '🇫🇷 FR法國丨yoyapai.com (4) #2 [7ms]'
+  server: 104.19.87.194
   port: 443
-  password: humanity
+  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
   udp: true
   tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
+  servername: ld.223350.xyz
+  sni: ld.223350.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /assignment
+    path: /
+    headers:
+      Host: ld.223350.xyz
 - type: vless
   name: 🌐 ❓免費節點丨yoyapai.com [7ms]
   server: 45.40.150.4
@@ -777,79 +991,6 @@ proxies:
     path: /pyip=Telegram🇨🇳++
     headers:
       Host: holy-breeze-0bac.47-dec.workers.dev
-- type: vless
-  name: 🇷🇺 俄罗斯丨yoyapai.com (2) [7ms]
-  server: 104.18.32.47
-  port: 443
-  uuid: a5a544bf-e4b3-4651-9ff4-de3461910d87
-  udp: true
-  tls: true
-  servername: rus.aba-hum.store
-  sni: rus.aba-hum.store
-  skip-cert-verify: false
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /
-    mode: auto
-- type: vless
-  name: '🇮🇷 IR伊朗丨yoyapai.com #2 [7ms]'
-  server: 45.131.4.115
-  port: 80
-  uuid: a7b22989-6c1f-4b59-b0f3-0605401813c4
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: worker3.gigak25604.workers.dev
-- type: vless
-  name: 🇨🇦 加拿大丨yoyapai.com (3) [7ms]
-  server: 104.21.88.174
-  port: 2052
-  uuid: 81e09a82-fe8d-4393-aefb-747322b20795
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wss
-    headers:
-      Host: nexo.xelviro.ir
-    v2ray-http-upgrade: true
-- type: vless
-  name: 🇨🇦 CA加拿大丨yoyapai.com [7ms]
-  server: 162.159.8.42
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  udp: true
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  sni: t1s1.rittbo.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- type: trojan
-  name: 🇫🇷 法国丨yoyapai.com (3) [7ms]
-  server: 104.18.152.152
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
 - type: trojan
   name: 🇨🇦 CA加拿大丨yoyapai.com (11) [7ms]
   server: 104.16.174.117
@@ -866,35 +1007,24 @@ proxies:
     headers:
       Host: www.ignitelimit.com
 - type: vless
-  name: 🇨🇦 加拿大丨yoyapai.com (2) [7ms]
-  server: 104.17.121.110
-  port: 8880
-  uuid: f3d6c244-772a-428f-b8fe-e2d632cd76e4
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /mmd
-    headers:
-      Host: svn-panel-team.lorqino.ir
-    v2ray-http-upgrade: true
-- type: trojan
-  name: 🌐 ❓未知丨yoyapai.com (44) [7ms]
-  server: 104.18.12.149
+  name: 🇺🇸 US美國丨yoyapai.com (9) [7ms]
+  server: 162.159.60.167
   port: 443
-  password: humanity
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   udp: true
   tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
+  servername: t1s1.rittbo.kdns.fr
+  sni: t1s1.rittbo.kdns.fr
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /assignment
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
 - type: trojan
-  name: '🇫🇷 FR法國丨yoyapai.com (3) #2 [7ms]'
-  server: 104.17.111.4
+  name: 🇨🇦 CA加拿大丨yoyapai.com (6) [7ms]
+  server: 104.18.152.219
   port: 443
   password: humanity
   udp: true
@@ -906,23 +1036,9 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- type: vless
-  name: 🇺🇸 US美国丨yoyapai.com (17) [7ms]
-  server: 172.67.139.229
-  port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /Dallas1
-    headers:
-      Host: usa.lovehk.xyz
 - type: trojan
-  name: 🇨🇦 CA加拿大丨yoyapai.com (10) [7ms]
-  server: 104.18.152.204
+  name: 🇫🇷 法国丨yoyapai.com (4) [7ms]
+  server: 104.18.22.63
   port: 443
   password: humanity
   udp: true
@@ -930,7 +1046,6 @@ proxies:
   servername: www.ignitelimit.com
   sni: www.ignitelimit.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /assignment
@@ -948,34 +1063,20 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- type: vless
-  name: 🇺🇸 US美國丨yoyapai.com (2) [7ms]
-  server: 108.162.194.135
+- type: trojan
+  name: 🇨🇦 CA加拿大丨yoyapai.com (12) [7ms]
+  server: 104.18.152.208
   port: 443
-  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
+  password: humanity
   udp: true
   tls: true
-  servername: nbhhh.mrcool.kdns.fr
-  sni: nbhhh.mrcool.kdns.fr
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: nbhhh.mrcool.kdns.fr
-- type: vless
-  name: 🇫🇷 FR法國丨yoyapai.com (6) [7ms]
-  server: 104.27.82.154
-  port: 8880
-  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-violet-a5ce.29-440.workers.dev
+    path: /assignment
 - type: vless
   name: 🌐 ❓未知丨yoyapai.com (31) [7ms]
   server: 50.62.194.30
@@ -989,123 +1090,21 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime37.workers.dev
-- type: vless
-  name: 🌐 LK斯里兰卡丨yoyapai.com [7ms]
-  server: support.zoom.us
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- type: vless
-  name: 🇺🇸 US丨yoyapai.com美国 (2) [7ms]
-  server: 188.164.248.151
-  port: 2096
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  servername: d39333476.pages.dev
-  sni: d39333476.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /item/m
-    headers:
-      Host: d39333476.pages.dev
-- type: vless
-  name: 🇰🇷 KR韩國丨yoyapai.com [7ms]
-  server: 104.17.144.29
-  port: 8880
-  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: spring-sound-8d8e.36-9ff.workers.dev
-- type: vless
-  name: 🇺🇸 US美國丨yoyapai.com (8) [7ms]
-  server: 162.159.10.87
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  udp: true
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  sni: t1s1.rittbo.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- type: vless
-  name: 🇸🇬 SG新加坡丨yoyapai.com (8) [8ms]
-  server: 172.65.90.53
-  port: 8880
-  uuid: 30a2a9a6-6a03-4353-a7fb-63831d64f718
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: orange-lab-896e.365-80b.workers.dev
-- type: vless
-  name: 🇸🇬 SG新加坡丨yoyapai.com [8ms]
-  server: 45.40.149.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime39.workers.dev
-- type: vless
-  name: 🇺🇸 US美國丨yoyapai.com (13) [8ms]
-  server: 45.131.208.4
-  port: 80
-  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: floral-thunder-10d3.82-67d.workers.dev
-- type: vless
-  name: 🇩🇪 德国丨yoyapai.com (5) [8ms]
-  server: 104.18.12.149
-  port: 443
-  uuid: afcc2147-1350-4155-9ec0-95c4ba4be847
-  udp: true
-  tls: true
-  servername: fran.sarzamiiinahang.ir
-  sni: fran.sarzamiiinahang.ir
-  skip-cert-verify: false
-  alpn:
-  - h2
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /Meh?di=443
-    host: fran.sarzamiiinahang.ir
-    mode: auto
 - type: trojan
-  name: 🌐 ❓未知丨yoyapai.com (40) [8ms]
+  name: 🇨🇦 CA加拿大丨yoyapai.com (18) [7ms]
+  server: 104.16.174.101
+  port: 443
+  password: humanity
+  udp: true
+  tls: true
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- type: trojan
+  name: 🌐 ❓未知丨yoyapai.com (40) [7ms]
   server: 104.18.152.143
   port: 443
   password: humanity
@@ -1119,39 +1118,24 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- type: trojan
-  name: 🇨🇦 CA加拿大丨yoyapai.com (14) [8ms]
-  server: 104.18.152.229
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /assignment
 - type: vless
-  name: '🇫🇷 FR法國丨yoyapai.com (4) #2 [8ms]'
-  server: 104.19.87.194
+  name: 🇺🇸 US美國丨yoyapai.com (10) [7ms]
+  server: 185.193.29.123
   port: 443
-  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   udp: true
   tls: true
-  servername: ld.223350.xyz
-  sni: ld.223350.xyz
+  servername: notls.lukongtou.eu.org
+  sni: notls.lukongtou.eu.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: Telegram-WangCai2🇨🇳
     headers:
-      Host: ld.223350.xyz
+      Host: notls.lukongtou.eu.org
 - type: trojan
-  name: 🇨🇦 CA加拿大丨yoyapai.com (7) [8ms]
-  server: 104.18.152.77
+  name: 🇨🇦 CA加拿大丨yoyapai.com (16) [7ms]
+  server: 104.16.174.37
   port: 443
   password: humanity
   udp: true
@@ -1162,37 +1146,72 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-    headers:
-      Host: www.ignitelimit.com
 - type: vless
-  name: 🇫🇷 FR法國丨yoyapai.com (5) [8ms]
-  server: 104.17.64.70
-  port: 8880
-  uuid: 220046c3-0081-4c22-a648-83a52bc3a0d5
+  name: 🇺🇸 🗽美國CloudFlare节点丨yoyapai.com [7ms]
+  server: 162.159.81.104
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
   udp: true
   tls: false
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
     headers:
-      Host: yellow-sky-38b3.154-d73.workers.dev
-- type: vless
-  name: '🇬🇧 GB英國丨yoyapai.com #2 [8ms]'
-  server: 162.159.152.4
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+- type: trojan
+  name: '🇫🇷 FR法國丨yoyapai.com (2) #2 [7ms]'
+  server: 104.26.15.137
   port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  password: humanity
   udp: true
   tls: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  sni: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
+    path: /assignment
+- type: trojan
+  name: 🇧🇷 BR巴西圣保罗丨yoyapai.com [7ms]
+  server: 188.114.97.7
+  port: 443
+  password: humanity
+  udp: true
+  tls: true
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- type: vless
+  name: 🇺🇸 US美国丨yoyapai.com (13) [7ms]
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
     path: /
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+      Host: vms.lifetime42.workers.dev
+- type: vless
+  name: 🇺🇸 US美国丨yoyapai.com (19) [7ms]
+  server: 104.254.140.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime54.workers.dev
 - type: trojan
   name: '🇫🇷 FR法国丨yoyapai.com #2 [8ms]'
   server: 104.18.152.207
@@ -1208,21 +1227,21 @@ proxies:
   ws-opts:
     path: /assignment
 - type: vless
-  name: 🇸🇬 SG新加坡丨yoyapai.com (9) [8ms]
-  server: 172.64.94.251
-  port: 8880
-  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+  name: 🇩🇪 DE德国丨yoyapai.com (2) [8ms]
+  server: 217.163.76.118
+  port: 2086
+  uuid: b7977b65-cfd8-4db9-a029-6ef014a4ae4a
   udp: true
   tls: false
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-violet-a5ce.29-440.workers.dev
+  network: xhttp
+  xhttp-opts:
+    path: /
+    host: xvh.andishehparenting.com
+    mode: auto
 - type: trojan
-  name: 🇨🇦 CA加拿大丨yoyapai.com (13) [9ms]
-  server: 104.16.73.213
+  name: 🇫🇷 法国丨yoyapai.com (5) [9ms]
+  server: 104.18.152.133
   port: 443
   password: humanity
   udp: true
@@ -1230,12 +1249,42 @@ proxies:
   servername: www.ignitelimit.com
   sni: www.ignitelimit.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /assignment
 - type: vless
-  name: 🇫🇷 FR法国丨yoyapai.com (8) [9ms]
+  name: '🇺🇸 US美國丨yoyapai.com (2) #3 [10ms]'
+  server: 3.170.185.91
+  port: 80
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2pwbkmfr5lxa4.cloudfront.net
+- type: vless
+  name: 🇫🇷 法国丨yoyapai.com [10ms]
+  server: 199.232.239.2
+  port: 443
+  uuid: f3ac6161-3592-43ed-82f2-daf9c97806aa
+  udp: true
+  tls: true
+  servername: accounts.fastly.com
+  sni: accounts.fastly.com
+  skip-cert-verify: false
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /
+    host: oh4.global.ssl.fastly.net
+    mode: packet-up
+- type: vless
+  name: 🇫🇷 FR法国丨yoyapai.com (8) [12ms]
   server: 199.232.78.160
   port: 443
   uuid: XpnTeam-57
@@ -1253,147 +1302,74 @@ proxies:
     headers:
       Host: Appxdn.global.ssl.fastly.net
 - type: vless
-  name: 🇫🇷 法國丨yoyapai.com [9ms]
-  server: 94.140.0.100
-  port: 8880
-  uuid: 78e6619e-e82a-cd8d-b482-0973d8498305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: silent-pine-a674.jfadwkglaugul.workers.dev
-- type: vless
-  name: 🇺🇸 US美國丨yoyapai.com (4) [9ms]
-  server: 104.24.9.6
+  name: 🇯🇵 JP日本丨yoyapai.com (9) [12ms]
+  server: 104.21.81.50
   port: 443
-  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
   udp: true
   tls: true
-  servername: ld.223350.xyz
-  sni: ld.223350.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /Tokyo1
     headers:
-      Host: ld.223350.xyz
-- type: trojan
-  name: 🇫🇷 法国丨yoyapai.com (5) [9ms]
-  server: 104.18.152.133
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+      Host: jp.lovehk.xyz
 - type: vless
-  name: '🇺🇸 US美國丨yoyapai.com #2 [9ms]'
-  server: 199.232.78.159
-  port: 443
-  uuid: 6e2e03e2-4f66-479a-a186-a34d66ca8c91
-  udp: true
-  tls: true
-  servername: ssl.fastly.com
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-    headers:
-      Host: pan11.global.ssl.fastly.net
-- type: vless
-  name: 🇸🇬 SG新加坡丨yoyapai.com (7) [9ms]
-  server: 104.17.191.15
-  port: 8880
-  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-haze-ab00.236-68b.workers.dev
-- type: trojan
-  name: 🇨🇦 CA加拿大丨yoyapai.com (9) [9ms]
-  server: 104.16.174.44
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- type: vless
-  name: 🇺🇸 US美国丨yoyapai.com (13) [10ms]
-  server: 63.141.128.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime42.workers.dev
-- type: vless
-  name: 🌐 ❓未知丨yoyapai.com (33) [10ms]
-  server: 104.26.13.40
-  port: 8880
-  uuid: 875d3876-ab9a-4dd6-8a8d-bf57f03403aa
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: square-sea-01d1.339-be3.workers.dev
-- type: vless
-  name: '🇺🇸 US美國丨yoyapai.com (2) #3 [12ms]'
+  name: 🇹🇭 泰国丨yoyapai.com [12ms]
   server: 3.170.185.91
-  port: 80
-  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
   udp: true
-  tls: false
+  tls: true
+  servername: d1yxsk0zprgivr.cloudfront.net
+  sni: d1yxsk0zprgivr.cloudfront.net
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d2pwbkmfr5lxa4.cloudfront.net
-- name: 🇺🇸 US-156.146.38.170-0159 [13ms]
-  type: ss
-  server: 156.146.38.170
+      Host: d1yxsk0zprgivr.cloudfront.net
+- type: trojan
+  name: 🌐 ❓未知丨yoyapai.com [13ms]
+  server: 167.82.64.120
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  password: MiTiVPN
   udp: true
-- name: 🇺🇸 US-156.146.38.169-0156 [13ms]
+  tls: true
+  servername: firefox.com
+  sni: firefox.com
+  skip-cert-verify: false
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mitivpn--mitivpn.ac.ir
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (78) [13ms]
+  server: 188.114.97.6
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  udp: true
+  tls: true
+  servername: snip.edgeoneai.cc.cd
+  sni: snip.edgeoneai.cc.cd
+  skip-cert-verify: false
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 🇺🇸 US-156.146.38.169-0156 [14ms]
   type: ss
   server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 US-156.146.38.168-0165 [14ms]
-  type: ss
-  server: 156.146.38.168
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
@@ -1417,59 +1393,7 @@ proxies:
     host: cloudnet2026.global.ssl.fastly.net
     mode: auto
 - type: vless
-  name: 🇹🇭 泰国丨yoyapai.com [14ms]
-  server: 3.170.185.91
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  udp: true
-  tls: true
-  servername: d1yxsk0zprgivr.cloudfront.net
-  sni: d1yxsk0zprgivr.cloudfront.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
-- type: vless
-  name: 🇫🇷 法国丨yoyapai.com [14ms]
-  server: 199.232.239.2
-  port: 443
-  uuid: f3ac6161-3592-43ed-82f2-daf9c97806aa
-  udp: true
-  tls: true
-  servername: accounts.fastly.com
-  sni: accounts.fastly.com
-  skip-cert-verify: false
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: oh4.global.ssl.fastly.net
-    mode: packet-up
-- type: trojan
-  name: 🌐 ❓未知丨yoyapai.com [15ms]
-  server: 167.82.64.120
-  port: 443
-  password: MiTiVPN
-  udp: true
-  tls: true
-  servername: firefox.com
-  sni: firefox.com
-  skip-cert-verify: false
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mitivpn--mitivpn.ac.ir
-- type: vless
-  name: 🇺🇸 US美国丨yoyapai.com (10) [18ms]
+  name: 🇺🇸 US美国丨yoyapai.com (10) [14ms]
   server: 199.232.78.159
   port: 443
   uuid: fe4ca690-6fd9-4471-9a9f-94528084d180
@@ -1483,7 +1407,104 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: pan1.global.ssl.fastly.net
-- name: 🌐 🏁RELAY-172.64.145.93-0999 [19ms]
+- type: vless
+  name: '🇺🇸 US美國丨yoyapai.com #2 [14ms]'
+  server: 199.232.78.159
+  port: 443
+  uuid: 6e2e03e2-4f66-479a-a186-a34d66ca8c91
+  udp: true
+  tls: true
+  servername: ssl.fastly.com
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pan11.global.ssl.fastly.net
+- name: 🇳🇱 NL_1|308KB/s [15ms]
+  type: trojan
+  server: 172.67.203.46
+  port: 443
+  password: humanity
+  skip-cert-verify: false
+  sni: www.cordweave.com
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assignment
+  udp: true
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (84) [15ms]
+  server: 188.114.98.0
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  udp: true
+  tls: true
+  servername: snip.edgeoneai.cc.cd
+  sni: snip.edgeoneai.cc.cd
+  skip-cert-verify: false
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fdip
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- type: vless
+  name: 🇺🇸 US美国丨yoyapai.com (17) [17ms]
+  server: 172.67.139.229
+  port: 443
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /Dallas1
+    headers:
+      Host: usa.lovehk.xyz
+- name: 🇺🇸 US-156.146.38.170-0159 [22ms]
+  type: ss
+  server: 156.146.38.170
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 US-156.146.38.167-0164 [22ms]
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦 CA-137.184.174.93-0113 [23ms]
+  type: ss
+  server: 137.184.174.93
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 🇺🇸 US-15.204.247.206-0199 [24ms]
+  type: ss
+  server: 15.204.247.206
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  udp: true
+- name: 🇺🇸 US-156.146.38.168-0165 [25ms]
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🌐 🏁RELAY-172.64.145.93-0999 [26ms]
   type: vmess
   server: www.shopify.com
   port: 443
@@ -1497,63 +1518,40 @@ proxies:
       Host: guanwang.awsno.com
   tls: true
   udp: true
-- name: 🇺🇸 US-156.146.38.167-0164 [22ms]
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 US-185.230.230.18-0080 [24ms]
-  type: ss
-  server: 185.230.230.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - type: vless
-  name: 🇺🇸 US美國丨yoyapai.com (3) [25ms]
-  server: support.zoom.us
+  name: 🇩🇪 DE德国丨yoyapai.com (10) [26ms]
+  server: 169.40.42.229
   port: 443
-  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
   udp: true
   tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  sni: support.zoom.us.yxls.eu.cc
+  servername: yahoo.com
+  sni: yahoo.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- type: vless
+  name: 🇺🇸 US美国丨yoyapai.com (12) [26ms]
+  server: www.speedtest.net
+  port: 443
+  uuid: d4733e5a-5850-4523-942e-f28f82ebf4a9
+  udp: true
+  tls: true
+  servername: party-5cn.pages.dev
+  sni: party-5cn.pages.dev
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /sg-amz
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: 🇨🇦 CA-137.184.174.93-0113 [25ms]
-  type: ss
-  server: 137.184.174.93
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: 🇺🇸 US-37.19.198.243-0171 [27ms]
-  type: ss
-  server: 37.19.198.243
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
+    path: /
 - name: 🇺🇸 US-37.19.198.236-0169 [27ms]
   type: ss
   server: 37.19.198.236
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-  udp: true
-- name: 🇺🇸 US-193.151.163.18-0077 [28ms]
-  type: ss
-  server: 193.151.163.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇺🇸 US-37.19.198.160-0172 [29ms]
   type: ss
@@ -1562,98 +1560,79 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸 US-37.19.198.244-0174 [29ms]
-  type: ss
-  server: 37.19.198.244
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇨🇦 CA-51.79.49.116-0422 [30ms]
-  type: ss
-  server: 51.79.49.116
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- type: vless
-  name: 🇩🇪 德國丨yoyapai.com (2) [31ms]
-  server: 88.218.44.4
-  port: 443
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  udp: true
-  tls: true
-  servername: dl.google.com
-  sni: dl.google.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
-  network: xhttp
-  xhttp-opts:
-    path: /
-    mode: auto
-- name: 🇨🇦 CA-51.222.155.113-0419 [31ms]
-  type: ss
-  server: 51.222.155.113
-  port: 5601
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇨🇦 CA-51.222.141.125-0415 [32ms]
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 CA-51.222.136.236-0163 [32ms]
-  type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇨🇦 CA-51.222.155.32-0420 [32ms]
-  type: ss
-  server: 51.222.155.32
-  port: 5003
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: 🇨🇦 CA-51.79.85.185-0416 [32ms]
+- name: 🇨🇦 CA-51.79.85.185-0416 [30ms]
   type: ss
   server: 51.79.85.185
   port: 8118
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
-- type: vless
-  name: 🇨🇦 CA加拿大丨yoyapai.com (21) [32ms]
-  server: www.iplocation.net
-  port: 8080
-  uuid: 5c4ce4e3-d4cd-43ff-8eb0-9aa553410bff
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n23odi-jolly-sound-f784.mbkl61es.workers.dev
-- name: 🇺🇸 US-45.86.51.18-0073 [33ms]
+- name: 🇺🇸 US-45.86.51.18-0073 [30ms]
   type: ss
   server: 45.86.51.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 US-15.204.247.206-0199 [33ms]
+- type: vless
+  name: 🇰🇷 KR韩国丨yoyapai.com (2) [30ms]
+  server: crimson-smoke-7818.397.workers.dev
+  port: 8880
+  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇺🇸 US-37.19.198.243-0171 [32ms]
   type: ss
-  server: 15.204.247.206
-  port: 4444
+  server: 37.19.198.243
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 US-198.98.53.130-5739 [32ms]
+  type: ss
+  server: 198.98.53.130
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
+  udp: true
+- name: 🇺🇸 US-37.19.198.244-0174 [32ms]
+  type: ss
+  server: 37.19.198.244
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 US-185.230.230.18-0080 [32ms]
+  type: ss
+  server: 185.230.230.18
+  port: 19999
   cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇦 CA-51.222.155.113-0419 [33ms]
+  type: ss
+  server: 51.222.155.113
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇨🇦 CA-51.222.155.32-0420 [33ms]
+  type: ss
+  server: 51.222.155.32
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: 🇨🇦 CA-51.79.49.116-0422 [33ms]
+  type: ss
+  server: 51.79.49.116
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
   udp: true
 - type: vless
   name: 🇳🇱 荷蘭丨yoyapai.com [34ms]
@@ -1671,8 +1650,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇨🇦 CA-51.222.200.165-0173 [35ms]
+  type: ss
+  server: 51.222.200.165
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
 - type: trojan
-  name: 🇺🇸 美國丨yoyapai.com [37ms]
+  name: 🇺🇸 美國丨yoyapai.com [35ms]
   server: www.ignitelimit.com
   port: 443
   password: humanity
@@ -1683,7 +1669,143 @@ proxies:
   ws-opts:
     path: /assignment
 - type: vless
-  name: 🇩🇪 DE德国丨yoyapai.com (12) [37ms]
+  name: 🇩🇪 德國丨yoyapai.com (2) [35ms]
+  server: 88.218.44.4
+  port: 443
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  udp: true
+  tls: true
+  servername: dl.google.com
+  sni: dl.google.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+  network: xhttp
+  xhttp-opts:
+    path: /
+    mode: auto
+- type: vless
+  name: 🇬🇷 希腊丨yoyapai.com [35ms]
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: dl.google.com
+  sni: dl.google.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+- type: vless
+  name: 🇨🇦 CA加拿大丨yoyapai.com (21) [35ms]
+  server: www.iplocation.net
+  port: 8080
+  uuid: 5c4ce4e3-d4cd-43ff-8eb0-9aa553410bff
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n23odi-jolly-sound-f784.mbkl61es.workers.dev
+- type: vless
+  name: 🇺🇸 US美國丨yoyapai.com (3) [36ms]
+  server: support.zoom.us
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  udp: true
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  sni: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sg-amz
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: 🇺🇸 US-173.244.56.6-0071 [38ms]
+  type: ss
+  server: 173.244.56.6
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 US-173.244.56.9-0074 [38ms]
+  type: ss
+  server: 173.244.56.9
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 US_3|337KB/s|P002-260618 [38ms]
+  password: None
+  port: 9002
+  server: 138.199.35.218
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- type: trojan
+  name: 🌐 ❓未知丨yoyapai.com (86) [38ms]
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  udp: true
+  tls: true
+  servername: www.calmlunch.com
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- type: vless
+  name: 🇺🇸 US美国丨yoyapai.com (11) [39ms]
+  server: 18.154.132.116
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  udp: true
+  tls: true
+  servername: d1yxsk0zprgivr.cloudfront.net
+  sni: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+- name: 🇺🇸 US_4|570KB/s|R002-260618 [39ms]
+  port: 9002
+  server: 138.199.35.213
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸 US-95.215.201.18-0072 [41ms]
+  type: ss
+  server: 95.215.201.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 US-193.151.163.18-0077 [42ms]
+  type: ss
+  server: 193.151.163.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: vless
+  name: 🇩🇪 DE德国丨yoyapai.com (12) [42ms]
   server: 151.101.69.253
   port: 443
   uuid: 884f23e9-caab-4775-9ed9-6a3a9cae677f
@@ -1700,65 +1822,43 @@ proxies:
     path: /Lunex
     host: lunex.store
     mode: auto
-- name: 🇺🇸 US-173.244.56.9-0074 [37ms]
+- name: 🇨🇦 CA-51.222.12.127-0423 [42ms]
   type: ss
-  server: 173.244.56.9
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- type: vless
-  name: 🇬🇷 希腊丨yoyapai.com [38ms]
-  server: 88.218.44.4
-  port: 993
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: dl.google.com
-  sni: dl.google.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
-- name: 🇺🇸 US-193.151.160.9-0075 [40ms]
-  type: ss
-  server: 193.151.160.9
-  port: 19999
+  server: 51.222.12.127
+  port: 445
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: zDNVedRFPQexG9v
   udp: true
-- name: 🇺🇸 US-198.98.53.130-5739 [40ms]
+- name: 🇨🇦 CA-51.222.136.236-0163 [42ms]
   type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
+  server: 51.222.136.236
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
   udp: true
-- type: vless
-  name: 🇩🇪 DE德国丨yoyapai.com (10) [41ms]
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: yahoo.com
-  sni: yahoo.com
-  skip-cert-verify: false
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: 🇨🇦 CA-51.79.64.198-0421 [41ms]
+- name: 🇨🇦 CA-51.79.64.198-0421 [43ms]
   type: ss
   server: 51.79.64.198
   port: 8119
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
+- name: 🇺🇸 US-193.151.160.9-0075 [43ms]
+  type: ss
+  server: 193.151.160.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇦 CA-51.222.141.125-0415 [44ms]
+  type: ss
+  server: 51.222.141.125
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
 - type: trojan
-  name: 🇫🇷 法国丨yoyapai.com (2) [43ms]
+  name: 🇫🇷 法国丨yoyapai.com (2) [44ms]
   server: www.speedtest.org
   port: 443
   password: humanity
@@ -1770,43 +1870,12 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇺🇸 US-193.151.160.18-0076 [44ms]
+- name: 🇺🇸 US-193.151.160.18-0076 [45ms]
   type: ss
   server: 193.151.160.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇨🇦 CA-51.222.12.127-0423 [44ms]
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇺🇸 US_3|337KB/s|P002-260618 [45ms]
-  password: None
-  port: 9002
-  server: 138.199.35.218
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇨🇦 CA-51.222.200.165-0173 [45ms]
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇺🇸 US_4|570KB/s|R002-260618 [45ms]
-  port: 9002
-  server: 138.199.35.213
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
   udp: true
 - name: 🇺🇸 US_2|258KB/s|R002-260618 [45ms]
   port: 443
@@ -1817,59 +1886,27 @@ proxies:
   type: http
   udp: true
 - type: vless
-  name: 🇺🇸 US美国丨yoyapai.com (11) [45ms]
-  server: 18.154.132.116
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  name: 🇨🇦 加拿大丨yoyapai.com [46ms]
+  server: www.speedtest.net
+  port: 8080
+  uuid: 443779ba-7694-44ce-95c1-2f10682de4fa
   udp: true
-  tls: true
-  servername: d1yxsk0zprgivr.cloudfront.net
-  sni: d1yxsk0zprgivr.cloudfront.net
+  tls: false
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
-- name: 🇺🇸 US-173.244.56.6-0071 [49ms]
-  type: ss
-  server: 173.244.56.6
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 US-95.215.201.18-0072 [49ms]
-  type: ss
-  server: 95.215.201.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇨🇦 CA-149.22.95.183-0100 [51ms]
+      Host: konkortur.sanjeshvipspeed.ir
+    v2ray-http-upgrade: true
+- name: 🇨🇦 CA-149.22.95.183-0100 [49ms]
   type: ss
   server: 149.22.95.183
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- type: vless
-  name: 🇺🇸 US美国丨yoyapai.com (18) [58ms]
-  server: 128.241.25.11
-  port: 30021
-  uuid: 339cda3d-79a5-4d37-8ad8-eddc130c992a
-  udp: true
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  sni: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🌐 🏁RELAY-104.21.41.92-0406 [64ms]
+- name: 🌐 🏁RELAY-104.21.41.92-0406 [50ms]
   type: vmess
   server: guanwang.awsno.com
   port: 443
@@ -1884,22 +1921,38 @@ proxies:
   tls: true
   servername: guanwang.awsno.com
   udp: true
-- type: trojan
-  name: 🌐 ❓未知丨yoyapai.com (86) [64ms]
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
+- type: vless
+  name: 🇺🇸 US美国丨yoyapai.com (18) [52ms]
+  server: 128.241.25.11
+  port: 30021
+  uuid: 339cda3d-79a5-4d37-8ad8-eddc130c992a
   udp: true
   tls: true
-  servername: www.calmlunch.com
-  sni: www.calmlunch.com
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  sni: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /assignment
+    path: /@Marisa_kristi
     headers:
-      Host: www.calmlunch.com
-- name: 🌐 🏁RELAY-172.67.156.121-1019 [66ms]
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- type: vless
+  name: 🇺🇸 US美国丨yoyapai.com (26) [71ms]
+  server: usa.letsconnectpoint.com
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: usa.letsconnectpoint.com
+  sni: usa.letsconnectpoint.com
+  skip-cert-verify: false
+  client-fingerprint: edge
+  reality-opts:
+    public-key: I45spoFEwSCaxR8FIP1HnrFj5KbR3keSAGMMdgt2AHY
+    short-id: b1c5a5e2
+- name: 🌐 🏁RELAY-172.67.156.121-1019 [76ms]
   type: vmess
   server: www.gptcloudai.com
   port: 443
@@ -1913,8 +1966,32 @@ proxies:
       Host: www.gptcloudai.com
   tls: true
   udp: true
+- name: 🇺🇸 US-216.106.186.33-0116 [88ms]
+  type: trojan
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  udp: true
+- type: vmess
+  name: 🇭🇰 HK香港 (3) [90ms]
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: true
+  servername: jmp1.907737.xyz
+  sni: jmp1.907737.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
 - type: vless
-  name: 🇫🇷 FR法國丨yoyapai.com (4) [67ms]
+  name: 🇫🇷 FR法國丨yoyapai.com (4) [93ms]
   server: store.ubi.com
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -1929,78 +2006,7 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: 🇺🇸 US-216.106.186.32-0095 [87ms]
-  type: trojan
-  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  udp: true
-- type: vless
-  name: 🇺🇸 US美国丨yoyapai.com (12) [88ms]
-  server: www.speedtest.net
-  port: 443
-  uuid: d4733e5a-5850-4523-942e-f28f82ebf4a9
-  udp: true
-  tls: true
-  servername: party-5cn.pages.dev
-  sni: party-5cn.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇬🇧 GB-185.176.206.9-0082 [98ms]
-  type: ss
-  server: 185.176.206.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 GB-146.70.61.37-0120 [99ms]
-  type: ss
-  server: 146.70.61.37
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: 🇮🇪 IE_1|151KB/s [100ms]
-  password: None
-  port: 443
-  server: 18.200.158.139
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸 US-216.106.186.33-0116 [101ms]
-  type: trojan
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  udp: true
-- type: vless
-  name: 🇺🇸 US美国丨yoyapai.com (26) [101ms]
-  server: usa.letsconnectpoint.com
-  port: 443
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: usa.letsconnectpoint.com
-  sni: usa.letsconnectpoint.com
-  skip-cert-verify: false
-  client-fingerprint: edge
-  reality-opts:
-    public-key: I45spoFEwSCaxR8FIP1HnrFj5KbR3keSAGMMdgt2AHY
-    short-id: b1c5a5e2
-- name: 🇳🇱 NL-109.201.152.181-0167 [101ms]
-  type: ss
-  server: 109.201.152.181
-  port: 443
-  cipher: aes-128-cfb
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 GB_1|294KB/s|P002-260618 [102ms]
+- name: 🇬🇧 GB_1|294KB/s|P002-260618 [98ms]
   password: None
   port: 443
   server: 212.102.63.31
@@ -2009,23 +2015,8 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 🇬🇧 GB-141.98.101.181-0143 [103ms]
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇳🇱 NL_2|179KB/s [105ms]
-  password: None
-  port: 443
-  server: 185.93.106.214
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
 - type: vless
-  name: 🇩🇪 DE德国丨yoyapai.com (14) [106ms]
+  name: 🇩🇪 DE德国丨yoyapai.com (14) [99ms]
   server: pew.dianawmoon.dpdns.org
   port: 443
   uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
@@ -2043,6 +2034,31 @@ proxies:
     path: /21096/noencd1ana
     host: pew.dianawmoon.dpdns.org
     mode: auto
+- name: 🇮🇪 IE_1|151KB/s [101ms]
+  password: None
+  port: 443
+  server: 18.200.158.139
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇪🇸 ES_1|632KB/s [104ms]
+  type: vless
+  server: 84.32.184.218
+  port: 443
+  uuid: 7d1a74fd-8a38-4a29-863f-5da53a9e557e
+  tls: true
+  skip-cert-verify: false
+  servername: 7d1a74fd.ferrin.uk
+  client-fingerprint: firefox
+  udp: true
+- name: 🇬🇧 GB-94.156.250.148-0131 [105ms]
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
 - type: vless
   name: 🇳🇱 荷蘭丨yoyapai.com (2) [106ms]
   server: 94.102.51.218
@@ -2057,22 +2073,49 @@ proxies:
   client-fingerprint: random
   reality-opts:
     public-key: SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M
-- name: 🇪🇸 ES_1|632KB/s [108ms]
-  type: vless
-  server: 84.32.184.218
-  port: 443
-  uuid: 7d1a74fd-8a38-4a29-863f-5da53a9e557e
-  tls: true
-  skip-cert-verify: false
-  servername: 7d1a74fd.ferrin.uk
-  client-fingerprint: firefox
-  udp: true
-- name: 🇬🇧 GB-94.156.250.148-0131 [109ms]
+- name: 🇬🇧 GB-146.70.61.37-0120 [106ms]
   type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  server: 146.70.61.37
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- type: vless
+  name: '🇺🇸 US美國丨yoyapai.com (2) #2 [107ms]'
+  server: 167.82.101.251
+  port: 443
+  uuid: d27a232b-de94-4204-9bae-b0c243c6b93c
+  udp: true
+  tls: true
+  servername: default.ssl.fastly.net
+  sni: default.ssl.fastly.net
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newip.global.ssl.fastly.neT.
+- name: 🇬🇧 GB-141.98.101.181-0143 [108ms]
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇳🇱 NL-109.201.152.181-0167 [110ms]
+  type: ss
+  server: 109.201.152.181
+  port: 443
+  cipher: aes-128-cfb
+  password: shadowsocks
+  udp: true
+- name: 🇳🇱 NL_2|179KB/s [111ms]
+  password: None
+  port: 443
+  server: 185.93.106.214
+  skip-cert-verify: true
+  tls: true
+  type: http
   udp: true
 - name: 🇫🇷 FR_1|303KB/s|R002-260618 [111ms]
   port: 9443
@@ -2082,54 +2125,12 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 🇬🇧 GB-82.38.31.190-0094 [111ms]
+- name: 🇬🇧 GB-185.176.206.9-0082 [113ms]
   type: ss
-  server: 82.38.31.190
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 NL-193.29.139.235-0188 [111ms]
-  type: ss
-  server: 193.29.139.235
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.203-0114 [112ms]
-  type: ss
-  server: 82.38.31.203
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 GB-82.38.31.3-0175 [112ms]
-  type: ss
-  server: 82.38.31.3
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 NL-193.29.139.151-0148 [112ms]
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇩🇪 DE-209.250.236.93-7974 [113ms]
-  type: trojan
-  server: 209.250.236.93
-  port: 443
-  password: Cl150MQWlG
-  sni: 209.250.236.93
-  udp: true
-- name: 🇬🇧 GB-82.38.31.199-0176 [114ms]
-  type: ss
-  server: 82.38.31.199
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  server: 185.176.206.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇬🇧 GB-82.38.31.162-0138 [114ms]
   type: ss
@@ -2138,64 +2139,137 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇬🇧 GB-82.38.31.184-0105 [114ms]
+- name: 🇬🇧 GB-82.38.31.149-0155 [114ms]
   type: ss
-  server: 82.38.31.184
+  server: 82.38.31.149
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.214-0090 [114ms]
+  type: ss
+  server: 82.38.31.214
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.180-0087 [114ms]
+- name: 🇬🇧 GB-178.83.185.156-0136 [114ms]
   type: ss
-  server: 82.38.31.180
+  server: 178.83.185.156
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.193-0215 [114ms]
+  type: ss
+  server: 82.38.31.193
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.208-0111 [114ms]
+- name: 🇳🇱 NL_3|927KB/s [114ms]
+  type: vless
+  server: 189.74.114.119
+  port: 443
+  uuid: abd5755a-8b77-4ed4-afbd-f2ccbc08e6f5
+  tls: true
+  skip-cert-verify: false
+  servername: api.mediaklenov.cc
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 3e99d50d5740985d
+  udp: true
+- name: 🇬🇧 GB-82.38.31.186-0230 [114ms]
+  type: ss
+  server: 82.38.31.186
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 GB-82.38.31.202-0102 [114ms]
+  type: ss
+  server: 82.38.31.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 GB-82.38.31.199-0176 [114ms]
+  type: ss
+  server: 82.38.31.199
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 GB-82.38.31.203-0114 [115ms]
+  type: ss
+  server: 82.38.31.203
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- type: vless
+  name: 🇮🇷 IR伊朗丨yoyapai.com [116ms]
+  server: 217.60.193.1
+  port: 443
+  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
+  udp: true
+  tls: true
+  servername: ddc-akn.astralweb.tech
+  sni: ddc-akn.astralweb.tech
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇬🇧 GB-82.38.31.187-0083 [116ms]
+  type: ss
+  server: 82.38.31.187
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 GB-82.38.31.171-0181 [117ms]
+  type: ss
+  server: 82.38.31.171
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.208-0111 [117ms]
   type: ss
   server: 82.38.31.208
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.47-0132 [114ms]
-  type: ss
-  server: 82.38.31.47
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.34-0135 [114ms]
-  type: ss
-  server: 82.38.31.34
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.49-0140 [114ms]
-  type: ss
-  server: 82.38.31.49
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.170-0180 [114ms]
-  type: ss
-  server: 82.38.31.170
+- name: 🇺🇸 US-216.106.186.32-0095 [117ms]
+  type: trojan
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
   udp: true
-- name: 🇬🇧 GB-82.38.31.46-0157 [115ms]
+- name: 🇬🇧 GB-82.38.31.218-0089 [117ms]
   type: ss
-  server: 82.38.31.46
+  server: 82.38.31.218
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 GB-82.38.31.217-0101 [117ms]
+  type: ss
+  server: 82.38.31.217
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇩🇪 DE-185.176.204.18-0084 [117ms]
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - type: vless
-  name: 🇬🇧 GB英国丨yoyapai.com (5) [115ms]
+  name: 🇬🇧 GB英国丨yoyapai.com (5) [118ms]
   server: 89.125.11.50
   port: 443
   uuid: d6b6461a-59b1-4aaf-89a0-6e051e7f215c
@@ -2209,184 +2283,30 @@ proxies:
   reality-opts:
     public-key: BTRF6cX_1ul5lAN31QmqrPNl9yMNo8JrsUJOhi9K71U
     short-id: 3cb2d38fbac380fa
-- name: 🇳🇱 NL-193.29.139.204-0144 [115ms]
+- name: 🇬🇧 GB-82.38.31.205-0112 [118ms]
   type: ss
-  server: 193.29.139.204
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.202-0102 [115ms]
-  type: ss
-  server: 82.38.31.202
+  server: 82.38.31.205
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.2-0179 [115ms]
+- name: 🇬🇧 GB-82.38.31.48-0145 [119ms]
   type: ss
-  server: 82.38.31.2
+  server: 82.38.31.48
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 NL_3|927KB/s [115ms]
-  type: vless
-  server: 189.74.114.119
-  port: 443
-  uuid: abd5755a-8b77-4ed4-afbd-f2ccbc08e6f5
-  tls: true
-  skip-cert-verify: false
-  servername: api.mediaklenov.cc
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 3e99d50d5740985d
-  udp: true
-- name: 🇬🇧 GB-82.38.31.10-0168 [116ms]
+- name: 🇬🇧 GB-82.38.31.184-0105 [119ms]
   type: ss
-  server: 82.38.31.10
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.155-0130 [116ms]
-  type: ss
-  server: 82.38.31.155
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- type: vless
-  name: 🇨🇦 加拿大丨yoyapai.com [117ms]
-  server: www.speedtest.net
-  port: 8080
-  uuid: 443779ba-7694-44ce-95c1-2f10682de4fa
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: konkortur.sanjeshvipspeed.ir
-    v2ray-http-upgrade: true
-- name: 🇳🇱 NL-193.29.139.223-0099 [117ms]
-  type: ss
-  server: 193.29.139.223
+  server: 82.38.31.184
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.149-0155 [117ms]
+- name: 🇬🇧 GB-82.38.31.190-0094 [119ms]
   type: ss
-  server: 82.38.31.149
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.174-0183 [117ms]
-  type: ss
-  server: 82.38.31.174
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-178.83.185.156-0136 [117ms]
-  type: ss
-  server: 178.83.185.156
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.171-0181 [118ms]
-  type: ss
-  server: 82.38.31.171
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇩🇪 DE-185.176.204.18-0084 [118ms]
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: vless
-  name: 🌐 ❓未知丨yoyapai.com (65) [119ms]
-  server: 45.198.0.24
-  port: 443
-  uuid: e5544327-834c-455a-9db5-2454c788fa17
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: pl.ru-msk.club
-  sni: pl.ru-msk.club
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: nFJCJ2tvxLdLrc9G-O1laW8KDir5SDnaOTmYndVaOGQ
-    short-id: 7a3f9e2b1c8d4f6a
-- name: 🇬🇧 GB-82.38.31.42-0189 [119ms]
-  type: ss
-  server: 82.38.31.42
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.179-0097 [119ms]
-  type: ss
-  server: 82.38.31.179
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 GB-82.38.31.176-0177 [119ms]
-  type: ss
-  server: 82.38.31.176
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 GB-82.38.31.62-0149 [119ms]
-  type: ss
-  server: 82.38.31.62
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.210-0231 [119ms]
-  type: ss
-  server: 82.38.31.210
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 GB-82.38.31.16-0185 [119ms]
-  type: ss
-  server: 82.38.31.16
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.35-0146 [119ms]
-  type: ss
-  server: 82.38.31.35
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.217-0101 [119ms]
-  type: ss
-  server: 82.38.31.217
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 GB-82.38.31.194-0223 [119ms]
-  type: ss
-  server: 82.38.31.194
+  server: 82.38.31.190
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -2398,121 +2318,140 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.159-0141 [119ms]
+- name: 🇬🇧 GB-82.38.31.212-0086 [119ms]
   type: ss
-  server: 82.38.31.159
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 GB-82.38.31.218-0089 [120ms]
-  type: ss
-  server: 82.38.31.218
+  server: 82.38.31.212
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.186-0230 [120ms]
+- name: 🇳🇱 NL-193.29.139.204-0144 [119ms]
   type: ss
-  server: 82.38.31.186
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 GB-82.38.31.61-0137 [120ms]
-  type: ss
-  server: 82.38.31.61
+  server: 193.29.139.204
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- type: vless
-  name: 🇯🇵 JP日本丨yoyapai.com (4) [120ms]
-  server: 2.27.27.64
-  port: 443
-  uuid: 94d2d711-76e5-4d82-a3c9-4f06fd5558c8
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: jp.musicwave.net
-  sni: jp.musicwave.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: qBtxq4RZxDLCJT8i48iaGMhacv8MOI0yhIFiuwYJm08
-    short-id: 825d392c67e4
-- type: vless
-  name: 🇩🇪 德國丨yoyapai.com [121ms]
-  server: 170.168.97.3
-  port: 443
-  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
-  udp: true
-  tls: true
-  servername: download.nvidia.com
-  sni: download.nvidia.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  network: xhttp
-  xhttp-opts:
-    path: /
-    mode: auto
-- name: 🇬🇧 GB-82.38.31.187-0083 [121ms]
+- name: 🇬🇧 GB-82.38.31.2-0179 [119ms]
   type: ss
-  server: 82.38.31.187
+  server: 82.38.31.2
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.47-0132 [119ms]
+  type: ss
+  server: 82.38.31.47
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.174-0183 [119ms]
+  type: ss
+  server: 82.38.31.174
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.66-0142 [119ms]
+  type: ss
+  server: 82.38.31.66
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.192-0212 [119ms]
+  type: ss
+  server: 82.38.31.192
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.189-5612 [122ms]
+- name: 🇳🇱 NL-193.29.139.147-0119 [120ms]
   type: ss
-  server: 82.38.31.189
+  server: 193.29.139.147
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.193-0215 [122ms]
+- name: 🇬🇧 GB-82.38.31.206-0118 [120ms]
   type: ss
-  server: 82.38.31.193
+  server: 82.38.31.206
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.174-0151 [122ms]
+- name: 🇳🇱 NL-193.29.139.168-0217 [120ms]
+  type: ss
+  server: 193.29.139.168
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: 🇬🇧 GB-82.38.31.35-0146 [120ms]
+  type: ss
+  server: 82.38.31.35
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.174-0151 [120ms]
   type: ss
   server: 82.38.31.174
   port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇬🇧 GB-82.38.31.207-0110 [122ms]
+- name: 🇬🇧 GB-82.38.31.219-0088 [120ms]
+  type: ss
+  server: 82.38.31.219
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 GB-82.38.31.49-0140 [120ms]
+  type: ss
+  server: 82.38.31.49
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.207-0110 [120ms]
   type: ss
   server: 82.38.31.207
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.191-0218 [122ms]
+- name: 🇬🇧 GB-82.38.31.34-0135 [120ms]
   type: ss
-  server: 82.38.31.191
+  server: 82.38.31.34
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇬🇧 GB-82.38.31.205-0112 [122ms]
-  type: ss
-  server: 82.38.31.205
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+- type: vless
+  name: 🇺🇸 US美国丨yoyapai.com (14) [121ms]
+  server: 129.153.71.28
+  port: 28863
+  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
   udp: true
-- name: 🇳🇱 NL-193.29.139.147-0119 [122ms]
-  type: ss
-  server: 193.29.139.147
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  sni: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇩🇪 DE-209.250.236.93-7974 [121ms]
+  type: trojan
+  server: 209.250.236.93
+  port: 443
+  password: Cl150MQWlG
+  sni: 209.250.236.93
   udp: true
 - name: 🇬🇧 GB-82.38.31.181-0091 [122ms]
   type: ss
@@ -2521,40 +2460,117 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.219-0088 [122ms]
+- name: 🇬🇧 GB-82.38.31.210-0231 [122ms]
   type: ss
-  server: 82.38.31.219
+  server: 82.38.31.210
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 GB-82.38.31.206-0118 [122ms]
+- name: 🇬🇧 GB-82.38.31.155-0130 [122ms]
   type: ss
-  server: 82.38.31.206
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 GB-82.38.31.212-0086 [122ms]
-  type: ss
-  server: 82.38.31.212
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 GB-82.38.31.48-0145 [122ms]
-  type: ss
-  server: 82.38.31.48
+  server: 82.38.31.155
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 NL-193.29.139.168-0217 [123ms]
+- name: 🇬🇧 GB-82.38.31.46-0157 [122ms]
   type: ss
-  server: 193.29.139.168
+  server: 82.38.31.46
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.189-5612 [122ms]
+  type: ss
+  server: 82.38.31.189
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 GB-82.38.31.159-0141 [122ms]
+  type: ss
+  server: 82.38.31.159
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.176-0177 [122ms]
+  type: ss
+  server: 82.38.31.176
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 GB-82.38.31.42-0189 [122ms]
+  type: ss
+  server: 82.38.31.42
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.62-0149 [122ms]
+  type: ss
+  server: 82.38.31.62
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.194-0223 [122ms]
+  type: ss
+  server: 82.38.31.194
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 GB-82.110.60.9-0093 [122ms]
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 GB-82.38.31.180-0087 [122ms]
+  type: ss
+  server: 82.38.31.180
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 NL-193.29.139.235-0188 [123ms]
+  type: ss
+  server: 193.29.139.235
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.179-0097 [123ms]
+  type: ss
+  server: 82.38.31.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 GB-82.38.31.170-0180 [123ms]
+  type: ss
+  server: 82.38.31.170
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.3-0175 [123ms]
+  type: ss
+  server: 82.38.31.3
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇺🇦 UA-185.164.175.81-0092 [123ms]
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - type: trojan
   name: 🌐 ❓未知丨yoyapai.com (55) [124ms]
@@ -2571,304 +2587,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 🇬🇧 GB-82.38.31.66-0142 [125ms]
-  type: ss
-  server: 82.38.31.66
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇴 NO-185.213.23.63-0186 [125ms]
-  type: ss
-  server: 185.213.23.63
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  udp: true
-- type: vless
-  name: '🇺🇸 US美國丨yoyapai.com (2) #2 [125ms]'
-  server: 167.82.101.251
-  port: 443
-  uuid: d27a232b-de94-4204-9bae-b0c243c6b93c
-  udp: true
-  tls: true
-  servername: default.ssl.fastly.net
-  sni: default.ssl.fastly.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newip.global.ssl.fastly.neT.
-- name: 🇬🇧 GB-82.38.31.192-0212 [125ms]
-  type: ss
-  server: 82.38.31.192
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 GB-82.110.60.9-0093 [125ms]
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 GB-82.38.31.214-0090 [125ms]
-  type: ss
-  server: 82.38.31.214
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- type: vless
-  name: '🇩🇪 德国丨yoyapai.com #2 [125ms]'
-  server: 46.101.253.244
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  servername: edge.yzkvm.top
-  sni: edge.yzkvm.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇭🇷 HR_2|234KB/s|R002-260618 [126ms]
-  port: 443
-  server: 154.47.29.174
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇭🇷 HR_1|169KB/s|R002-260618 [127ms]
-  port: 443
-  server: 154.47.29.161
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇮🇹 IT-202.50.253.54-0239 [129ms]
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: vless
-  name: 🌐 ❓未知丨yoyapai.com (63) [132ms]
-  server: nl.cachevault.net
-  port: 443
-  uuid: 2b9fc113-db27-4635-86d8-fa4556a5b7ba
-  udp: true
-  tls: true
-  servername: nl.cachevault.net
-  sni: nl.cachevault.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: XTX6Yvtj5B4HENQbNCS0MH3jDqq5vj5gWlg2nilTviE
-    short-id: 8ba02790a1480848
-  network: xhttp
-  xhttp-opts:
-    path: /static/
-    mode: auto
-- name: 🇯🇵 JP-149.22.87.240-0123 [133ms]
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 JP-149.22.87.204-0121 [133ms]
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- type: vless
-  name: 🇯🇵 JP日本丨yoyapai.com (10) [133ms]
-  server: 141.11.138.132
-  port: 443
-  uuid: b47cc98c-54f4-4ab2-acb9-b493a04ccc6b
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: www.cloudflare.com
-  sni: www.cloudflare.com
-  skip-cert-verify: false
-  client-fingerprint: ios
-  reality-opts:
-    public-key: Kb511WMVMJe1nImN8kCi9PdPQSGu3aZCrffMOvzv43A
-    short-id: f9ca9286d0ff8920
-- type: vless
-  name: 🇮🇷 IR伊朗丨yoyapai.com [133ms]
-  server: 217.60.193.1
-  port: 443
-  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
-  udp: true
-  tls: true
-  servername: ddc-akn.astralweb.tech
-  sni: ddc-akn.astralweb.tech
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇫🇷 FR-51.83.192.80-2722 [134ms]
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇯🇵 JP-149.22.87.241-0122 [134ms]
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- type: trojan
-  name: 🇺🇸 美國丨yoyapai.com (2) [135ms]
-  server: blackshadow.dpdns.org
-  port: 443
-  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  udp: true
-  tls: true
-  servername: blackshadow.dpdns.org
-  sni: blackshadow.dpdns.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /195.123.218.174-443
-    headers:
-      Host: blackshadow.dpdns.org
-- type: vless
-  name: '🇹🇷 土耳其丨yoyapai.com #2 [136ms]'
-  server: 170.168.97.3
-  port: 993
-  uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: download.nvidia.com
-  sni: download.nvidia.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-- name: 🇳🇱 NL-78.142.194.96-5722 [137ms]
-  type: trojan
-  server: nl-1.tr202607.com
-  port: 443
-  password: LSS6HLnp7IeEEJUcox
-  sni: nl-1.tr202607.com
-  udp: true
-- name: 🇫🇷 FR-54.36.174.134-0447 [139ms]
-  type: ss
-  server: 54.36.174.134
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- type: ss
-  name: 🇮🇹 IT意大利丨yoyapai.com (5) [139ms]
-  server: 202.50.253.45
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: vless
-  name: 🇯🇵 JP日本丨yoyapai.com (3) [139ms]
-  server: 38.47.96.220
-  port: 11424
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  servername: notls.lukongtou.eu.org
-  sni: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- type: vless
-  name: '🇯🇵 JP日本丨yoyapai.com #2 [140ms]'
-  server: 64.176.62.54
-  port: 443
-  uuid: 12e35bfe-1e79-4cf1-8a8e-22a242e97408
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: www.amazon.com
-  sni: www.amazon.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: d1LjsQHtTCj7kHx2LHFisVDPc_xOtKnugy5YRFKXqUs
-    short-id: '39'
-- type: vless
-  name: 🇵🇱 PL波兰丨yoyapai.com (6) [140ms]
-  server: 194.93.63.246
-  port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: pl.bubahero.com
-  sni: pl.bubahero.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
-    short-id: 9c2378562188c3cb
-- type: ss
-  name: 🇮🇹 IT意大利丨yoyapai.com (4) [140ms]
-  server: 202.50.253.36
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇮🇹 IT-202.50.253.72-0098 [140ms]
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 IT-202.50.253.90-0109 [140ms]
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: ss
-  name: 🇮🇹 IT意大利丨yoyapai.com (2) [140ms]
-  server: 202.50.253.27
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇺🇦 UA-185.164.175.81-0092 [140ms]
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇪🇪 EE_1|196KB/s [141ms]
+- name: 🇪🇪 EE_1|196KB/s [124ms]
   type: vless
   server: 185.225.205.53
   port: 443
@@ -2882,215 +2601,64 @@ proxies:
     public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
     short-id: 2e82d7ac
   udp: true
-- type: vless
-  name: 🇸🇪 SE瑞典丨yoyapai.com [141ms]
-  server: 91.242.228.29
-  port: 443
-  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: se1.mycloud1.org
-  sni: se1.mycloud1.org
-  skip-cert-verify: false
-  client-fingerprint: edge
-  reality-opts:
-    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
-    short-id: afee962d
-- type: ss
-  name: 🇮🇹 IT意大利丨yoyapai.com (3) [142ms]
-  server: 202.50.253.99
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇮🇹 IT-202.50.253.81-0255 [143ms]
+- name: 🇬🇧 GB-82.38.31.61-0137 [125ms]
   type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  server: 82.38.31.61
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 NL-193.29.139.223-0099 [125ms]
+  type: ss
+  server: 193.29.139.223
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 GB-82.38.31.16-0185 [125ms]
+  type: ss
+  server: 82.38.31.16
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.10-0168 [125ms]
+  type: ss
+  server: 82.38.31.10
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 GB-82.38.31.191-0218 [125ms]
+  type: ss
+  server: 82.38.31.191
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 NL-193.29.139.151-0148 [125ms]
+  type: ss
+  server: 193.29.139.151
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - type: vless
-  name: 🇹🇷 土耳其丨yoyapai.com [145ms]
-  server: 170.168.97.3
+  name: 🇩🇪 DE德国丨yoyapai.com (29) [125ms]
+  server: 188.241.241.36
   port: 8443
-  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
-  udp: true
-  tls: true
-  servername: download.nvidia.com
-  sni: download.nvidia.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇷🇴 RO-154.46.31.106-0449 [145ms]
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- type: vless
-  name: 🇰🇷 KR韩国丨yoyapai.com (2) [145ms]
-  server: crimson-smoke-7818.397.workers.dev
-  port: 8880
-  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- type: vless
-  name: 🌐 斯洛文尼亚丨yoyapai.com [146ms]
-  server: 2.27.56.216
-  port: 443
-  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
-  udp: true
-  tls: true
-  servername: sun10-67.vkuserphoto.ru
-  sni: sun10-67.vkuserphoto.ru
-  skip-cert-verify: false
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 8R416wHsKA_fipQLIw2gceCaTTBJIZRMwGjNTURAx3I
-    short-id: ad55857184e91aad
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/events
-    mode: auto
-- name: 🇮🇹 IT-202.50.253.18-0106 [147ms]
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: ss
-  name: 🇮🇹 IT意大利丨yoyapai.com [147ms]
-  server: 202.50.253.63
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇳🇱 NL荷兰丨yoyapai.com (13) [147ms]
-  server: c3.nastuh.link
-  port: 443
-  password: y7KeRTzmH0vXT2kp
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: vless
-  name: 🇷🇺 RU俄罗斯丨yoyapai.com (10) [151ms]
-  server: 200.165.235.78
-  port: 443
-  uuid: 238e492b-bc20-4380-92b6-135d39112ca4
+  uuid: 5c331d12-f0b0-48d8-ba6e-ec945ef889ea
   flow: xtls-rprx-vision
   udp: true
   tls: true
-  servername: api8.eaglors.com
-  sni: api8.eaglors.com
-  skip-cert-verify: false
-  client-fingerprint: qq
-  reality-opts:
-    public-key: Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o
-    short-id: 52ccb3687fe0b7ec
-- type: vless
-  name: 🇫🇮 FI芬兰丨yoyapai.com (4) [152ms]
-  server: psf-3.weedly.top
-  port: 80
-  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: machinemag.ir
-- type: trojan
-  name: 🇳🇴 NO挪威丨yoyapai.com [152ms]
-  server: join-telegram-channel.tirexnet.kdns.fr
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- type: vless
-  name: 🇹🇷 TR土耳其丨yoyapai.com (2) [155ms]
-  server: 206.1.101.85
-  port: 42654
-  uuid: 16e9ae65-c42d-49b9-9e86-524956e4ef19
-  udp: true
-  tls: true
-  servername: 206.1.101.85
-  sni: 206.1.101.85
-  skip-cert-verify: false
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇰🇷 KR-141.164.45.187-2718 [155ms]
-  type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- type: vless
-  name: 🇩🇪 DE德国丨yoyapai.com (19) [157ms]
-  server: gr1.originmesh.online
-  port: 443
-  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: gr1.originmesh.online
-  sni: gr1.originmesh.online
+  servername: d100.relay.logicnova.ru
+  sni: d100.relay.logicnova.ru
   skip-cert-verify: false
   client-fingerprint: chrome
   reality-opts:
-    public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
-    short-id: eecfe76af97a6132
+    public-key: GUqm415-hOCPsm5OJnca6iwSmgMUbX_UmEqWT9Ch60I
 - type: vless
-  name: 🇺🇸 US美国丨yoyapai.com (21) [157ms]
-  server: 45.144.221.169
-  port: 443
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: arizona.eosapp.net
-  sni: arizona.eosapp.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-- type: vless
-  name: 🇺🇦 烏克蘭丨yoyapai.com [157ms]
+  name: 🇺🇦 烏克蘭丨yoyapai.com [126ms]
   server: 104.245.242.7
   port: 443
   uuid: e3e876aa-589e-1dcb-e55f-6ff56d8d80f4
@@ -3107,22 +2675,489 @@ proxies:
     path: /
     mode: auto
 - type: vless
-  name: 🇷🇺 RU俄罗斯丨yoyapai.com (15) [157ms]
-  server: 217.19.122.156
-  port: 443
-  uuid: 40c4274f-3e4f-4c7b-ae5c-d87645a6e899
+  name: 🇹🇷 土耳其丨yoyapai.com [126ms]
+  server: 170.168.97.3
+  port: 8443
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
   udp: true
   tls: true
-  servername: vzvt1tpiml.rucdncomp.pro
-  sni: vzvt1tpiml.rucdncomp.pro
+  servername: download.nvidia.com
+  sni: download.nvidia.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- type: vless
+  name: 🇯🇵 JP日本丨yoyapai.com (4) [128ms]
+  server: 2.27.27.64
+  port: 443
+  uuid: 94d2d711-76e5-4d82-a3c9-4f06fd5558c8
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: jp.musicwave.net
+  sni: jp.musicwave.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: qBtxq4RZxDLCJT8i48iaGMhacv8MOI0yhIFiuwYJm08
+    short-id: 825d392c67e4
+- type: ss
+  name: 🇮🇹 IT意大利丨yoyapai.com (2) [128ms]
+  server: 202.50.253.27
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇭🇷 HR_2|234KB/s|R002-260618 [130ms]
+  port: 443
+  server: 154.47.29.174
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- type: vless
+  name: '🇩🇪 德国丨yoyapai.com #2 [131ms]'
+  server: 46.101.253.244
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  udp: true
+  tls: true
+  servername: edge.yzkvm.top
+  sni: edge.yzkvm.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
+- name: 🇭🇷 HR_1|169KB/s|R002-260618 [132ms]
+  port: 443
+  server: 154.47.29.161
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇯🇵 JP-149.22.87.241-0122 [132ms]
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 JP-149.22.87.240-0123 [133ms]
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- type: vless
+  name: 🌐 斯洛文尼亚丨yoyapai.com [133ms]
+  server: 2.27.56.216
+  port: 443
+  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
+  udp: true
+  tls: true
+  servername: sun10-67.vkuserphoto.ru
+  sni: sun10-67.vkuserphoto.ru
+  skip-cert-verify: false
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 8R416wHsKA_fipQLIw2gceCaTTBJIZRMwGjNTURAx3I
+    short-id: ad55857184e91aad
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/events
+    mode: auto
+- type: vless
+  name: 🇯🇵 JP日本丨yoyapai.com (10) [133ms]
+  server: 141.11.138.132
+  port: 443
+  uuid: b47cc98c-54f4-4ab2-acb9-b493a04ccc6b
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: www.cloudflare.com
+  sni: www.cloudflare.com
+  skip-cert-verify: false
+  client-fingerprint: ios
+  reality-opts:
+    public-key: Kb511WMVMJe1nImN8kCi9PdPQSGu3aZCrffMOvzv43A
+    short-id: f9ca9286d0ff8920
+- name: 🇯🇵 JP-149.22.87.204-0121 [133ms]
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇫🇷 FR-54.36.174.134-0447 [134ms]
+  type: ss
+  server: 54.36.174.134
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- type: vless
+  name: 🇵🇱 PL波兰丨yoyapai.com (6) [135ms]
+  server: 194.93.63.246
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: pl.bubahero.com
+  sni: pl.bubahero.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
+    short-id: 9c2378562188c3cb
+- type: vless
+  name: 🇸🇪 SE瑞典丨yoyapai.com [135ms]
+  server: 91.242.228.29
+  port: 443
+  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: se1.mycloud1.org
+  sni: se1.mycloud1.org
+  skip-cert-verify: false
+  client-fingerprint: edge
+  reality-opts:
+    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
+    short-id: afee962d
+- type: trojan
+  name: 🇺🇸 美國丨yoyapai.com (2) [136ms]
+  server: blackshadow.dpdns.org
+  port: 443
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  udp: true
+  tls: true
+  servername: blackshadow.dpdns.org
+  sni: blackshadow.dpdns.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /service/telemetry/e6dc0bd08cb1/
+    path: /195.123.218.174-443
     headers:
-      Host: vzvt1tpiml.rucdncomp.pro
+      Host: blackshadow.dpdns.org
 - type: vless
-  name: 🌐 ❓未知丨yoyapai.com (17) [159ms]
+  name: 🇯🇵 JP日本丨yoyapai.com (3) [138ms]
+  server: 38.47.96.220
+  port: 11424
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  servername: notls.lukongtou.eu.org
+  sni: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- type: ss
+  name: 🇮🇹 IT意大利丨yoyapai.com (3) [139ms]
+  server: 202.50.253.99
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vless
+  name: '🇯🇵 JP日本丨yoyapai.com #2 [139ms]'
+  server: 64.176.62.54
+  port: 443
+  uuid: 12e35bfe-1e79-4cf1-8a8e-22a242e97408
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: www.amazon.com
+  sni: www.amazon.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: d1LjsQHtTCj7kHx2LHFisVDPc_xOtKnugy5YRFKXqUs
+    short-id: '39'
+- name: 🇮🇹 IT-202.50.253.18-0106 [139ms]
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 FR-51.83.192.80-2722 [140ms]
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- type: vless
+  name: '🇹🇷 土耳其丨yoyapai.com #2 [141ms]'
+  server: 170.168.97.3
+  port: 993
+  uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: download.nvidia.com
+  sni: download.nvidia.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+- name: 🇮🇹 IT-202.50.253.81-0255 [143ms]
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (63) [143ms]
+  server: nl.cachevault.net
+  port: 443
+  uuid: 2b9fc113-db27-4635-86d8-fa4556a5b7ba
+  udp: true
+  tls: true
+  servername: nl.cachevault.net
+  sni: nl.cachevault.net
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: XTX6Yvtj5B4HENQbNCS0MH3jDqq5vj5gWlg2nilTviE
+    short-id: 8ba02790a1480848
+  network: xhttp
+  xhttp-opts:
+    path: /static/
+    mode: auto
+- type: vless
+  name: 🇫🇮 FI芬兰丨yoyapai.com (7) [143ms]
+  server: 78.17.209.100
+  port: 443
+  uuid: c5cf36f5-50e9-405b-adb4-b40fdf0d4619
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: fin-skl-1.movietop24.site
+  sni: fin-skl-1.movietop24.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 6DLiz4O1GkMzUveVx_6Wr_e99QxAgZZ6BonblaRVPFI
+    short-id: ba80654a85a4634c
+- name: 🇯🇵 JP-84.247.155.196-0441 [144ms]
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 JP-84.247.155.196-2716 [144ms]
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇮🇹 IT-202.50.253.72-0098 [144ms]
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 IT-202.50.253.90-0109 [144ms]
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: vless
+  name: 🇳🇱 荷兰丨yoyapai.com (2) [146ms]
+  server: fast.letsconnectpoint.com
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: fast.letsconnectpoint.com
+  sni: fast.letsconnectpoint.com
+  skip-cert-verify: false
+  client-fingerprint: qq
+  reality-opts:
+    public-key: osmv_68hih_V_A_ptwQj_TVmdj8ayt_chDCZdj1DrS4
+    short-id: f1a5e1d9
+- type: ss
+  name: 🇮🇹 IT意大利丨yoyapai.com [146ms]
+  server: 202.50.253.63
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇮🇹 IT-202.50.253.54-0239 [147ms]
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  name: 🇮🇹 IT意大利丨yoyapai.com (4) [148ms]
+  server: 202.50.253.36
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹 IT意大利丨yoyapai.com (5) [148ms]
+  server: 202.50.253.45
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇫🇷 FR-54.36.174.134-0200 [148ms]
+  type: ss
+  server: pl134.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: 🇷🇴 RO-154.46.31.106-0449 [150ms]
+  type: ss
+  server: 154.46.31.106
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
+- type: vless
+  name: 🇩🇪 德國丨yoyapai.com [150ms]
+  server: 170.168.97.3
+  port: 443
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+  udp: true
+  tls: true
+  servername: download.nvidia.com
+  sni: download.nvidia.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+  network: xhttp
+  xhttp-opts:
+    path: /
+    mode: auto
+- type: vless
+  name: 🇯🇵 JP日本節點丨yoyapai.com [150ms]
+  server: 89.125.244.28
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  servername: notls.lukongtou.eu.org
+  sni: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- type: ss
+  name: 🇳🇱 NL荷兰丨yoyapai.com (13) [153ms]
+  server: c3.nastuh.link
+  port: 443
+  password: y7KeRTzmH0vXT2kp
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇫🇷 FR-54.36.174.140-0162 [153ms]
+  type: ss
+  server: pl140.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: 🇰🇷 KR-141.164.45.187-2718 [154ms]
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- type: vless
+  name: 🇷🇺 RU俄罗斯丨yoyapai.com (10) [156ms]
+  server: 200.165.235.78
+  port: 443
+  uuid: 238e492b-bc20-4380-92b6-135d39112ca4
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: api8.eaglors.com
+  sni: api8.eaglors.com
+  skip-cert-verify: false
+  client-fingerprint: qq
+  reality-opts:
+    public-key: Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o
+    short-id: 52ccb3687fe0b7ec
+- name: 🇰🇷 KR-141.164.45.187-0443 [158ms]
+  type: ss
+  server: 141.164.45.187
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (51) [158ms]
+  server: 43.108.48.169
+  port: 40701
+  uuid: cdb7d825-9892-4d6f-80b8-7add83159dac
+  udp: true
+  tls: true
+  servername: amazon.com
+  sni: amazon.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: TWuVILeiSXfCSMZPsqNHtRquNALPRaW5Z51I63zdLEA
+    short-id: 7ef3a8ab2886
+- type: vless
+  name: 🇱🇻 LV拉脱维亚丨yoyapai.com [162ms]
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: yandex.ru
+  sni: yandex.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+- type: vless
+  name: 🌐 ❓未知丨yoyapai.com (17) [162ms]
   server: dey.lnmarketplace.net
   port: 443
   uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
@@ -3140,93 +3175,35 @@ proxies:
     host: dey.lnmarketplace.net
     mode: stream-one
 - type: vless
-  name: 🌐 ❓未知丨yoyapai.com (51) [159ms]
-  server: 43.108.48.169
-  port: 40701
-  uuid: cdb7d825-9892-4d6f-80b8-7add83159dac
+  name: 🇩🇪 DE德国丨yoyapai.com (19) [165ms]
+  server: gr1.originmesh.online
+  port: 443
+  uuid: 35da102e-536b-4103-9632-58c7c4c6303b
+  flow: xtls-rprx-vision
   udp: true
   tls: true
-  servername: amazon.com
-  sni: amazon.com
+  servername: gr1.originmesh.online
+  sni: gr1.originmesh.online
   skip-cert-verify: false
   client-fingerprint: chrome
   reality-opts:
-    public-key: TWuVILeiSXfCSMZPsqNHtRquNALPRaW5Z51I63zdLEA
-    short-id: 7ef3a8ab2886
-- name: 🇰🇷 KR-141.164.45.187-0443 [160ms]
-  type: ss
-  server: 141.164.45.187
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
+    public-key: eCJwHto6UMfRpXErgAoIdvM13jTHrWqgBbIoj3apKkY
+    short-id: eecfe76af97a6132
 - type: vless
-  name: 🇳🇱 荷兰丨yoyapai.com (2) [160ms]
-  server: fast.letsconnectpoint.com
+  name: 🇺🇸 US美国丨yoyapai.com (21) [165ms]
+  server: 45.144.221.169
   port: 443
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   flow: xtls-rprx-vision
   udp: true
   tls: true
-  servername: fast.letsconnectpoint.com
-  sni: fast.letsconnectpoint.com
-  skip-cert-verify: false
-  client-fingerprint: qq
-  reality-opts:
-    public-key: osmv_68hih_V_A_ptwQj_TVmdj8ayt_chDCZdj1DrS4
-    short-id: f1a5e1d9
-- type: vless
-  name: 🇱🇻 LV拉脱维亚丨yoyapai.com [160ms]
-  server: 193.163.203.170
-  port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: yandex.ru
-  sni: yandex.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-- name: 🇩🇪 DE_2|275KB/s [162ms]
-  type: vless
-  server: 5.181.158.195
-  port: 8466
-  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: svoboda20.bystriynet.online
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: k2jSuvKPXyN0fCJiGpl1NMzzN7kzo64vsbbLD4gdKQ4
-    short-id: f017b721750fd683
-  udp: true
-- type: vless
-  name: 🇫🇮 FI芬兰丨yoyapai.com (7) [163ms]
-  server: 78.17.209.100
-  port: 443
-  uuid: c5cf36f5-50e9-405b-adb4-b40fdf0d4619
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: fin-skl-1.movietop24.site
-  sni: fin-skl-1.movietop24.site
+  servername: arizona.eosapp.net
+  sni: arizona.eosapp.net
   skip-cert-verify: false
   client-fingerprint: firefox
   reality-opts:
-    public-key: 6DLiz4O1GkMzUveVx_6Wr_e99QxAgZZ6BonblaRVPFI
-    short-id: ba80654a85a4634c
-- name: 🇰🇷 KR-211.178.105.134-0153 [166ms]
-  type: ss
-  server: 211.178.105.134
-  port: 6123
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-- name: 🇩🇪 DE_1|140KB/s [168ms]
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+- name: 🇩🇪 DE_1|140KB/s [166ms]
   type: vless
   server: 5.181.158.195
   port: 8463
@@ -3240,25 +3217,155 @@ proxies:
     public-key: k2jSuvKPXyN0fCJiGpl1NMzzN7kzo64vsbbLD4gdKQ4
     short-id: f017b721750fd683
   udp: true
-- type: vmess
-  name: 🇨🇦 CA加拿大 [168ms]
-  server: hk2.998998.best
+- name: 🇩🇪 DE_2|275KB/s [167ms]
+  type: vless
+  server: 5.181.158.195
+  port: 8466
+  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: svoboda20.bystriynet.online
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: k2jSuvKPXyN0fCJiGpl1NMzzN7kzo64vsbbLD4gdKQ4
+    short-id: f017b721750fd683
+  udp: true
+- name: 🇰🇷 KR-211.178.105.134-0153 [168ms]
+  type: ss
+  server: 211.178.105.134
+  port: 6123
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- type: vless
+  name: 🇳🇱 NL荷兰丨yoyapai.com (2) [169ms]
+  server: c20s5.portablesubmarines.com
   port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  cipher: auto
-  alterId: 0
+  uuid: 85fe968d-fbb5-40dc-8422-30635eccb149
+  flow: xtls-rprx-vision
   udp: true
   tls: true
-  servername: server15.9966338.xyz
-  sni: server15.9966338.xyz
+  servername: portal.citygrainla.com
+  sni: portal.citygrainla.com
+  skip-cert-verify: false
+  client-fingerprint: qq
+  reality-opts:
+    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+    short-id: 051f20c2344a2dfd
+- name: 🇷🇺 RU_3|282KB/s [170ms]
+  type: vless
+  server: app-tw-113.statsmarket-wb.com
+  port: 443
+  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: assets-tw-113.statsmarket-wb.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: D_-aOnqEEAyi1i95e9mBjGpbT3kbTuQsWYBGW2s-iTg
+    short-id: 8998b032d5c33de9
+  udp: true
+- type: vless
+  name: 🇷🇺 RU俄罗斯丨yoyapai.com (15) [171ms]
+  server: 217.19.122.156
+  port: 443
+  uuid: 40c4274f-3e4f-4c7b-ae5c-d87645a6e899
+  udp: true
+  tls: true
+  servername: vzvt1tpiml.rucdncomp.pro
+  sni: vzvt1tpiml.rucdncomp.pro
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /asivewritten
+    path: /service/telemetry/e6dc0bd08cb1/
     headers:
-      Host: server15.9966338.xyz
+      Host: vzvt1tpiml.rucdncomp.pro
+- name: 🇳🇱 NL-78.142.194.96-5722 [172ms]
+  type: trojan
+  server: nl-1.tr202607.com
+  port: 443
+  password: LSS6HLnp7IeEEJUcox
+  sni: nl-1.tr202607.com
+  udp: true
 - type: vless
-  name: 🇵🇱 波兰丨yoyapai.com [169ms]
+  name: 🌐 ❓未知丨yoyapai.com (4) [173ms]
+  server: tau1.freerunet.online
+  port: 443
+  uuid: ca14493b-b984-4ffb-bc0e-9cb5da969e15
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: tau1.freerunet.online
+  sni: tau1.freerunet.online
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg
+    short-id: 4a7b1c8d
+- name: 🇷🇴 RO-154.46.31.106-2726 [174ms]
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
+- name: 🇨🇳 CN-47.243.153.153-0658 [174ms]
+  type: vmess
+  server: 47.243.153.153
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+  tls: true
+  udp: true
+- name: 🇨🇳 CN-8.218.195.61-1020 [174ms]
+  type: vmess
+  server: 8.218.195.61
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: EX1oGt73NzPQKAc2.v.3dns.vip
+  tls: true
+  udp: true
+- name: 🇨🇳 CN-47.244.120.197-0566 [175ms]
+  type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+  udp: true
+- name: 🇨🇳 CN-47.244.120.197-5649 [175ms]
+  type: vmess
+  server: 47.244.120.197
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers: {}
+  udp: true
+- type: vless
+  name: 🇵🇱 波兰丨yoyapai.com [177ms]
   server: 213.226.112.19
   port: 443
   uuid: de34642f-21d7-49d2-a8ff-aad30750a929
@@ -3272,8 +3379,89 @@ proxies:
   reality-opts:
     public-key: y9hgkaFKFTgKL5PHsksGNKuSrd7jBysJ6rBHktu2k1o
     short-id: 6ba85179e30d4fc2
+- name: 🇬🇷 GR-178.253.16.185-0161 [180ms]
+  type: ss
+  server: ams1.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: x2A6AsyZ-rAllz0wbKHzWA
+  udp: true
+- name: 🇳🇱 NL_4|138KB/s [194ms]
+  type: vless
+  server: in-nl2.bystriynet.online
+  port: 8469
+  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: svoboda12.bystriynet.online
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: jXnHLdfNcX2fwTFY-d2boAYcfC9EnnhqYS0hfR6WwFo
+    short-id: 55d42bdd79605658
+  udp: true
+- name: 🇸🇬 SG_1|245KB/s|R002-260618 [194ms]
+  port: 9443
+  server: 152.233.9.239
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇫🇷 FR-145.239.55.210-0178 [195ms]
+  type: vmess
+  server: 145.239.55.210
+  port: 80
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+  udp: true
 - type: vless
-  name: 🇲🇩 MD摩尔多瓦丨yoyapai.com [169ms]
+  name: 🇸🇬 SG新加坡丨yoyapai.com (11) [196ms]
+  server: 103.25.202.102
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  servername: asia.csmaster.site
+  sni: asia.csmaster.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 SG-68.183.227.4-0125 [197ms]
+  type: ss
+  server: 68.183.227.4
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- type: vless
+  name: 🇸🇬 SG新加坡丨yoyapai.com (4) [197ms]
+  server: 47.131.189.221
+  port: 443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  udp: true
+  tls: true
+  servername: mia7.pages.dev
+  sni: mia7.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /TG:@MiaChatChannel
+    headers:
+      Host: mia7.pages.dev
+- type: vless
+  name: 🇲🇩 MD摩尔多瓦丨yoyapai.com [198ms]
   server: 89.35.14.34
   port: 443
   uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
@@ -3290,111 +3478,22 @@ proxies:
   grpc-opts:
     grpc-service-name: app.v1.PushService
 - type: vless
-  name: 🇯🇵 JP日本節點丨yoyapai.com [172ms]
-  server: 89.125.244.28
+  name: 🇷🇺 俄罗斯丨yoyapai.com (4) [202ms]
+  server: 217.177.74.229
   port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  servername: notls.lukongtou.eu.org
-  sni: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇷🇴 RO-154.46.31.106-2726 [173ms]
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇨🇳 CN-47.244.120.197-5649 [174ms]
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
-    headers: {}
-  udp: true
-- name: 🇨🇳 CN-47.244.120.197-0566 [175ms]
-  type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-  udp: true
-- name: 🇨🇳 CN-8.218.195.61-1020 [175ms]
-  type: vmess
-  server: 8.218.195.61
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: EX1oGt73NzPQKAc2.v.3dns.vip
-  tls: true
-  udp: true
-- name: 🇨🇳 CN-47.243.153.153-0658 [176ms]
-  type: vmess
-  server: 47.243.153.153
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-  tls: true
-  udp: true
-- type: vless
-  name: 🇳🇱 NL荷兰丨yoyapai.com (2) [179ms]
-  server: c20s5.portablesubmarines.com
-  port: 443
-  uuid: 85fe968d-fbb5-40dc-8422-30635eccb149
+  uuid: 23e18cb4-9db3-4eb1-93d3-26c62095159d
   flow: xtls-rprx-vision
   udp: true
   tls: true
-  servername: portal.citygrainla.com
-  sni: portal.citygrainla.com
+  servername: yandex.ru
+  sni: yandex.ru
   skip-cert-verify: false
-  client-fingerprint: qq
-  reality-opts:
-    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-    short-id: 051f20c2344a2dfd
-- name: 🇳🇱 NL_4|138KB/s [182ms]
-  type: vless
-  server: in-nl2.bystriynet.online
-  port: 8469
-  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: svoboda12.bystriynet.online
   client-fingerprint: firefox
   reality-opts:
-    public-key: jXnHLdfNcX2fwTFY-d2boAYcfC9EnnhqYS0hfR6WwFo
-    short-id: 55d42bdd79605658
-  udp: true
+    public-key: xSvlclDt9Oz7WKqoCCyuT3mEGnLwyp5ciOUClsZADH8
+    short-id: d4331052
 - type: vless
-  name: 🇨🇭 瑞士丨yoyapai.com [183ms]
+  name: 🇨🇭 瑞士丨yoyapai.com [204ms]
   server: ns.l90909l.vip
   port: 2096
   uuid: 3fcec4e4-a674-44d2-8cae-c253cec43b9c
@@ -3409,139 +3508,29 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless-grpc-reality
-- type: vless
-  name: 🇬🇧 GB英国丨yoyapai.com (2) [186ms]
-  server: 91.110.174.210
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  sni: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 🇫🇷 FR-145.239.55.210-0178 [187ms]
+- name: 🇫🇷 FR-54.37.131.126-0166 [205ms]
   type: vmess
-  server: 145.239.55.210
+  server: 54.37.131.126
   port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
   udp: true
-- type: vless
-  name: 🇷🇺 俄罗斯丨yoyapai.com (4) [191ms]
-  server: 217.177.74.229
+- name: 🇮🇩 ID_1|167KB/s|R002-260618 [212ms]
   port: 443
-  uuid: 23e18cb4-9db3-4eb1-93d3-26c62095159d
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: yandex.ru
-  sni: yandex.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: xSvlclDt9Oz7WKqoCCyuT3mEGnLwyp5ciOUClsZADH8
-    short-id: d4331052
-- name: 🇸🇬 SG_1|245KB/s|R002-260618 [195ms]
-  port: 9443
-  server: 152.233.9.239
+  server: 103.86.117.202
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: 🇭🇰 HK-156.245.232.239-5651 [196ms]
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers: {}
-  udp: true
-- name: 🇫🇷 FR-54.36.174.140-0162 [196ms]
-  type: ss
-  server: pl140.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- name: 🇸🇬 SG-68.183.227.4-0125 [196ms]
-  type: ss
-  server: 68.183.227.4
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: 🇯🇵 JP-84.247.155.196-0441 [197ms]
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
 - type: vless
-  name: 🇸🇬 SG新加坡丨yoyapai.com (11) [197ms]
-  server: 103.25.202.102
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  servername: asia.csmaster.site
-  sni: asia.csmaster.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇯🇵 JP-84.247.155.196-2716 [197ms]
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- type: vless
-  name: 🇸🇬 SG新加坡丨yoyapai.com (4) [198ms]
-  server: 47.131.189.221
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  tls: true
-  servername: mia7.pages.dev
-  sni: mia7.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia7.pages.dev
-- name: 🇫🇷 FR-54.36.174.134-0200 [204ms]
-  type: ss
-  server: pl134.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- type: vless
-  name: 🇳🇱 NL荷兰丨yoyapai.com [204ms]
+  name: 🇳🇱 NL荷兰丨yoyapai.com [233ms]
   server: 78.17.178.125
   port: 443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
@@ -3555,81 +3544,21 @@ proxies:
   reality-opts:
     public-key: jcp4Lj_qYzxtkalm_XFjrmvqEMGRG7sb19yMwLe16WE
     short-id: e0215064d8d1fd7c
-- name: 🇯🇵 JP-154.36.158.197-0412 [207ms]
-  type: ss
-  server: 154.36.158.197
-  port: 8388
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
-  udp: true
-- name: 🇷🇺 RU_3|282KB/s [208ms]
-  type: vless
-  server: app-tw-113.statsmarket-wb.com
-  port: 443
-  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
-  tls: true
+- name: 🇯🇵 JP_1|215KB/s [236ms]
+  port: 40583
+  server: 120.232.204.58
   skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: assets-tw-113.statsmarket-wb.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: D_-aOnqEEAyi1i95e9mBjGpbT3kbTuQsWYBGW2s-iTg
-    short-id: 8998b032d5c33de9
-  udp: true
-- type: vless
-  name: 🇳🇱 荷兰丨yoyapai.com (4) [208ms]
-  server: sw.golangwikito.cfd
-  port: 443
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: sw.golangwikito.cfd
-  sni: sw.golangwikito.cfd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-- name: 🇫🇷 FR-54.37.131.126-0166 [213ms]
-  type: vmess
-  server: 54.37.131.126
-  port: 80
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-  udp: true
-- name: 🇮🇩 ID_1|167KB/s|R002-260618 [213ms]
-  port: 443
-  server: 103.86.117.202
-  skip-cert-verify: true
-  sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- type: vmess
-  name: 🇭🇰 HK香港 (3) [214ms]
-  server: yg1.ygkkk.dpdns.org
-  port: 443
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  cipher: auto
-  alterId: 0
+- name: 🇿🇦 ZA-102.133.165.160-0152 [238ms]
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
-  tls: true
-  servername: jmp1.907737.xyz
-  sni: jmp1.907737.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-    headers:
-      Host: jmp1.907737.xyz
-- name: 🇰🇿 KZ_1|326KB/s [220ms]
+- name: 🇰🇿 KZ_1|326KB/s [238ms]
   type: vless
   server: 95.56.251.12
   port: 47443
@@ -3644,7 +3573,75 @@ proxies:
     short-id: ae97223a8f799877
   udp: true
 - type: vless
-  name: 🇫🇮 FI芬兰丨yoyapai.com [227ms]
+  name: 🇹🇭 Thailand泰国丨yoyapai.com [241ms]
+  server: 18.239.134.69
+  port: 80
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+- type: vless
+  name: 🇺🇸 US美國丨yoyapai.com (11) [241ms]
+  server: 18.239.134.69
+  port: 80
+  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+- name: 🇭🇰 HK_1|607KB/s [244ms]
+  port: 31343
+  server: 120.232.204.58
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇿🇦 ZA-102.37.156.224-0170 [247ms]
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- type: vless
+  name: 🇫🇮 FI芬兰丨yoyapai.com (4) [260ms]
+  server: psf-3.weedly.top
+  port: 80
+  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: machinemag.ir
+- type: vless
+  name: 🇺🇸 US美国丨yoyapai.com (20) [262ms]
+  server: a0688bt.us4.h1clayd.click
+  port: 443
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  udp: true
+  tls: true
+  servername: a0688bt.us4.h1clayd.click
+  sni: a0688bt.us4.h1clayd.click
+  skip-cert-verify: false
+  client-fingerprint: ios
+  reality-opts:
+    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
+    short-id: 257420d9d430152a
+- type: vless
+  name: 🇫🇮 FI芬兰丨yoyapai.com [265ms]
   server: frfx.pafaktalaei.ir
   port: 443
   uuid: a5bb02b7-0a54-44dc-af05-dc2633d5abd4
@@ -3661,70 +3658,225 @@ proxies:
     path: /connect-v1
     host: frfx.pafaktalaei.ir
     mode: auto
-- name: 🇯🇵 JP_1|215KB/s [237ms]
-  port: 40583
-  server: 120.232.204.58
-  skip-cert-verify: true
-  tls: true
-  type: http
+- name: 🇮🇳 IN-139.84.210.39-0530 [280ms]
+  type: trojan
+  server: in002.zestapp778.com
+  port: 42733
+  password: 5t6i121em5lkmsmk
+  sni: in002.zestapp778.com
   udp: true
-- name: 🇭🇰 HK_1|607KB/s [239ms]
-  port: 31343
-  server: 120.232.204.58
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- type: vless
-  name: 🇺🇸 US美國丨yoyapai.com (11) [240ms]
-  server: 18.239.134.69
-  port: 80
-  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-- name: 🇿🇦 ZA-102.133.165.160-0152 [240ms]
+- name: 🇬🇧 GB-104.239.12.81-0190 [314ms]
   type: ss
-  server: 102.133.165.160
-  port: 16233
+  server: sql.popmintxo.cc
+  port: 43385
   cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
   udp: true
 - type: vless
-  name: 🇹🇭 Thailand泰国丨yoyapai.com [240ms]
-  server: 18.239.134.69
-  port: 80
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  name: 🇫🇷 FR法國丨yoyapai.com (3) [329ms]
+  server: cf.877774.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   udp: true
-  tls: false
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  sni: t1s1.rittbo.kdns.fr
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-- name: 🇿🇦 ZA-102.37.156.224-0170 [249ms]
+      Host: t1s1.rittbo.kdns.fr
+- name: 🇰🇷 KR-218.237.185.234-0158 [366ms]
   type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  server: p141.panda001.net
+  port: 4652
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
   udp: true
-- name: 🇬🇷 GR-178.253.16.185-0161 [253ms]
-  type: ss
-  server: ams1.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: x2A6AsyZ-rAllz0wbKHzWA
+- type: vmess
+  name: 🇲🇽 墨西哥 [367ms]
+  server: cindy50.ceoiii.com
+  port: 36801
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: ajax.microsoft.com
+- type: vmess
+  name: 🇺🇸 US美國 [390ms]
+  server: cindy52.ceoiii.com
+  port: 36803
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: ajax.microsoft.com
+- type: vless
+  name: '🇮🇷 伊朗丨yoyapai.com #2 [394ms]'
+  server: link.mrpgd.ir
+  port: 6008
+  uuid: e19f406e-0f0f-4abd-9861-a3d2d213b650
+  udp: true
+  tls: false
+  servername: cafebazaar.ir
+  sni: cafebazaar.ir
+  skip-cert-verify: false
+  network: xhttp
+  xhttp-opts:
+    path: /assets
+    host: cafebazaar.ir
+    mode: stream-up
+- type: vmess
+  name: 🇨🇦 CA加拿大 [401ms]
+  server: hk2.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: true
+  servername: server15.9966338.xyz
+  sni: server15.9966338.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /asivewritten
+    headers:
+      Host: server15.9966338.xyz
+- type: vless
+  name: 🇮🇳 IN印度丨yoyapai.com (2) [414ms]
+  server: dorado.yokkastars.com
+  port: 40443
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: deepl.com
+  sni: deepl.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+- type: vless
+  name: 🇫🇷 FR法國丨yoyapai.com (2) [435ms]
+  server: cloudflare-ip.mofashi.ltd
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  udp: true
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  sni: t1s1.rittbo.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- type: vmess
+  name: 🇹🇭 TH泰国 [487ms]
+  server: www.true.th
+  port: 80
+  uuid: a150d554-e962-4632-829f-ee583ada3f95
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /htun
+    headers:
+      Host: d7pu5mzr9c4b0.cloudfront.net
+- name: 🇷🇺 RU_2|310KB/s [507ms]
+  type: vless
+  server: xnod13x.artemida.live
+  port: 8443
+  uuid: c05ec3c7-2784-da2b-aa98-a3c132860fcb
+  tls: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: xnod13x.artemida.live
+  client-fingerprint: random
+  reality-opts:
+    public-key: ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU
+    short-id: a1b2c3d4e5f6a7b8
   udp: true
 - type: vless
-  name: 🇩🇪 DE德国丨yoyapai.com (31) [263ms]
+  name: 🇫🇷 FR法國丨yoyapai.com [535ms]
+  server: cf.130519.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  udp: true
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  sni: t1s1.rittbo.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- type: vless
+  name: 🇺🇸 美國節點丨yoyapai.com [538ms]
+  server: www.true.th
+  port: 80
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  udp: true
+  tls: false
+  servername: d2pwbkmfr5lxa4.cloudfront.net
+  sni: d2pwbkmfr5lxa4.cloudfront.net
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2pwbkmfr5lxa4.cloudfront.net
+- type: vless
+  name: '🇺🇸 美國丨yoyapai.com #2 [539ms]'
+  server: www.true.th
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  udp: true
+  tls: true
+  servername: d1yxsk0zprgivr.cloudfront.net
+  sni: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- type: vless
+  name: 🇹🇭 TH泰國丨yoyapai.com [539ms]
+  server: www.true.th
+  port: 80
+  uuid: 63ae5b68-f6f8-432e-b440-d975053cfbc2
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /than
+    headers:
+      Host: d16l6nb4do0zu4.cloudfront.net
+- type: vless
+  name: 🇩🇪 DE德国丨yoyapai.com (31) [587ms]
   server: 148-253-210-191.sslip.io
   port: 443
   uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
@@ -3741,156 +3893,27 @@ proxies:
     path: /test-ws
     headers:
       Host: 148-253-210-191.sslip.io
-- type: vless
-  name: 🇺🇸 US美国丨yoyapai.com (20) [265ms]
-  server: a0688bt.us4.h1clayd.click
-  port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  servername: a0688bt.us4.h1clayd.click
-  sni: a0688bt.us4.h1clayd.click
-  skip-cert-verify: false
-  client-fingerprint: ios
-  reality-opts:
-    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
-    short-id: 257420d9d430152a
-- name: 🇺🇦 UA-104.253.216.227-0202 [267ms]
+- name: 🇯🇵 JP-154.36.158.197-0412 [631ms]
   type: ss
-  server: staging.lastilhame.monster
-  port: 49917
-  cipher: chacha20-ietf-poly1305
-  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
   udp: true
-- type: vless
-  name: 🇫🇷 FR法國丨yoyapai.com [300ms]
-  server: cf.130519.xyz
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  udp: true
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  sni: t1s1.rittbo.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
+- name: 🇭🇰 HK-156.245.232.239-5651 [675ms]
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 🇬🇧 GB-104.239.12.81-0190 [324ms]
-  type: ss
-  server: sql.popmintxo.cc
-  port: 43385
-  cipher: chacha20-ietf-poly1305
-  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-  udp: true
-- name: 🇷🇺 RU_2|310KB/s [328ms]
-  type: vless
-  server: xnod13x.artemida.live
-  port: 8443
-  uuid: c05ec3c7-2784-da2b-aa98-a3c132860fcb
-  tls: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  servername: xnod13x.artemida.live
-  client-fingerprint: random
-  reality-opts:
-    public-key: ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU
-    short-id: a1b2c3d4e5f6a7b8
-  udp: true
-- name: 🇮🇳 IN-139.84.210.39-0530 [344ms]
-  type: trojan
-  server: in002.zestapp778.com
-  port: 42733
-  password: 5t6i121em5lkmsmk
-  sni: in002.zestapp778.com
+    headers: {}
   udp: true
 - type: vless
-  name: 🇫🇷 FR法國丨yoyapai.com (2) [354ms]
-  server: cloudflare-ip.mofashi.ltd
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  udp: true
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  sni: t1s1.rittbo.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- type: vmess
-  name: 🇲🇽 墨西哥 [370ms]
-  server: cindy50.ceoiii.com
-  port: 36801
-  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-  cipher: auto
-  alterId: 0
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: ajax.microsoft.com
-- type: vmess
-  name: 🇺🇸 US美國 [384ms]
-  server: cindy52.ceoiii.com
-  port: 36803
-  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-  cipher: auto
-  alterId: 0
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: ajax.microsoft.com
-- name: 🇰🇷 KR-218.237.185.234-0158 [389ms]
-  type: ss
-  server: p141.panda001.net
-  port: 4652
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-- type: vless
-  name: 🇮🇳 IN印度丨yoyapai.com (2) [407ms]
-  server: dorado.yokkastars.com
-  port: 40443
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: deepl.com
-  sni: deepl.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-- type: vless
-  name: '🇮🇷 伊朗丨yoyapai.com #2 [444ms]'
-  server: link.mrpgd.ir
-  port: 6008
-  uuid: e19f406e-0f0f-4abd-9861-a3d2d213b650
-  udp: true
-  tls: false
-  servername: cafebazaar.ir
-  sni: cafebazaar.ir
-  skip-cert-verify: false
-  network: xhttp
-  xhttp-opts:
-    path: /assets
-    host: cafebazaar.ir
-    mode: stream-up
-- type: vless
-  name: 🇺🇸 US美國丨yoyapai.com (7) [455ms]
+  name: 🇺🇸 US美國丨yoyapai.com (7) [679ms]
   server: cf.090227.xyz
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -3905,94 +3928,26 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- type: vmess
-  name: 🇹🇭 TH泰国 [504ms]
-  server: www.true.th
-  port: 80
-  uuid: a150d554-e962-4632-829f-ee583ada3f95
-  cipher: auto
-  alterId: 0
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /htun
-    headers:
-      Host: d7pu5mzr9c4b0.cloudfront.net
-- type: vless
-  name: 🇫🇷 FR法國丨yoyapai.com (3) [512ms]
-  server: cf.877774.xyz
+- type: trojan
+  name: 🇳🇴 NO挪威丨yoyapai.com [713ms]
+  server: join-telegram-channel.tirexnet.kdns.fr
   port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  password: humanity
   udp: true
   tls: true
-  servername: t1s1.rittbo.kdns.fr
-  sni: t1s1.rittbo.kdns.fr
+  servername: www.ignitelimit.com
+  sni: www.ignitelimit.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+  - http/1.1
   network: ws
   ws-opts:
-    path: /
+    path: /assignment
     headers:
-      Host: t1s1.rittbo.kdns.fr
-- type: vless
-  name: '🇺🇸 美國丨yoyapai.com #2 [558ms]'
-  server: www.true.th
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  udp: true
-  tls: true
-  servername: d1yxsk0zprgivr.cloudfront.net
-  sni: d1yxsk0zprgivr.cloudfront.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- type: vless
-  name: 🇹🇭 TH泰國丨yoyapai.com [558ms]
-  server: www.true.th
-  port: 80
-  uuid: 63ae5b68-f6f8-432e-b440-d975053cfbc2
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /than
-    headers:
-      Host: d16l6nb4do0zu4.cloudfront.net
-- type: vless
-  name: 🇺🇸 美國節點丨yoyapai.com [567ms]
-  server: www.true.th
-  port: 80
-  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
-  udp: true
-  tls: false
-  servername: d2pwbkmfr5lxa4.cloudfront.net
-  sni: d2pwbkmfr5lxa4.cloudfront.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d2pwbkmfr5lxa4.cloudfront.net
-- type: vless
-  name: 🇩🇪 DE德国丨yoyapai.com (30) [633ms]
-  server: de15.h1cloud.net
-  port: 25362
-  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
-  udp: true
-  tls: true
-  servername: www.chip.de
-  sni: www.chip.de
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
-    short-id: 23732d14a527990d
-- name: 🇨🇳 CN-8.217.186.60-0661 [665ms]
+      Host: www.ignitelimit.com
+- name: 🇨🇳 CN-8.217.186.60-0661 [948ms]
   type: vmess
   server: euu1yalfmcqvljex.v.3dns.vip
   port: 443
@@ -4007,7 +3962,7 @@ proxies:
   tls: true
   servername: euu1yalfmcqvljex.v.3dns.vip
   udp: true
-- name: 🇨🇳 CN-47.243.153.153-0567 [676ms]
+- name: 🇨🇳 CN-47.243.153.153-0567 [1137ms]
   type: vmess
   server: i2psm3knof5qjjix.v.3dns.vip
   port: 443
@@ -4022,23 +3977,7 @@ proxies:
   tls: true
   udp: true
 - type: vless
-  name: 🇺🇸 US美国丨yoyapai.com (14) [1082ms]
-  server: 129.153.71.28
-  port: 28863
-  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
-  udp: true
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  sni: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- type: vless
-  name: 🌐 ❓未知丨yoyapai.com (91) [1259ms]
+  name: 🌐 ❓未知丨yoyapai.com (91) [1266ms]
   server: dnld.chaqalli.com
   port: 8180
   uuid: 560ecca1-7e20-4b41-b4d6-781fb3bc179d
@@ -4049,7 +3988,7 @@ proxies:
   ws-opts:
     path: /
 - type: vless
-  name: 🇭🇰 HK香港丨yoyapai.com (17) [2175ms]
+  name: 🇭🇰 HK香港丨yoyapai.com (17) [1291ms]
   server: 152.175.6.229
   port: 31884
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
@@ -4108,12 +4047,12 @@ proxy-groups:
   proxies:
   - ⚡ 低延迟优选
   - ♻️ 自动选择
-  - 🇬🇧 英国 · 61
+  - 🇬🇧 英国 · 60
   - 🇺🇸 美国 · 58
   - 🇨🇦 加拿大 · 36
   - 🌐 其他 · 33
   - 🇫🇷 法国 · 29
-  - 🇳🇱 荷兰 · 19
+  - 🇳🇱 荷兰 · 18
   - 🇩🇪 德国 · 16
   - 🇯🇵 日本 · 13
   - 🇮🇹 意大利 · 10
@@ -4121,21 +4060,20 @@ proxy-groups:
   - 🇷🇺 俄罗斯 · 8
   - 🇨🇳 中国 · 6
   - 🇰🇷 韩国 · 5
-  - 🇹🇷 土耳其 · 4
-  - 🇫🇮 芬兰 · 4
   - 🇹🇭 泰国 · 4
+  - 🇫🇮 芬兰 · 4
   - 🇭🇰 香港 · 4
   - 🇵🇱 波兰 · 3
   - 🇮🇷 伊朗 · 3
-  - 🇺🇦 乌克兰 · 3
+  - 🇹🇷 土耳其 · 3
   - 🇬🇷 希腊 · 2
-  - 🇳🇴 挪威 · 2
+  - 🇺🇦 乌克兰 · 2
   - 🇭🇷 克罗地亚 · 2
   - 🇷🇴 罗马尼亚 · 2
   - 🇿🇦 南非 · 2
   - 🇮🇳 印度 · 2
-  - 🇧🇷 巴西 · 1
   - 🇻🇳 越南 · 1
+  - 🇧🇷 巴西 · 1
   - 🇮🇪 爱尔兰 · 1
   - 🇪🇸 西班牙 · 1
   - 🇪🇪 爱沙尼亚 · 1
@@ -4146,6 +4084,7 @@ proxy-groups:
   - 🇮🇩 印尼 · 1
   - 🇰🇿 哈萨克斯坦 · 1
   - 🇲🇽 墨西哥 · 1
+  - 🇳🇴 挪威 · 1
   - DIRECT
 - name: ♻️ 自动选择
   type: url-test
@@ -4153,86 +4092,86 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇬🇧 GB英国丨yoyapai.com (4) [6ms]
+  - '🇬🇧 GB英國丨yoyapai.com #2 [6ms]'
   - 🇺🇸 US丨yoyapai.com美国 (3) [3ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (5) [6ms]
-  - 🌐 ❓未知丨yoyapai.com (80) [6ms]
-  - 🇫🇷 FR法国丨yoyapai.com (7) [6ms]
-  - 🇳🇱 NL_1|308KB/s [6ms]
-  - 🇩🇪 DE德国丨yoyapai.com (2) [6ms]
-  - 🇯🇵 JP日本丨yoyapai.com (9) [6ms]
-  - 🇮🇹 IT-202.50.253.54-0239 [129ms]
-  - 🇸🇬 SG新加坡丨yoyapai.com (12) [7ms]
+  - 🇨🇦 加拿大丨yoyapai.com (4) [6ms]
+  - 🌐 ❓未知丨yoyapai.com (92) [6ms]
+  - 🇫🇷 FR法国丨yoyapai.com (6) [6ms]
+  - 🇳🇱 NL_1|308KB/s [15ms]
+  - 🇩🇪 德国丨yoyapai.com (5) [6ms]
+  - 🇯🇵 JP日本丨yoyapai.com (9) [12ms]
+  - 🇮🇹 IT意大利丨yoyapai.com (2) [128ms]
+  - 🇸🇬 SG新加坡丨yoyapai.com (9) [6ms]
   - 🇷🇺 俄罗斯丨yoyapai.com (2) [7ms]
-  - 🇨🇳 CN-47.244.120.197-5649 [174ms]
-  - 🇰🇷 KR韩国丨yoyapai.com (2) [145ms]
-  - 🇹🇷 TR土耳其丨yoyapai.com [7ms]
+  - 🇨🇳 CN-47.243.153.153-0658 [174ms]
+  - 🇰🇷 KR韩国丨yoyapai.com (2) [30ms]
+  - 🇹🇭 泰国丨yoyapai.com [12ms]
   - 🇫🇮 FI芬兰丨yoyapai.com (6) [14ms]
-  - 🇹🇭 泰国丨yoyapai.com [14ms]
-  - 🇭🇰 HK-156.245.232.239-5651 [196ms]
+  - 🇭🇰 HK香港 (3) [90ms]
   - 🇵🇱 PL波兰丨yoyapai.com (7) [6ms]
   - '🇮🇷 IR伊朗丨yoyapai.com #2 [7ms]'
-  - 🇺🇦 UA-185.164.175.81-0092 [140ms]
-  - 🇬🇷 希腊丨yoyapai.com [38ms]
-  - 🇳🇴 NO-185.213.23.63-0186 [125ms]
-  - 🇭🇷 HR_2|234KB/s|R002-260618 [126ms]
-  - 🇷🇴 RO-154.46.31.106-0449 [145ms]
-  - 🇿🇦 ZA-102.133.165.160-0152 [240ms]
-  - 🇮🇳 IN-139.84.210.39-0530 [344ms]
-  - 🇧🇷 BR巴西圣保罗丨yoyapai.com [6ms]
-  - 🇻🇳 VN越南丨yoyapai.com [7ms]
-  - 🇮🇪 IE_1|151KB/s [100ms]
-  - 🇪🇸 ES_1|632KB/s [108ms]
-  - 🇪🇪 EE_1|196KB/s [141ms]
-  - 🇸🇪 SE瑞典丨yoyapai.com [141ms]
-  - 🇱🇻 LV拉脱维亚丨yoyapai.com [160ms]
-  - 🇲🇩 MD摩尔多瓦丨yoyapai.com [169ms]
-  - 🇨🇭 瑞士丨yoyapai.com [183ms]
-  - 🇮🇩 ID_1|167KB/s|R002-260618 [213ms]
-  - 🇰🇿 KZ_1|326KB/s [220ms]
-  - 🇲🇽 墨西哥 [370ms]
-  - '🇬🇧 GB英國丨yoyapai.com #2 [8ms]'
-  - 🇺🇸 US美国丨yoyapai.com (19) [6ms]
-  - '🇨🇦 CA加拿大丨yoyapai.com #2 [6ms]'
-  - 🌐 ❓未知丨yoyapai.com (92) [6ms]
-  - 🇫🇷 FR法国丨yoyapai.com [6ms]
-  - 🇳🇱 荷蘭丨yoyapai.com [34ms]
-  - 🇩🇪 德国丨yoyapai.com (5) [8ms]
-  - 🇯🇵 JP日本丨yoyapai.com (4) [120ms]
-  - 🇮🇹 IT意大利丨yoyapai.com (5) [139ms]
-  - 🇸🇬 SG新加坡丨yoyapai.com (8) [8ms]
-  - 🇷🇺 RU俄罗斯丨yoyapai.com (10) [151ms]
-  - 🇨🇳 CN-47.244.120.197-0566 [175ms]
-  - 🇰🇷 KR-141.164.45.187-2718 [155ms]
-  - '🇹🇷 土耳其丨yoyapai.com #2 [136ms]'
-  - 🇫🇮 FI芬兰丨yoyapai.com (4) [152ms]
-  - 🇹🇭 Thailand泰国丨yoyapai.com [240ms]
-  - 🇭🇰 HK香港 (3) [214ms]
-  - 🇵🇱 PL波兰丨yoyapai.com (6) [140ms]
-  - 🇮🇷 IR伊朗丨yoyapai.com [133ms]
-  - 🇺🇦 烏克蘭丨yoyapai.com [157ms]
-  - 🇬🇷 GR-178.253.16.185-0161 [253ms]
-  - 🇳🇴 NO挪威丨yoyapai.com [152ms]
-  - 🇭🇷 HR_1|169KB/s|R002-260618 [127ms]
-  - 🇷🇴 RO-154.46.31.106-2726 [173ms]
-  - 🇿🇦 ZA-102.37.156.224-0170 [249ms]
-  - 🇮🇳 IN印度丨yoyapai.com (2) [407ms]
-  - 🇬🇧 GB-185.176.206.9-0082 [98ms]
+  - 🇹🇷 TR土耳其丨yoyapai.com [7ms]
+  - 🇬🇷 希腊丨yoyapai.com [35ms]
+  - 🇺🇦 UA-185.164.175.81-0092 [123ms]
+  - 🇭🇷 HR_2|234KB/s|R002-260618 [130ms]
+  - 🇷🇴 RO-154.46.31.106-0449 [150ms]
+  - 🇿🇦 ZA-102.133.165.160-0152 [238ms]
+  - 🇮🇳 IN-139.84.210.39-0530 [280ms]
+  - 🇻🇳 VN越南丨yoyapai.com [6ms]
+  - 🇧🇷 BR巴西圣保罗丨yoyapai.com [7ms]
+  - 🇮🇪 IE_1|151KB/s [101ms]
+  - 🇪🇸 ES_1|632KB/s [104ms]
+  - 🇪🇪 EE_1|196KB/s [124ms]
+  - 🇸🇪 SE瑞典丨yoyapai.com [135ms]
+  - 🇱🇻 LV拉脱维亚丨yoyapai.com [162ms]
+  - 🇲🇩 MD摩尔多瓦丨yoyapai.com [198ms]
+  - 🇨🇭 瑞士丨yoyapai.com [204ms]
+  - 🇮🇩 ID_1|167KB/s|R002-260618 [212ms]
+  - 🇰🇿 KZ_1|326KB/s [238ms]
+  - 🇲🇽 墨西哥 [367ms]
+  - 🇳🇴 NO挪威丨yoyapai.com [713ms]
+  - 🇬🇧 GB英国丨yoyapai.com (4) [6ms]
   - 🇺🇸 US_1|164KB/s [6ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (3) [6ms]
-  - 🌐 ❓未知丨yoyapai.com (87) [6ms]
-  - '🇫🇷 FR法國丨yoyapai.com (2) #2 [6ms]'
-  - 🇳🇱 NL-109.201.152.181-0167 [101ms]
-  - 🇩🇪 德國丨yoyapai.com (2) [31ms]
-  - 🇯🇵 JP-149.22.87.240-0123 [133ms]
-  - 🇮🇹 IT意大利丨yoyapai.com (4) [140ms]
-  - 🇸🇬 SG新加坡丨yoyapai.com [8ms]
-  - 🇷🇺 RU俄罗斯丨yoyapai.com (15) [157ms]
-  - 🇨🇳 CN-8.218.195.61-1020 [175ms]
-  - 🇰🇷 KR-141.164.45.187-0443 [160ms]
-  - 🇹🇷 土耳其丨yoyapai.com [145ms]
-  - 🇫🇮 FI芬兰丨yoyapai.com (7) [163ms]
-  - 🇹🇭 TH泰国 [504ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (20) [6ms]
+  - 🌐 ❓未知丨yoyapai.com (68) [6ms]
+  - '🇫🇷 法国丨yoyapai.com #2 [6ms]'
+  - 🇳🇱 荷蘭丨yoyapai.com [34ms]
+  - 🇩🇪 DE德国丨yoyapai.com (2) [8ms]
+  - 🇯🇵 JP日本丨yoyapai.com (4) [128ms]
+  - 🇮🇹 IT意大利丨yoyapai.com (3) [139ms]
+  - 🇸🇬 SG新加坡丨yoyapai.com (12) [6ms]
+  - 🇷🇺 RU俄罗斯丨yoyapai.com (10) [156ms]
+  - 🇨🇳 CN-8.218.195.61-1020 [174ms]
+  - 🇰🇷 KR-141.164.45.187-2718 [154ms]
+  - 🇹🇭 Thailand泰国丨yoyapai.com [241ms]
+  - 🇫🇮 FI芬兰丨yoyapai.com (7) [143ms]
+  - 🇭🇰 HK_1|607KB/s [244ms]
+  - 🇵🇱 PL波兰丨yoyapai.com (6) [135ms]
+  - 🇮🇷 IR伊朗丨yoyapai.com [116ms]
+  - 🇹🇷 土耳其丨yoyapai.com [126ms]
+  - 🇬🇷 GR-178.253.16.185-0161 [180ms]
+  - 🇺🇦 烏克蘭丨yoyapai.com [126ms]
+  - 🇭🇷 HR_1|169KB/s|R002-260618 [132ms]
+  - 🇷🇴 RO-154.46.31.106-2726 [174ms]
+  - 🇿🇦 ZA-102.37.156.224-0170 [247ms]
+  - 🇮🇳 IN印度丨yoyapai.com (2) [414ms]
+  - 🇬🇧 GB_1|294KB/s|P002-260618 [98ms]
+  - 🇺🇸 US丨yoyapai.com美国 [6ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (7) [6ms]
+  - 🌐 ❓Other_1|151KB/s [6ms]
+  - '🇫🇷 FR法國丨yoyapai.com (3) #2 [6ms]'
+  - 🇳🇱 荷蘭丨yoyapai.com (2) [106ms]
+  - 🇩🇪 DE德国丨yoyapai.com (10) [26ms]
+  - 🇯🇵 JP-149.22.87.241-0122 [132ms]
+  - 🇮🇹 IT-202.50.253.18-0106 [139ms]
+  - 🇸🇬 SG新加坡丨yoyapai.com (8) [7ms]
+  - 🇷🇺 RU_3|282KB/s [170ms]
+  - 🇨🇳 CN-47.244.120.197-0566 [175ms]
+  - 🇰🇷 KR-141.164.45.187-0443 [158ms]
+  - 🇹🇭 TH泰国 [487ms]
+  - 🇫🇮 FI芬兰丨yoyapai.com (4) [260ms]
+  - 🇭🇰 HK-156.245.232.239-5651 [675ms]
+  - 🇵🇱 波兰丨yoyapai.com [177ms]
 - name: ⚡ 低延迟优选
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -4240,538 +4179,533 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇺🇸 US丨yoyapai.com美国 (3) [3ms]
-  - 🇫🇷 FR法国丨yoyapai.com (7) [6ms]
-  - 🌐 ❓未知丨yoyapai.com (80) [6ms]
-  - 🇺🇸 US美国丨yoyapai.com (19) [6ms]
-  - 🇺🇸 US_1|164KB/s [6ms]
   - 🌐 ❓未知丨yoyapai.com (92) [6ms]
-  - 🇺🇸 US丨yoyapai.com美国 [6ms]
-  - 🇯🇵 JP日本丨yoyapai.com (9) [6ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (5) [6ms]
-  - 🌐 ❓未知丨yoyapai.com (87) [6ms]
-  - 🇫🇷 FR法国丨yoyapai.com [6ms]
-  - 🇬🇧 GB英国丨yoyapai.com (4) [6ms]
-  - 🌐 🏁RELAY-172.64.229.21-1657 [6ms]
-  - 🇵🇱 PL波兰丨yoyapai.com (7) [6ms]
-  - '🇨🇦 CA加拿大丨yoyapai.com #2 [6ms]'
+  - 🌐 ❓未知丨yoyapai.com (68) [6ms]
   - 🌐 ❓Other_1|151KB/s [6ms]
-  - 🌐 ❓未知丨yoyapai.com (56) [6ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (3) [6ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (18) [6ms]
-  - 🌐 ❓未知丨yoyapai.com (35) [6ms]
-  - 🌐 ❓未知丨yoyapai.com (84) [6ms]
-  - '🇫🇷 FR法國丨yoyapai.com (2) #2 [6ms]'
   - 🇫🇷 FR法国丨yoyapai.com (6) [6ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (20) [6ms]
+  - 🌐 ❓未知丨yoyapai.com (80) [6ms]
+  - 🇺🇸 US_1|164KB/s [6ms]
+  - '🇬🇧 GB英國丨yoyapai.com #2 [6ms]'
+  - 🇬🇧 GB英国丨yoyapai.com (4) [6ms]
+  - 🇰🇷 KR韩國丨yoyapai.com [6ms]
   - '🇫🇷 法国丨yoyapai.com #2 [6ms]'
-  - 🇨🇦 CA加拿大丨yoyapai.com (8) [6ms]
-  - 🇳🇱 NL_1|308KB/s [6ms]
-  - 🇺🇸 🗽美國CloudFlare节点丨yoyapai.com [6ms]
+  - 🌐 ❓未知丨yoyapai.com (56) [6ms]
+  - '🇫🇷 FR法國丨yoyapai.com (3) #2 [6ms]'
+  - 🇫🇷 FR法國丨yoyapai.com (5) [6ms]
+  - 🇨🇦 加拿大丨yoyapai.com (4) [6ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (20) [6ms]
+  - 🇻🇳 VN越南丨yoyapai.com [6ms]
+  - 🌐 🏁RELAY-172.64.229.21-1657 [6ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (7) [6ms]
+  - 🇫🇷 FR法国丨yoyapai.com (7) [6ms]
   - 🌐 ❓未知丨yoyapai.com (60) [6ms]
+  - 🇸🇬 SG新加坡丨yoyapai.com (9) [6ms]
   - 🌐 ❓未知丨yoyapai.com (50) [6ms]
-- name: 🇬🇧 英国 · 61
+  - 🇸🇬 SG新加坡丨yoyapai.com (12) [6ms]
+  - '🇨🇦 CA加拿大丨yoyapai.com #2 [6ms]'
+  - 🌐 ❓未知丨yoyapai.com (35) [6ms]
+  - 🌐 ❓未知丨yoyapai.com (45) [6ms]
+  - 🇺🇸 US丨yoyapai.com美国 [6ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (10) [6ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (5) [6ms]
+- name: 🇬🇧 英国 · 60
   type: select
   proxies:
+  - '🇬🇧 GB英國丨yoyapai.com #2 [6ms]'
   - 🇬🇧 GB英国丨yoyapai.com (4) [6ms]
-  - '🇬🇧 GB英國丨yoyapai.com #2 [8ms]'
-  - 🇬🇧 GB-185.176.206.9-0082 [98ms]
-  - 🇬🇧 GB-146.70.61.37-0120 [99ms]
-  - 🇬🇧 GB_1|294KB/s|P002-260618 [102ms]
-  - 🇬🇧 GB-141.98.101.181-0143 [103ms]
-  - 🇬🇧 GB-94.156.250.148-0131 [109ms]
-  - 🇬🇧 GB-82.38.31.190-0094 [111ms]
-  - 🇬🇧 GB-82.38.31.203-0114 [112ms]
-  - 🇬🇧 GB-82.38.31.3-0175 [112ms]
-  - 🇬🇧 GB-82.38.31.199-0176 [114ms]
+  - 🇬🇧 GB_1|294KB/s|P002-260618 [98ms]
+  - 🇬🇧 GB-94.156.250.148-0131 [105ms]
+  - 🇬🇧 GB-146.70.61.37-0120 [106ms]
+  - 🇬🇧 GB-141.98.101.181-0143 [108ms]
+  - 🇬🇧 GB-185.176.206.9-0082 [113ms]
   - 🇬🇧 GB-82.38.31.162-0138 [114ms]
-  - 🇬🇧 GB-82.38.31.184-0105 [114ms]
-  - 🇬🇧 GB-82.38.31.180-0087 [114ms]
-  - 🇬🇧 GB-82.38.31.208-0111 [114ms]
-  - 🇬🇧 GB-82.38.31.47-0132 [114ms]
-  - 🇬🇧 GB-82.38.31.34-0135 [114ms]
-  - 🇬🇧 GB-82.38.31.49-0140 [114ms]
-  - 🇬🇧 GB-82.38.31.170-0180 [114ms]
-  - 🇬🇧 GB-82.38.31.46-0157 [115ms]
-  - 🇬🇧 GB英国丨yoyapai.com (5) [115ms]
-  - 🇬🇧 GB-82.38.31.202-0102 [115ms]
-  - 🇬🇧 GB-82.38.31.2-0179 [115ms]
-  - 🇬🇧 GB-82.38.31.10-0168 [116ms]
-  - 🇬🇧 GB-82.38.31.155-0130 [116ms]
-  - 🇬🇧 GB-82.38.31.149-0155 [117ms]
-  - 🇬🇧 GB-82.38.31.174-0183 [117ms]
-  - 🇬🇧 GB-178.83.185.156-0136 [117ms]
-  - 🇬🇧 GB-82.38.31.171-0181 [118ms]
-  - 🇬🇧 GB-82.38.31.42-0189 [119ms]
-  - 🇬🇧 GB-82.38.31.179-0097 [119ms]
-  - 🇬🇧 GB-82.38.31.176-0177 [119ms]
-  - 🇬🇧 GB-82.38.31.62-0149 [119ms]
-  - 🇬🇧 GB-82.38.31.210-0231 [119ms]
-  - 🇬🇧 GB-82.38.31.16-0185 [119ms]
-  - 🇬🇧 GB-82.38.31.35-0146 [119ms]
-  - 🇬🇧 GB-82.38.31.217-0101 [119ms]
-  - 🇬🇧 GB-82.38.31.194-0223 [119ms]
+  - 🇬🇧 GB-82.38.31.149-0155 [114ms]
+  - 🇬🇧 GB-82.38.31.214-0090 [114ms]
+  - 🇬🇧 GB-178.83.185.156-0136 [114ms]
+  - 🇬🇧 GB-82.38.31.193-0215 [114ms]
+  - 🇬🇧 GB-82.38.31.186-0230 [114ms]
+  - 🇬🇧 GB-82.38.31.202-0102 [114ms]
+  - 🇬🇧 GB-82.38.31.199-0176 [114ms]
+  - 🇬🇧 GB-82.38.31.203-0114 [115ms]
+  - 🇬🇧 GB-82.38.31.187-0083 [116ms]
+  - 🇬🇧 GB-82.38.31.171-0181 [117ms]
+  - 🇬🇧 GB-82.38.31.208-0111 [117ms]
+  - 🇬🇧 GB-82.38.31.218-0089 [117ms]
+  - 🇬🇧 GB-82.38.31.217-0101 [117ms]
+  - 🇬🇧 GB英国丨yoyapai.com (5) [118ms]
+  - 🇬🇧 GB-82.38.31.205-0112 [118ms]
+  - 🇬🇧 GB-82.38.31.48-0145 [119ms]
+  - 🇬🇧 GB-82.38.31.184-0105 [119ms]
+  - 🇬🇧 GB-82.38.31.190-0094 [119ms]
   - 🇬🇧 GB-82.38.31.216-0096 [119ms]
-  - 🇬🇧 GB-82.38.31.159-0141 [119ms]
-  - 🇬🇧 GB-82.38.31.218-0089 [120ms]
-  - 🇬🇧 GB-82.38.31.186-0230 [120ms]
-  - 🇬🇧 GB-82.38.31.61-0137 [120ms]
-  - 🇬🇧 GB-82.38.31.187-0083 [121ms]
-  - 🇬🇧 GB-82.38.31.189-5612 [122ms]
-  - 🇬🇧 GB-82.38.31.193-0215 [122ms]
-  - 🇬🇧 GB-82.38.31.174-0151 [122ms]
-  - 🇬🇧 GB-82.38.31.207-0110 [122ms]
-  - 🇬🇧 GB-82.38.31.191-0218 [122ms]
-  - 🇬🇧 GB-82.38.31.205-0112 [122ms]
+  - 🇬🇧 GB-82.38.31.212-0086 [119ms]
+  - 🇬🇧 GB-82.38.31.2-0179 [119ms]
+  - 🇬🇧 GB-82.38.31.47-0132 [119ms]
+  - 🇬🇧 GB-82.38.31.174-0183 [119ms]
+  - 🇬🇧 GB-82.38.31.66-0142 [119ms]
+  - 🇬🇧 GB-82.38.31.192-0212 [119ms]
+  - 🇬🇧 GB-82.38.31.206-0118 [120ms]
+  - 🇬🇧 GB-82.38.31.35-0146 [120ms]
+  - 🇬🇧 GB-82.38.31.174-0151 [120ms]
+  - 🇬🇧 GB-82.38.31.219-0088 [120ms]
+  - 🇬🇧 GB-82.38.31.49-0140 [120ms]
+  - 🇬🇧 GB-82.38.31.207-0110 [120ms]
+  - 🇬🇧 GB-82.38.31.34-0135 [120ms]
   - 🇬🇧 GB-82.38.31.181-0091 [122ms]
-  - 🇬🇧 GB-82.38.31.219-0088 [122ms]
-  - 🇬🇧 GB-82.38.31.206-0118 [122ms]
-  - 🇬🇧 GB-82.38.31.212-0086 [122ms]
-  - 🇬🇧 GB-82.38.31.48-0145 [122ms]
-  - 🇬🇧 GB-82.38.31.66-0142 [125ms]
-  - 🇬🇧 GB-82.38.31.192-0212 [125ms]
-  - 🇬🇧 GB-82.110.60.9-0093 [125ms]
-  - 🇬🇧 GB-82.38.31.214-0090 [125ms]
-  - 🇬🇧 GB英国丨yoyapai.com (2) [186ms]
-  - 🇬🇧 GB-104.239.12.81-0190 [324ms]
+  - 🇬🇧 GB-82.38.31.210-0231 [122ms]
+  - 🇬🇧 GB-82.38.31.155-0130 [122ms]
+  - 🇬🇧 GB-82.38.31.46-0157 [122ms]
+  - 🇬🇧 GB-82.38.31.189-5612 [122ms]
+  - 🇬🇧 GB-82.38.31.159-0141 [122ms]
+  - 🇬🇧 GB-82.38.31.176-0177 [122ms]
+  - 🇬🇧 GB-82.38.31.42-0189 [122ms]
+  - 🇬🇧 GB-82.38.31.62-0149 [122ms]
+  - 🇬🇧 GB-82.38.31.194-0223 [122ms]
+  - 🇬🇧 GB-82.110.60.9-0093 [122ms]
+  - 🇬🇧 GB-82.38.31.180-0087 [122ms]
+  - 🇬🇧 GB-82.38.31.179-0097 [123ms]
+  - 🇬🇧 GB-82.38.31.170-0180 [123ms]
+  - 🇬🇧 GB-82.38.31.3-0175 [123ms]
+  - 🇬🇧 GB-82.38.31.61-0137 [125ms]
+  - 🇬🇧 GB-82.38.31.16-0185 [125ms]
+  - 🇬🇧 GB-82.38.31.10-0168 [125ms]
+  - 🇬🇧 GB-82.38.31.191-0218 [125ms]
+  - 🇬🇧 GB-104.239.12.81-0190 [314ms]
   - DIRECT
 - name: 🇺🇸 美国 · 58
   type: select
   proxies:
   - 🇺🇸 US丨yoyapai.com美国 (3) [3ms]
-  - 🇺🇸 US美国丨yoyapai.com (19) [6ms]
   - 🇺🇸 US_1|164KB/s [6ms]
   - 🇺🇸 US丨yoyapai.com美国 [6ms]
-  - 🇺🇸 🗽美國CloudFlare节点丨yoyapai.com [6ms]
-  - 🇺🇸 US美國丨yoyapai.com (9) [6ms]
-  - 🇺🇸 US美國丨yoyapai.com (10) [6ms]
-  - 🇺🇸 US美国丨yoyapai.com (2) [7ms]
-  - '🇺🇸 美國丨yoyapai.com (2) #2 [7ms]'
-  - 🇺🇸 US美国丨yoyapai.com (17) [7ms]
-  - 🇺🇸 US美國丨yoyapai.com (2) [7ms]
-  - 🇺🇸 US丨yoyapai.com美国 (2) [7ms]
+  - 🇺🇸 US丨yoyapai.com美国 (2) [6ms]
+  - '🇺🇸 美國丨yoyapai.com (2) #2 [6ms]'
+  - 🇺🇸 US美國丨yoyapai.com (13) [6ms]
+  - 🇺🇸 US美国丨yoyapai.com (2) [6ms]
+  - 🇺🇸 US美國丨yoyapai.com (2) [6ms]
   - 🇺🇸 US美國丨yoyapai.com (8) [7ms]
-  - 🇺🇸 US美國丨yoyapai.com (13) [8ms]
-  - 🇺🇸 US美國丨yoyapai.com (4) [9ms]
-  - '🇺🇸 US美國丨yoyapai.com #2 [9ms]'
-  - 🇺🇸 US美国丨yoyapai.com (13) [10ms]
-  - '🇺🇸 US美國丨yoyapai.com (2) #3 [12ms]'
-  - 🇺🇸 US-156.146.38.170-0159 [13ms]
-  - 🇺🇸 US-156.146.38.169-0156 [13ms]
-  - 🇺🇸 US-156.146.38.168-0165 [14ms]
-  - 🇺🇸 US美国丨yoyapai.com (10) [18ms]
+  - 🇺🇸 US美國丨yoyapai.com (4) [7ms]
+  - 🇺🇸 US美國丨yoyapai.com (9) [7ms]
+  - 🇺🇸 US美國丨yoyapai.com (10) [7ms]
+  - 🇺🇸 🗽美國CloudFlare节点丨yoyapai.com [7ms]
+  - 🇺🇸 US美国丨yoyapai.com (13) [7ms]
+  - 🇺🇸 US美国丨yoyapai.com (19) [7ms]
+  - '🇺🇸 US美國丨yoyapai.com (2) #3 [10ms]'
+  - 🇺🇸 US-156.146.38.169-0156 [14ms]
+  - 🇺🇸 US美国丨yoyapai.com (10) [14ms]
+  - '🇺🇸 US美國丨yoyapai.com #2 [14ms]'
+  - 🇺🇸 US美国丨yoyapai.com (17) [17ms]
+  - 🇺🇸 US-156.146.38.170-0159 [22ms]
   - 🇺🇸 US-156.146.38.167-0164 [22ms]
-  - 🇺🇸 US-185.230.230.18-0080 [24ms]
-  - 🇺🇸 US美國丨yoyapai.com (3) [25ms]
-  - 🇺🇸 US-37.19.198.243-0171 [27ms]
+  - 🇺🇸 US-15.204.247.206-0199 [24ms]
+  - 🇺🇸 US-156.146.38.168-0165 [25ms]
+  - 🇺🇸 US美国丨yoyapai.com (12) [26ms]
   - 🇺🇸 US-37.19.198.236-0169 [27ms]
-  - 🇺🇸 US-193.151.163.18-0077 [28ms]
   - 🇺🇸 US-37.19.198.160-0172 [29ms]
-  - 🇺🇸 US-37.19.198.244-0174 [29ms]
-  - 🇺🇸 US-45.86.51.18-0073 [33ms]
-  - 🇺🇸 US-15.204.247.206-0199 [33ms]
-  - 🇺🇸 美國丨yoyapai.com [37ms]
-  - 🇺🇸 US-173.244.56.9-0074 [37ms]
-  - 🇺🇸 US-193.151.160.9-0075 [40ms]
-  - 🇺🇸 US-198.98.53.130-5739 [40ms]
-  - 🇺🇸 US-193.151.160.18-0076 [44ms]
-  - 🇺🇸 US_3|337KB/s|P002-260618 [45ms]
-  - 🇺🇸 US_4|570KB/s|R002-260618 [45ms]
+  - 🇺🇸 US-45.86.51.18-0073 [30ms]
+  - 🇺🇸 US-37.19.198.243-0171 [32ms]
+  - 🇺🇸 US-198.98.53.130-5739 [32ms]
+  - 🇺🇸 US-37.19.198.244-0174 [32ms]
+  - 🇺🇸 US-185.230.230.18-0080 [32ms]
+  - 🇺🇸 美國丨yoyapai.com [35ms]
+  - 🇺🇸 US美國丨yoyapai.com (3) [36ms]
+  - 🇺🇸 US-173.244.56.6-0071 [38ms]
+  - 🇺🇸 US-173.244.56.9-0074 [38ms]
+  - 🇺🇸 US_3|337KB/s|P002-260618 [38ms]
+  - 🇺🇸 US美国丨yoyapai.com (11) [39ms]
+  - 🇺🇸 US_4|570KB/s|R002-260618 [39ms]
+  - 🇺🇸 US-95.215.201.18-0072 [41ms]
+  - 🇺🇸 US-193.151.163.18-0077 [42ms]
+  - 🇺🇸 US-193.151.160.9-0075 [43ms]
+  - 🇺🇸 US-193.151.160.18-0076 [45ms]
   - 🇺🇸 US_2|258KB/s|R002-260618 [45ms]
-  - 🇺🇸 US美国丨yoyapai.com (11) [45ms]
-  - 🇺🇸 US-173.244.56.6-0071 [49ms]
-  - 🇺🇸 US-95.215.201.18-0072 [49ms]
-  - 🇺🇸 US美国丨yoyapai.com (18) [58ms]
-  - 🇺🇸 US-216.106.186.32-0095 [87ms]
-  - 🇺🇸 US美国丨yoyapai.com (12) [88ms]
-  - 🇺🇸 US-216.106.186.33-0116 [101ms]
-  - 🇺🇸 US美国丨yoyapai.com (26) [101ms]
-  - '🇺🇸 US美國丨yoyapai.com (2) #2 [125ms]'
-  - 🇺🇸 美國丨yoyapai.com (2) [135ms]
-  - 🇺🇸 US美国丨yoyapai.com (21) [157ms]
-  - 🇺🇸 US美國丨yoyapai.com (11) [240ms]
-  - 🇺🇸 US美国丨yoyapai.com (20) [265ms]
-  - 🇺🇸 US美國 [384ms]
-  - 🇺🇸 US美國丨yoyapai.com (7) [455ms]
-  - '🇺🇸 美國丨yoyapai.com #2 [558ms]'
-  - 🇺🇸 美國節點丨yoyapai.com [567ms]
-  - 🇺🇸 US美国丨yoyapai.com (14) [1082ms]
+  - 🇺🇸 US美国丨yoyapai.com (18) [52ms]
+  - 🇺🇸 US美国丨yoyapai.com (26) [71ms]
+  - 🇺🇸 US-216.106.186.33-0116 [88ms]
+  - '🇺🇸 US美國丨yoyapai.com (2) #2 [107ms]'
+  - 🇺🇸 US-216.106.186.32-0095 [117ms]
+  - 🇺🇸 US美国丨yoyapai.com (14) [121ms]
+  - 🇺🇸 美國丨yoyapai.com (2) [136ms]
+  - 🇺🇸 US美国丨yoyapai.com (21) [165ms]
+  - 🇺🇸 US美國丨yoyapai.com (11) [241ms]
+  - 🇺🇸 US美国丨yoyapai.com (20) [262ms]
+  - 🇺🇸 US美國 [390ms]
+  - 🇺🇸 美國節點丨yoyapai.com [538ms]
+  - '🇺🇸 美國丨yoyapai.com #2 [539ms]'
+  - 🇺🇸 US美國丨yoyapai.com (7) [679ms]
   - DIRECT
 - name: 🇨🇦 加拿大 · 36
   type: select
   proxies:
-  - 🇨🇦 CA加拿大丨yoyapai.com (5) [6ms]
-  - '🇨🇦 CA加拿大丨yoyapai.com #2 [6ms]'
-  - 🇨🇦 CA加拿大丨yoyapai.com (3) [6ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (18) [6ms]
+  - 🇨🇦 加拿大丨yoyapai.com (4) [6ms]
   - 🇨🇦 CA加拿大丨yoyapai.com (20) [6ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (7) [6ms]
+  - '🇨🇦 CA加拿大丨yoyapai.com #2 [6ms]'
+  - 🇨🇦 CA加拿大丨yoyapai.com (10) [6ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (5) [6ms]
+  - '🇨🇦 CA加拿大丨yoyapai.com (2) #2 [6ms]'
   - 🇨🇦 CA加拿大丨yoyapai.com (8) [6ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (12) [6ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (16) [7ms]
-  - '🇨🇦 CA加拿大丨yoyapai.com (2) #2 [7ms]'
-  - 🇨🇦 加拿大丨yoyapai.com (4) [7ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (4) [7ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (6) [7ms]
-  - 🇨🇦 加拿大丨yoyapai.com (3) [7ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (13) [6ms]
+  - 🇨🇦 加拿大丨yoyapai.com (3) [6ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (9) [7ms]
   - 🇨🇦 CA加拿大丨yoyapai.com [7ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (11) [7ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (4) [7ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (3) [7ms]
   - 🇨🇦 加拿大丨yoyapai.com (2) [7ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (10) [7ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (14) [7ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (11) [7ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (6) [7ms]
   - 🇨🇦 CA加拿大丨yoyapai.com (15) [7ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (14) [8ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (7) [8ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (13) [9ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (9) [9ms]
-  - 🇨🇦 CA-137.184.174.93-0113 [25ms]
-  - 🇨🇦 CA-51.79.49.116-0422 [30ms]
-  - 🇨🇦 CA-51.222.155.113-0419 [31ms]
-  - 🇨🇦 CA-51.222.141.125-0415 [32ms]
-  - 🇨🇦 CA-51.222.136.236-0163 [32ms]
-  - 🇨🇦 CA-51.222.155.32-0420 [32ms]
-  - 🇨🇦 CA-51.79.85.185-0416 [32ms]
-  - 🇨🇦 CA加拿大丨yoyapai.com (21) [32ms]
-  - 🇨🇦 CA-51.79.64.198-0421 [41ms]
-  - 🇨🇦 CA-51.222.12.127-0423 [44ms]
-  - 🇨🇦 CA-51.222.200.165-0173 [45ms]
-  - 🇨🇦 CA-149.22.95.183-0100 [51ms]
-  - 🇨🇦 加拿大丨yoyapai.com [117ms]
-  - 🇨🇦 CA加拿大 [168ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (12) [7ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (18) [7ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (16) [7ms]
+  - 🇨🇦 CA-137.184.174.93-0113 [23ms]
+  - 🇨🇦 CA-51.79.85.185-0416 [30ms]
+  - 🇨🇦 CA-51.222.155.113-0419 [33ms]
+  - 🇨🇦 CA-51.222.155.32-0420 [33ms]
+  - 🇨🇦 CA-51.79.49.116-0422 [33ms]
+  - 🇨🇦 CA-51.222.200.165-0173 [35ms]
+  - 🇨🇦 CA加拿大丨yoyapai.com (21) [35ms]
+  - 🇨🇦 CA-51.222.12.127-0423 [42ms]
+  - 🇨🇦 CA-51.222.136.236-0163 [42ms]
+  - 🇨🇦 CA-51.79.64.198-0421 [43ms]
+  - 🇨🇦 CA-51.222.141.125-0415 [44ms]
+  - 🇨🇦 加拿大丨yoyapai.com [46ms]
+  - 🇨🇦 CA-149.22.95.183-0100 [49ms]
+  - 🇨🇦 CA加拿大 [401ms]
   - DIRECT
 - name: 🌐 其他 · 33
   type: select
   proxies:
-  - 🌐 ❓未知丨yoyapai.com (80) [6ms]
   - 🌐 ❓未知丨yoyapai.com (92) [6ms]
-  - 🌐 ❓未知丨yoyapai.com (87) [6ms]
-  - 🌐 🏁RELAY-172.64.229.21-1657 [6ms]
+  - 🌐 ❓未知丨yoyapai.com (68) [6ms]
   - 🌐 ❓Other_1|151KB/s [6ms]
+  - 🌐 ❓未知丨yoyapai.com (80) [6ms]
+  - 🇰🇷 KR韩國丨yoyapai.com [6ms]
   - 🌐 ❓未知丨yoyapai.com (56) [6ms]
-  - 🌐 ❓未知丨yoyapai.com (35) [6ms]
-  - 🌐 ❓未知丨yoyapai.com (84) [6ms]
+  - 🌐 🏁RELAY-172.64.229.21-1657 [6ms]
   - 🌐 ❓未知丨yoyapai.com (60) [6ms]
   - 🌐 ❓未知丨yoyapai.com (50) [6ms]
-  - 🌐 ❓未知丨yoyapai.com (78) [6ms]
-  - 🌐 ❓未知丨yoyapai.com (68) [7ms]
-  - 🌐 ❓未知丨yoyapai.com (45) [7ms]
+  - 🌐 ❓未知丨yoyapai.com (35) [6ms]
+  - 🌐 ❓未知丨yoyapai.com (45) [6ms]
+  - 🌐 LK斯里兰卡丨yoyapai.com [6ms]
+  - 🌐 ❓未知丨yoyapai.com (87) [7ms]
+  - 🌐 ❓未知丨yoyapai.com (33) [7ms]
+  - 🌐 ❓未知丨yoyapai.com (44) [7ms]
   - 🌐 ❓未知丨yoyapai.com (36) [7ms]
   - 🌐 ❓免費節點丨yoyapai.com [7ms]
-  - 🌐 ❓未知丨yoyapai.com (44) [7ms]
   - 🌐 ❓未知丨yoyapai.com (31) [7ms]
-  - 🌐 LK斯里兰卡丨yoyapai.com [7ms]
-  - 🇰🇷 KR韩國丨yoyapai.com [7ms]
-  - 🌐 ❓未知丨yoyapai.com (40) [8ms]
-  - 🌐 ❓未知丨yoyapai.com (33) [10ms]
-  - 🌐 ❓未知丨yoyapai.com [15ms]
-  - 🌐 🏁RELAY-172.64.145.93-0999 [19ms]
-  - 🌐 🏁RELAY-104.21.41.92-0406 [64ms]
-  - 🌐 ❓未知丨yoyapai.com (86) [64ms]
-  - 🌐 🏁RELAY-172.67.156.121-1019 [66ms]
-  - 🌐 ❓未知丨yoyapai.com (65) [119ms]
+  - 🌐 ❓未知丨yoyapai.com (40) [7ms]
+  - 🌐 ❓未知丨yoyapai.com [13ms]
+  - 🌐 ❓未知丨yoyapai.com (78) [13ms]
+  - 🌐 ❓未知丨yoyapai.com (84) [15ms]
+  - 🌐 🏁RELAY-172.64.145.93-0999 [26ms]
+  - 🌐 ❓未知丨yoyapai.com (86) [38ms]
+  - 🌐 🏁RELAY-104.21.41.92-0406 [50ms]
+  - 🌐 🏁RELAY-172.67.156.121-1019 [76ms]
   - 🌐 ❓未知丨yoyapai.com (55) [124ms]
-  - 🌐 ❓未知丨yoyapai.com (63) [132ms]
-  - 🌐 斯洛文尼亚丨yoyapai.com [146ms]
-  - 🌐 ❓未知丨yoyapai.com (17) [159ms]
-  - 🌐 ❓未知丨yoyapai.com (51) [159ms]
-  - 🌐 ❓未知丨yoyapai.com (91) [1259ms]
+  - 🌐 斯洛文尼亚丨yoyapai.com [133ms]
+  - 🌐 ❓未知丨yoyapai.com (63) [143ms]
+  - 🌐 ❓未知丨yoyapai.com (51) [158ms]
+  - 🌐 ❓未知丨yoyapai.com (17) [162ms]
+  - 🌐 ❓未知丨yoyapai.com (4) [173ms]
+  - 🌐 ❓未知丨yoyapai.com (91) [1266ms]
   - DIRECT
 - name: 🇫🇷 法国 · 29
   type: select
   proxies:
-  - 🇫🇷 FR法国丨yoyapai.com (7) [6ms]
-  - 🇫🇷 FR法国丨yoyapai.com [6ms]
-  - '🇫🇷 FR法國丨yoyapai.com (2) #2 [6ms]'
   - 🇫🇷 FR法国丨yoyapai.com (6) [6ms]
   - '🇫🇷 法国丨yoyapai.com #2 [6ms]'
+  - '🇫🇷 FR法國丨yoyapai.com (3) #2 [6ms]'
+  - 🇫🇷 FR法國丨yoyapai.com (5) [6ms]
+  - 🇫🇷 FR法国丨yoyapai.com (7) [6ms]
+  - 🇫🇷 FR法國丨yoyapai.com (6) [6ms]
+  - 🇫🇷 法国丨yoyapai.com (3) [6ms]
+  - 🇫🇷 FR法国丨yoyapai.com [7ms]
+  - 🇫🇷 法國丨yoyapai.com [7ms]
+  - '🇫🇷 FR法國丨yoyapai.com (4) #2 [7ms]'
   - 🇫🇷 法国丨yoyapai.com (4) [7ms]
-  - 🇫🇷 法国丨yoyapai.com (3) [7ms]
-  - '🇫🇷 FR法國丨yoyapai.com (3) #2 [7ms]'
-  - 🇫🇷 FR法國丨yoyapai.com (6) [7ms]
-  - '🇫🇷 FR法國丨yoyapai.com (4) #2 [8ms]'
-  - 🇫🇷 FR法國丨yoyapai.com (5) [8ms]
+  - '🇫🇷 FR法國丨yoyapai.com (2) #2 [7ms]'
   - '🇫🇷 FR法国丨yoyapai.com #2 [8ms]'
-  - 🇫🇷 FR法国丨yoyapai.com (8) [9ms]
-  - 🇫🇷 法國丨yoyapai.com [9ms]
   - 🇫🇷 法国丨yoyapai.com (5) [9ms]
-  - 🇫🇷 法国丨yoyapai.com [14ms]
-  - 🇫🇷 法国丨yoyapai.com (2) [43ms]
-  - 🇫🇷 FR法國丨yoyapai.com (4) [67ms]
+  - 🇫🇷 法国丨yoyapai.com [10ms]
+  - 🇫🇷 FR法国丨yoyapai.com (8) [12ms]
+  - 🇫🇷 法国丨yoyapai.com (2) [44ms]
+  - 🇫🇷 FR法國丨yoyapai.com (4) [93ms]
   - 🇫🇷 FR_1|303KB/s|R002-260618 [111ms]
-  - 🇫🇷 FR-51.83.192.80-2722 [134ms]
-  - 🇫🇷 FR-54.36.174.134-0447 [139ms]
-  - 🇫🇷 FR-145.239.55.210-0178 [187ms]
-  - 🇫🇷 FR-54.36.174.140-0162 [196ms]
-  - 🇫🇷 FR-54.36.174.134-0200 [204ms]
-  - 🇫🇷 FR-54.37.131.126-0166 [213ms]
-  - 🇫🇷 FR法國丨yoyapai.com [300ms]
-  - 🇫🇷 FR法國丨yoyapai.com (2) [354ms]
-  - 🇫🇷 FR法國丨yoyapai.com (3) [512ms]
+  - 🇫🇷 FR-54.36.174.134-0447 [134ms]
+  - 🇫🇷 FR-51.83.192.80-2722 [140ms]
+  - 🇫🇷 FR-54.36.174.134-0200 [148ms]
+  - 🇫🇷 FR-54.36.174.140-0162 [153ms]
+  - 🇫🇷 FR-145.239.55.210-0178 [195ms]
+  - 🇫🇷 FR-54.37.131.126-0166 [205ms]
+  - 🇫🇷 FR法國丨yoyapai.com (3) [329ms]
+  - 🇫🇷 FR法國丨yoyapai.com (2) [435ms]
+  - 🇫🇷 FR法國丨yoyapai.com [535ms]
   - 🇫🇷 FR_2|744KB/s
   - DIRECT
-- name: 🇳🇱 荷兰 · 19
+- name: 🇳🇱 荷兰 · 18
   type: select
   proxies:
-  - 🇳🇱 NL_1|308KB/s [6ms]
+  - 🇳🇱 NL_1|308KB/s [15ms]
   - 🇳🇱 荷蘭丨yoyapai.com [34ms]
-  - 🇳🇱 NL-109.201.152.181-0167 [101ms]
-  - 🇳🇱 NL_2|179KB/s [105ms]
   - 🇳🇱 荷蘭丨yoyapai.com (2) [106ms]
-  - 🇳🇱 NL-193.29.139.235-0188 [111ms]
-  - 🇳🇱 NL-193.29.139.151-0148 [112ms]
-  - 🇳🇱 NL-193.29.139.204-0144 [115ms]
-  - 🇳🇱 NL_3|927KB/s [115ms]
-  - 🇳🇱 NL-193.29.139.223-0099 [117ms]
-  - 🇳🇱 NL-193.29.139.147-0119 [122ms]
-  - 🇳🇱 NL-193.29.139.168-0217 [123ms]
-  - 🇳🇱 NL-78.142.194.96-5722 [137ms]
-  - 🇳🇱 NL荷兰丨yoyapai.com (13) [147ms]
-  - 🇳🇱 荷兰丨yoyapai.com (2) [160ms]
-  - 🇳🇱 NL荷兰丨yoyapai.com (2) [179ms]
-  - 🇳🇱 NL_4|138KB/s [182ms]
-  - 🇳🇱 NL荷兰丨yoyapai.com [204ms]
-  - 🇳🇱 荷兰丨yoyapai.com (4) [208ms]
+  - 🇳🇱 NL-109.201.152.181-0167 [110ms]
+  - 🇳🇱 NL_2|179KB/s [111ms]
+  - 🇳🇱 NL_3|927KB/s [114ms]
+  - 🇳🇱 NL-193.29.139.204-0144 [119ms]
+  - 🇳🇱 NL-193.29.139.147-0119 [120ms]
+  - 🇳🇱 NL-193.29.139.168-0217 [120ms]
+  - 🇳🇱 NL-193.29.139.235-0188 [123ms]
+  - 🇳🇱 NL-193.29.139.223-0099 [125ms]
+  - 🇳🇱 NL-193.29.139.151-0148 [125ms]
+  - 🇳🇱 荷兰丨yoyapai.com (2) [146ms]
+  - 🇳🇱 NL荷兰丨yoyapai.com (13) [153ms]
+  - 🇳🇱 NL荷兰丨yoyapai.com (2) [169ms]
+  - 🇳🇱 NL-78.142.194.96-5722 [172ms]
+  - 🇳🇱 NL_4|138KB/s [194ms]
+  - 🇳🇱 NL荷兰丨yoyapai.com [233ms]
   - DIRECT
 - name: 🇩🇪 德国 · 16
   type: select
   proxies:
-  - 🇩🇪 DE德国丨yoyapai.com (2) [6ms]
-  - 🇩🇪 德国丨yoyapai.com (5) [8ms]
-  - 🇩🇪 德國丨yoyapai.com (2) [31ms]
-  - 🇩🇪 DE德国丨yoyapai.com (12) [37ms]
-  - 🇩🇪 DE德国丨yoyapai.com (10) [41ms]
-  - 🇩🇪 DE德国丨yoyapai.com (14) [106ms]
-  - 🇩🇪 DE-209.250.236.93-7974 [113ms]
-  - 🇩🇪 DE-185.176.204.18-0084 [118ms]
-  - 🇩🇪 德國丨yoyapai.com [121ms]
-  - '🇩🇪 德国丨yoyapai.com #2 [125ms]'
-  - 🇩🇪 DE德国丨yoyapai.com (19) [157ms]
-  - 🇩🇪 DE_2|275KB/s [162ms]
-  - 🇩🇪 DE_1|140KB/s [168ms]
-  - 🇩🇪 DE德国丨yoyapai.com (31) [263ms]
-  - 🇩🇪 DE德国丨yoyapai.com (30) [633ms]
+  - 🇩🇪 德国丨yoyapai.com (5) [6ms]
+  - 🇩🇪 DE德国丨yoyapai.com (2) [8ms]
+  - 🇩🇪 DE德国丨yoyapai.com (10) [26ms]
+  - 🇩🇪 德國丨yoyapai.com (2) [35ms]
+  - 🇩🇪 DE德国丨yoyapai.com (12) [42ms]
+  - 🇩🇪 DE德国丨yoyapai.com (14) [99ms]
+  - 🇩🇪 DE-185.176.204.18-0084 [117ms]
+  - 🇩🇪 DE-209.250.236.93-7974 [121ms]
+  - 🇩🇪 DE德国丨yoyapai.com (29) [125ms]
+  - '🇩🇪 德国丨yoyapai.com #2 [131ms]'
+  - 🇩🇪 德國丨yoyapai.com [150ms]
+  - 🇩🇪 DE德国丨yoyapai.com (19) [165ms]
+  - 🇩🇪 DE_1|140KB/s [166ms]
+  - 🇩🇪 DE_2|275KB/s [167ms]
+  - 🇩🇪 DE德国丨yoyapai.com (31) [587ms]
   - 🇩🇪 DE_3|245KB/s
   - DIRECT
 - name: 🇯🇵 日本 · 13
   type: select
   proxies:
-  - 🇯🇵 JP日本丨yoyapai.com (9) [6ms]
-  - 🇯🇵 JP日本丨yoyapai.com (4) [120ms]
+  - 🇯🇵 JP日本丨yoyapai.com (9) [12ms]
+  - 🇯🇵 JP日本丨yoyapai.com (4) [128ms]
+  - 🇯🇵 JP-149.22.87.241-0122 [132ms]
   - 🇯🇵 JP-149.22.87.240-0123 [133ms]
-  - 🇯🇵 JP-149.22.87.204-0121 [133ms]
   - 🇯🇵 JP日本丨yoyapai.com (10) [133ms]
-  - 🇯🇵 JP-149.22.87.241-0122 [134ms]
-  - 🇯🇵 JP日本丨yoyapai.com (3) [139ms]
-  - '🇯🇵 JP日本丨yoyapai.com #2 [140ms]'
-  - 🇯🇵 JP日本節點丨yoyapai.com [172ms]
-  - 🇯🇵 JP-84.247.155.196-0441 [197ms]
-  - 🇯🇵 JP-84.247.155.196-2716 [197ms]
-  - 🇯🇵 JP-154.36.158.197-0412 [207ms]
-  - 🇯🇵 JP_1|215KB/s [237ms]
+  - 🇯🇵 JP-149.22.87.204-0121 [133ms]
+  - 🇯🇵 JP日本丨yoyapai.com (3) [138ms]
+  - '🇯🇵 JP日本丨yoyapai.com #2 [139ms]'
+  - 🇯🇵 JP-84.247.155.196-0441 [144ms]
+  - 🇯🇵 JP-84.247.155.196-2716 [144ms]
+  - 🇯🇵 JP日本節點丨yoyapai.com [150ms]
+  - 🇯🇵 JP_1|215KB/s [236ms]
+  - 🇯🇵 JP-154.36.158.197-0412 [631ms]
   - DIRECT
 - name: 🇮🇹 意大利 · 10
   type: select
   proxies:
-  - 🇮🇹 IT-202.50.253.54-0239 [129ms]
-  - 🇮🇹 IT意大利丨yoyapai.com (5) [139ms]
-  - 🇮🇹 IT意大利丨yoyapai.com (4) [140ms]
-  - 🇮🇹 IT-202.50.253.72-0098 [140ms]
-  - 🇮🇹 IT-202.50.253.90-0109 [140ms]
-  - 🇮🇹 IT意大利丨yoyapai.com (2) [140ms]
-  - 🇮🇹 IT意大利丨yoyapai.com (3) [142ms]
+  - 🇮🇹 IT意大利丨yoyapai.com (2) [128ms]
+  - 🇮🇹 IT意大利丨yoyapai.com (3) [139ms]
+  - 🇮🇹 IT-202.50.253.18-0106 [139ms]
   - 🇮🇹 IT-202.50.253.81-0255 [143ms]
-  - 🇮🇹 IT-202.50.253.18-0106 [147ms]
-  - 🇮🇹 IT意大利丨yoyapai.com [147ms]
+  - 🇮🇹 IT-202.50.253.72-0098 [144ms]
+  - 🇮🇹 IT-202.50.253.90-0109 [144ms]
+  - 🇮🇹 IT意大利丨yoyapai.com [146ms]
+  - 🇮🇹 IT-202.50.253.54-0239 [147ms]
+  - 🇮🇹 IT意大利丨yoyapai.com (4) [148ms]
+  - 🇮🇹 IT意大利丨yoyapai.com (5) [148ms]
   - DIRECT
 - name: 🇸🇬 新加坡 · 9
   type: select
   proxies:
-  - 🇸🇬 SG新加坡丨yoyapai.com (12) [7ms]
-  - 🇸🇬 SG新加坡丨yoyapai.com (8) [8ms]
-  - 🇸🇬 SG新加坡丨yoyapai.com [8ms]
-  - 🇸🇬 SG新加坡丨yoyapai.com (9) [8ms]
-  - 🇸🇬 SG新加坡丨yoyapai.com (7) [9ms]
-  - 🇸🇬 SG_1|245KB/s|R002-260618 [195ms]
-  - 🇸🇬 SG-68.183.227.4-0125 [196ms]
-  - 🇸🇬 SG新加坡丨yoyapai.com (11) [197ms]
-  - 🇸🇬 SG新加坡丨yoyapai.com (4) [198ms]
+  - 🇸🇬 SG新加坡丨yoyapai.com (9) [6ms]
+  - 🇸🇬 SG新加坡丨yoyapai.com (12) [6ms]
+  - 🇸🇬 SG新加坡丨yoyapai.com (8) [7ms]
+  - 🇸🇬 SG新加坡丨yoyapai.com (7) [7ms]
+  - 🇸🇬 SG新加坡丨yoyapai.com [7ms]
+  - 🇸🇬 SG_1|245KB/s|R002-260618 [194ms]
+  - 🇸🇬 SG新加坡丨yoyapai.com (11) [196ms]
+  - 🇸🇬 SG-68.183.227.4-0125 [197ms]
+  - 🇸🇬 SG新加坡丨yoyapai.com (4) [197ms]
   - DIRECT
 - name: 🇷🇺 俄罗斯 · 8
   type: select
   proxies:
   - 🇷🇺 俄罗斯丨yoyapai.com (2) [7ms]
-  - 🇷🇺 RU俄罗斯丨yoyapai.com (10) [151ms]
-  - 🇷🇺 RU俄罗斯丨yoyapai.com (15) [157ms]
-  - 🇷🇺 俄罗斯丨yoyapai.com (4) [191ms]
-  - 🇷🇺 RU_3|282KB/s [208ms]
-  - 🇷🇺 RU_2|310KB/s [328ms]
+  - 🇷🇺 RU俄罗斯丨yoyapai.com (10) [156ms]
+  - 🇷🇺 RU_3|282KB/s [170ms]
+  - 🇷🇺 RU俄罗斯丨yoyapai.com (15) [171ms]
+  - 🇷🇺 俄罗斯丨yoyapai.com (4) [202ms]
+  - 🇷🇺 RU_2|310KB/s [507ms]
   - 🇷🇺 RU_1|3.4MB/s
   - 🇷🇺 RU_4|1.7MB/s
   - DIRECT
 - name: 🇨🇳 中国 · 6
   type: select
   proxies:
-  - 🇨🇳 CN-47.244.120.197-5649 [174ms]
+  - 🇨🇳 CN-47.243.153.153-0658 [174ms]
+  - 🇨🇳 CN-8.218.195.61-1020 [174ms]
   - 🇨🇳 CN-47.244.120.197-0566 [175ms]
-  - 🇨🇳 CN-8.218.195.61-1020 [175ms]
-  - 🇨🇳 CN-47.243.153.153-0658 [176ms]
-  - 🇨🇳 CN-8.217.186.60-0661 [665ms]
-  - 🇨🇳 CN-47.243.153.153-0567 [676ms]
+  - 🇨🇳 CN-47.244.120.197-5649 [175ms]
+  - 🇨🇳 CN-8.217.186.60-0661 [948ms]
+  - 🇨🇳 CN-47.243.153.153-0567 [1137ms]
   - DIRECT
 - name: 🇰🇷 韩国 · 5
   type: select
   proxies:
-  - 🇰🇷 KR韩国丨yoyapai.com (2) [145ms]
-  - 🇰🇷 KR-141.164.45.187-2718 [155ms]
-  - 🇰🇷 KR-141.164.45.187-0443 [160ms]
-  - 🇰🇷 KR-211.178.105.134-0153 [166ms]
-  - 🇰🇷 KR-218.237.185.234-0158 [389ms]
+  - 🇰🇷 KR韩国丨yoyapai.com (2) [30ms]
+  - 🇰🇷 KR-141.164.45.187-2718 [154ms]
+  - 🇰🇷 KR-141.164.45.187-0443 [158ms]
+  - 🇰🇷 KR-211.178.105.134-0153 [168ms]
+  - 🇰🇷 KR-218.237.185.234-0158 [366ms]
   - DIRECT
-- name: 🇹🇷 土耳其 · 4
+- name: 🇹🇭 泰国 · 4
   type: select
   proxies:
-  - 🇹🇷 TR土耳其丨yoyapai.com [7ms]
-  - '🇹🇷 土耳其丨yoyapai.com #2 [136ms]'
-  - 🇹🇷 土耳其丨yoyapai.com [145ms]
-  - 🇹🇷 TR土耳其丨yoyapai.com (2) [155ms]
+  - 🇹🇭 泰国丨yoyapai.com [12ms]
+  - 🇹🇭 Thailand泰国丨yoyapai.com [241ms]
+  - 🇹🇭 TH泰国 [487ms]
+  - 🇹🇭 TH泰國丨yoyapai.com [539ms]
   - DIRECT
 - name: 🇫🇮 芬兰 · 4
   type: select
   proxies:
   - 🇫🇮 FI芬兰丨yoyapai.com (6) [14ms]
-  - 🇫🇮 FI芬兰丨yoyapai.com (4) [152ms]
-  - 🇫🇮 FI芬兰丨yoyapai.com (7) [163ms]
-  - 🇫🇮 FI芬兰丨yoyapai.com [227ms]
-  - DIRECT
-- name: 🇹🇭 泰国 · 4
-  type: select
-  proxies:
-  - 🇹🇭 泰国丨yoyapai.com [14ms]
-  - 🇹🇭 Thailand泰国丨yoyapai.com [240ms]
-  - 🇹🇭 TH泰国 [504ms]
-  - 🇹🇭 TH泰國丨yoyapai.com [558ms]
+  - 🇫🇮 FI芬兰丨yoyapai.com (7) [143ms]
+  - 🇫🇮 FI芬兰丨yoyapai.com (4) [260ms]
+  - 🇫🇮 FI芬兰丨yoyapai.com [265ms]
   - DIRECT
 - name: 🇭🇰 香港 · 4
   type: select
   proxies:
-  - 🇭🇰 HK-156.245.232.239-5651 [196ms]
-  - 🇭🇰 HK香港 (3) [214ms]
-  - 🇭🇰 HK_1|607KB/s [239ms]
-  - 🇭🇰 HK香港丨yoyapai.com (17) [2175ms]
+  - 🇭🇰 HK香港 (3) [90ms]
+  - 🇭🇰 HK_1|607KB/s [244ms]
+  - 🇭🇰 HK-156.245.232.239-5651 [675ms]
+  - 🇭🇰 HK香港丨yoyapai.com (17) [1291ms]
   - DIRECT
 - name: 🇵🇱 波兰 · 3
   type: select
   proxies:
   - 🇵🇱 PL波兰丨yoyapai.com (7) [6ms]
-  - 🇵🇱 PL波兰丨yoyapai.com (6) [140ms]
-  - 🇵🇱 波兰丨yoyapai.com [169ms]
+  - 🇵🇱 PL波兰丨yoyapai.com (6) [135ms]
+  - 🇵🇱 波兰丨yoyapai.com [177ms]
   - DIRECT
 - name: 🇮🇷 伊朗 · 3
   type: select
   proxies:
   - '🇮🇷 IR伊朗丨yoyapai.com #2 [7ms]'
-  - 🇮🇷 IR伊朗丨yoyapai.com [133ms]
-  - '🇮🇷 伊朗丨yoyapai.com #2 [444ms]'
+  - 🇮🇷 IR伊朗丨yoyapai.com [116ms]
+  - '🇮🇷 伊朗丨yoyapai.com #2 [394ms]'
   - DIRECT
-- name: 🇺🇦 乌克兰 · 3
+- name: 🇹🇷 土耳其 · 3
   type: select
   proxies:
-  - 🇺🇦 UA-185.164.175.81-0092 [140ms]
-  - 🇺🇦 烏克蘭丨yoyapai.com [157ms]
-  - 🇺🇦 UA-104.253.216.227-0202 [267ms]
+  - 🇹🇷 TR土耳其丨yoyapai.com [7ms]
+  - 🇹🇷 土耳其丨yoyapai.com [126ms]
+  - '🇹🇷 土耳其丨yoyapai.com #2 [141ms]'
   - DIRECT
 - name: 🇬🇷 希腊 · 2
   type: select
   proxies:
-  - 🇬🇷 希腊丨yoyapai.com [38ms]
-  - 🇬🇷 GR-178.253.16.185-0161 [253ms]
+  - 🇬🇷 希腊丨yoyapai.com [35ms]
+  - 🇬🇷 GR-178.253.16.185-0161 [180ms]
   - DIRECT
-- name: 🇳🇴 挪威 · 2
+- name: 🇺🇦 乌克兰 · 2
   type: select
   proxies:
-  - 🇳🇴 NO-185.213.23.63-0186 [125ms]
-  - 🇳🇴 NO挪威丨yoyapai.com [152ms]
+  - 🇺🇦 UA-185.164.175.81-0092 [123ms]
+  - 🇺🇦 烏克蘭丨yoyapai.com [126ms]
   - DIRECT
 - name: 🇭🇷 克罗地亚 · 2
   type: select
   proxies:
-  - 🇭🇷 HR_2|234KB/s|R002-260618 [126ms]
-  - 🇭🇷 HR_1|169KB/s|R002-260618 [127ms]
+  - 🇭🇷 HR_2|234KB/s|R002-260618 [130ms]
+  - 🇭🇷 HR_1|169KB/s|R002-260618 [132ms]
   - DIRECT
 - name: 🇷🇴 罗马尼亚 · 2
   type: select
   proxies:
-  - 🇷🇴 RO-154.46.31.106-0449 [145ms]
-  - 🇷🇴 RO-154.46.31.106-2726 [173ms]
+  - 🇷🇴 RO-154.46.31.106-0449 [150ms]
+  - 🇷🇴 RO-154.46.31.106-2726 [174ms]
   - DIRECT
 - name: 🇿🇦 南非 · 2
   type: select
   proxies:
-  - 🇿🇦 ZA-102.133.165.160-0152 [240ms]
-  - 🇿🇦 ZA-102.37.156.224-0170 [249ms]
+  - 🇿🇦 ZA-102.133.165.160-0152 [238ms]
+  - 🇿🇦 ZA-102.37.156.224-0170 [247ms]
   - DIRECT
 - name: 🇮🇳 印度 · 2
   type: select
   proxies:
-  - 🇮🇳 IN-139.84.210.39-0530 [344ms]
-  - 🇮🇳 IN印度丨yoyapai.com (2) [407ms]
-  - DIRECT
-- name: 🇧🇷 巴西 · 1
-  type: select
-  proxies:
-  - 🇧🇷 BR巴西圣保罗丨yoyapai.com [6ms]
+  - 🇮🇳 IN-139.84.210.39-0530 [280ms]
+  - 🇮🇳 IN印度丨yoyapai.com (2) [414ms]
   - DIRECT
 - name: 🇻🇳 越南 · 1
   type: select
   proxies:
-  - 🇻🇳 VN越南丨yoyapai.com [7ms]
+  - 🇻🇳 VN越南丨yoyapai.com [6ms]
+  - DIRECT
+- name: 🇧🇷 巴西 · 1
+  type: select
+  proxies:
+  - 🇧🇷 BR巴西圣保罗丨yoyapai.com [7ms]
   - DIRECT
 - name: 🇮🇪 爱尔兰 · 1
   type: select
   proxies:
-  - 🇮🇪 IE_1|151KB/s [100ms]
+  - 🇮🇪 IE_1|151KB/s [101ms]
   - DIRECT
 - name: 🇪🇸 西班牙 · 1
   type: select
   proxies:
-  - 🇪🇸 ES_1|632KB/s [108ms]
+  - 🇪🇸 ES_1|632KB/s [104ms]
   - DIRECT
 - name: 🇪🇪 爱沙尼亚 · 1
   type: select
   proxies:
-  - 🇪🇪 EE_1|196KB/s [141ms]
+  - 🇪🇪 EE_1|196KB/s [124ms]
   - DIRECT
 - name: 🇸🇪 瑞典 · 1
   type: select
   proxies:
-  - 🇸🇪 SE瑞典丨yoyapai.com [141ms]
+  - 🇸🇪 SE瑞典丨yoyapai.com [135ms]
   - DIRECT
 - name: 🇱🇻 拉脱维亚 · 1
   type: select
   proxies:
-  - 🇱🇻 LV拉脱维亚丨yoyapai.com [160ms]
+  - 🇱🇻 LV拉脱维亚丨yoyapai.com [162ms]
   - DIRECT
 - name: 🇲🇩 摩尔多瓦 · 1
   type: select
   proxies:
-  - 🇲🇩 MD摩尔多瓦丨yoyapai.com [169ms]
+  - 🇲🇩 MD摩尔多瓦丨yoyapai.com [198ms]
   - DIRECT
 - name: 🇨🇭 瑞士 · 1
   type: select
   proxies:
-  - 🇨🇭 瑞士丨yoyapai.com [183ms]
+  - 🇨🇭 瑞士丨yoyapai.com [204ms]
   - DIRECT
 - name: 🇮🇩 印尼 · 1
   type: select
   proxies:
-  - 🇮🇩 ID_1|167KB/s|R002-260618 [213ms]
+  - 🇮🇩 ID_1|167KB/s|R002-260618 [212ms]
   - DIRECT
 - name: 🇰🇿 哈萨克斯坦 · 1
   type: select
   proxies:
-  - 🇰🇿 KZ_1|326KB/s [220ms]
+  - 🇰🇿 KZ_1|326KB/s [238ms]
   - DIRECT
 - name: 🇲🇽 墨西哥 · 1
   type: select
   proxies:
-  - 🇲🇽 墨西哥 [370ms]
+  - 🇲🇽 墨西哥 [367ms]
+  - DIRECT
+- name: 🇳🇴 挪威 · 1
+  type: select
+  proxies:
+  - 🇳🇴 NO挪威丨yoyapai.com [713ms]
   - DIRECT
 - name: 🎯 全球直连
   type: select
